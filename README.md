@@ -1,2 +1,2 @@
-# nieruchomosci
+# estates
 projekt zaliczeniowy AGH - C#
