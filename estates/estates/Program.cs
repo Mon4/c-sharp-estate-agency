@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace estates
 {
-    enum Kind_of_meeting { watching, selling}
+    enum Kind_of_meeting { watching, selling }
     public abstract class Owner
     {
         string adress; //street and home number
         string zip_code;
         string city;
         string phone_number;
-        string estates_number;
+        int estates_number;
 
-        protected Owner(string adress, string zip_code, string city, string phone_number, string estates_number)
+        protected Owner(string adress, string zip_code, string city, string phone_number, int estates_number)
         {
             this.adress = adress;
             this.zip_code = zip_code;
@@ -32,12 +32,12 @@ namespace estates
         string phone_number;
         DateTime date_of_birth;
 
-        public Client(string name, string surname, string phone_number, string data)
+        public Client(string name, string surname, string phone_number, string date)
         {
             this.name = name;
             this.surname = surname;
             this.phone_number = phone_number;
-            DateTime.TryParseExact(data, "dd/MM/yyyy", null, System.Globalization.DateTimeStyles.None, out DateTime date_of_birth);
+            DateTime.TryParseExact(date, "dd/MM/yyyy", null, System.Globalization.DateTimeStyles.None, out DateTime date_of_birth);
         }
     }
 
@@ -74,7 +74,7 @@ namespace estates
         int bedrooms;
         Owner owner;
 
-        protected Estate(int id, string adress, string zip_code, string city, decimal price, decimal area, 
+        protected Estate(int id, string adress, string zip_code, string city, decimal price, decimal area,
             bool furniture, bool balcony, int rooms_numer, string description, int bedrooms, Owner owner)
         {
             this.id = id;
@@ -105,15 +105,15 @@ namespace estates
         public Owner Owner { get => owner; set => owner = value; }
     }
 
-    class House:Estate
+    class House : Estate
     {
         int levels;
         bool garden;
         decimal garden_area;
 
-        public House(int id, string adress, string zip_code, string city, decimal price, 
+        public House(int id, string adress, string zip_code, string city, decimal price,
             decimal area, bool furniture, bool balcony, int rooms_number, string description,
-            int bedrooms, Owner owner, int levels, bool garden, decimal garden_area):base(id, adress, zip_code, city, price, area,
+            int bedrooms, Owner owner, int levels, bool garden, decimal garden_area) : base(id, adress, zip_code, city, price, area,
                 furniture, balcony, rooms_number, description, bedrooms, owner)
         {
             this.levels = levels;
@@ -129,7 +129,7 @@ namespace estates
 
         public Flat(int id, string adress, string zip_code, string city, decimal price,
             decimal area, bool furniture, bool balcony, int rooms_number, string description,
-            int bedrooms, Owner owner, string building_development, int level):base(id, adress, zip_code, city, price, area,
+            int bedrooms, Owner owner, string building_development, int level) : base(id, adress, zip_code, city, price, area,
                 furniture, balcony, rooms_number, description, bedrooms, owner)
         {
             this.building_development = building_development;
@@ -155,26 +155,26 @@ namespace estates
         }
     }
 
-    class PrivateOwner:Owner
+    class PrivateOwner : Owner
     {
         string name;
         string surname;
 
-        public PrivateOwner(string adress, string zip_code, string city, string phone_number, string estates_number, 
-            string name, string surname):base(adress, zip_code, city, phone_number, estates_number)
+        public PrivateOwner(string adress, string zip_code, string city, string phone_number, int estates_number,
+            string name, string surname) : base(adress, zip_code, city, phone_number, estates_number)
         {
             this.name = name;
             this.surname = surname;
         }
     }
 
-    class Company:Owner
+    class Company : Owner
     {
         string NIP;
         string company_name;
 
-        public Company(string adress, string zip_code, string city, string phone_number, string estates_number,
-            string nip, string company_name): base(adress, zip_code, city, phone_number, estates_number)
+        public Company(string adress, string zip_code, string city, string phone_number, int estates_number,
+            string nip, string company_name) : base(adress, zip_code, city, phone_number, estates_number)
         {
             NIP = nip;
             this.company_name = company_name;
@@ -185,7 +185,22 @@ namespace estates
     {
         static void Main(string[] args)
         {
+            PrivateOwner po1 = new PrivateOwner(adress: "Kraków", zip_code: "32-123", city: "Kraków", phone_number: "123456789", estates_number:1, name: "Mariusz", surname: "Grzyb");
             
+            Client c1 = new Client(name: "Jan", surname: "Kowalski", phone_number: "512132546", date: "15.12.1980");
+            
+            Employee e1 = new Employee(name: "Janina", surname: "Nowak", phone_number: "801234123", salary: 2500, sale_bonus:100);
+            
+            House h1 = new House(id:1, adress: "Kraków", zip_code: "31-642", city:"Kraków", price: 50000, area: 50, furniture: true, balcony: true, rooms_number:4, 
+                description:"nice house", bedrooms:2, owner: po1, levels:2, garden: true, garden_area:20);
+            
+            Flat f1 = new Flat(id:2, adress: "Kraków", zip_code:"32-123", city:"Kraków", price: 400000, area:90, furniture:true, balcony:false, rooms_number:5,
+                description: "nice flat", bedrooms: 1, owner: po1, building_development: "kamienica", level:10);
+            
+            Meeting m1 = new Meeting(client: c1, employee: e1, estate: h1, date1: "12.12.2021", Kind_of_meeting.selling);
+            
+            Company co1 = new Company(adress:"Kraków", zip_code:"23-534", city:"Kraków", phone_number:"123456789", estates_number:1, nip:"123", company_name:"BUDUJEMY_SE");
+
 
         }
     }
