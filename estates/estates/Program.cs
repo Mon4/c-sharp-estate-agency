@@ -15,7 +15,7 @@ namespace estates
          
             Client c1 = new Client(name: "Jan", surname: "Kowalski", phone_number: "512132546", date: "15.12.1980");
             
-            Employee e1 = new Employee(name: "Janina", surname: "Nowak", phone_number: "801234123", salary: 2500, sale_bonus:100);
+            Employee e1 = new Employee(name: "Janina", surname: "Nowak", phone_number: "801234123", salary: 2500, sold_estates:0);
             
             House h1 = new House(id:1, adress: "Kraków", zip_code: "31-642", city:"Kraków", price: 50000, area: 50, furniture: true, balcony: true, rooms_number:4, 
                 description:"nice house", bedrooms:2, owner: po1, levels:2, garden: true, garden_area:20);
@@ -28,6 +28,7 @@ namespace estates
             Company co1 = new Company(adress:"Kraków", zip_code:"23-534", city:"Kraków", phone_number:"123456789", estates_number:1, nip:"123", company_name:"BUDUJEMY_SE");
 
 
+            System.Console.WriteLine(e1);
         }
     }
 }
