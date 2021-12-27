@@ -12,7 +12,7 @@ namespace estates
         static void Main(string[] args)
         {
             PrivateOwner po1 = new PrivateOwner(adress: "Kraków", zip_code: "32-123", city: "Kraków", phone_number: "123456789", estates_number:1, name: "Mariusz", surname: "Grzyb");
-            
+         
             Client c1 = new Client(name: "Jan", surname: "Kowalski", phone_number: "512132546", date: "15.12.1980");
             
             Employee e1 = new Employee(name: "Janina", surname: "Nowak", phone_number: "801234123", salary: 2500, sale_bonus:100);
