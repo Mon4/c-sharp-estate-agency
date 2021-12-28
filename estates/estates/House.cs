@@ -10,17 +10,17 @@ namespace estates
     {
         int _levels;
         bool _garden;
-        decimal _garden_area;
+        decimal _gardenArea;
 
 
-        public House(int id, string adress, string zip_code, string city, decimal price,
-            decimal area, bool furniture, bool balcony, int rooms_number, string description,
-            int bedrooms, Owner owner, int levels, bool garden, decimal garden_area) : base(id, adress, zip_code, city, price, area,
-                furniture, balcony, rooms_number, description, bedrooms, owner)
+        public House(int id, string adress, string zipCode, string city, decimal price,
+            decimal area, bool furniture, bool balcony, int roomsNumber, string description,
+            int bedrooms, Owner owner, int levels, bool garden, decimal gardenArea) : base(id, adress, zipCode, city, price, area,
+                furniture, balcony, roomsNumber, description, bedrooms, owner)
         {
             _levels = levels;
             _garden = garden;
-            _garden_area = garden_area;
+            _gardenArea = gardenArea;
            
         }
     }

@@ -11,11 +11,11 @@ namespace estates
         string _NIP;
         string _companyName;
 
-        public Company(string adress, string zip_code, string city, string phone_number, int estates_number,
-            string nip, string company_name) : base(adress, zip_code, city, phone_number, estates_number)
+        public Company(string adress, string zipCode, string city, string phoneNumber, int estatesNumber,
+            string nip, string companyName) : base(adress, zipCode, city, phoneNumber, estatesNumber)
         {
             _NIP = nip;
-            _companyName = company_name;
+            _companyName = companyName;
         }
     }
 }

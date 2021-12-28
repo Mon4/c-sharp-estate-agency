@@ -8,13 +8,13 @@
         string _phoneNumber;
         int _estatesNumber;
 
-        protected Owner(string adress, string zip_code, string city, string phone_number, int estates_number)
+        protected Owner(string adress, string zipCode, string city, string phoneNumber, int estatesNumber)
         {
             _adress = adress;
-            _zipCode = zip_code;
+            _zipCode = zipCode;
             _city = city;
-            _phoneNumber = phone_number;
-            _estatesNumber = estates_number;
+            _phoneNumber = phoneNumber;
+            _estatesNumber = estatesNumber;
         }
     }
 

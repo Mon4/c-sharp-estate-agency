@@ -15,12 +15,12 @@
         int _bedrooms;
         Owner _owner;
 
-        protected Estate(int id, string adress, string zip_code, string city, decimal price, decimal area,
+        protected Estate(int id, string adress, string zipCode, string city, decimal price, decimal area,
             bool furniture, bool balcony, int rooms_numer, string description, int bedrooms, Owner owner)
         {
             _id = id;
             _adress = adress;
-            _zipCode = zip_code;
+            _zipCode = zipCode;
             _city = city;
             _price = price;
             _area = area;
@@ -34,7 +34,7 @@
 
         public int Id { get => _id; set => _id = value; }
         public string Adress { get => _adress; set => _adress = value; }
-        public string Zip_code { get => _zipCode; set => _zipCode = value; }
+        public string zipCode { get => _zipCode; set => _zipCode = value; }
         public string City { get => _city; set => _city = value; }
         public decimal Price { get => _price; set => _price = value; }
         public decimal Area { get => _area; set => _area = value; }
