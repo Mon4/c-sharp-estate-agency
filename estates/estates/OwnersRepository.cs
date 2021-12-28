@@ -8,7 +8,7 @@ namespace estates
 {
     class OwnersRepository
     {
-        string nazwa;
-        List<Owner> ownerList;
+        string _name;
+        List<Owner> _ownerList;
     }
 }

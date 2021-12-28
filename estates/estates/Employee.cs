@@ -2,7 +2,7 @@
 
 namespace estates
 {
-    class Employee:RealEstateCompany
+    class Employee
     {
         string _name;
         string _surname;
@@ -20,7 +20,7 @@ namespace estates
             _salary = salary;
             _sale_bonus = SaleBonus(sold_estates, _amountForSale);
             _sold_estates = sold_estates;
-            DodajPracownika(this);
+            
             
         }
 
