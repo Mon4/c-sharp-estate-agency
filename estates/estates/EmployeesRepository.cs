@@ -39,5 +39,32 @@ namespace estates
             else
                 return x.Surname.CompareTo(y.Surname);
         }
+
+        public void FindEmployeebyName(string name)
+        {
+            foreach(Employee e in _employelist)
+            {
+                if(e.Name==name)
+                {
+                    Console.WriteLine(e);
+                }    
+            }
+        }
+
+        public void FindEmployeebyNumber(string number)
+        {
+            foreach (Employee e in _employelist)
+            {
+                if (e.PhoneNumber1 == number)
+                {
+                    Console.WriteLine(e);
+                }
+            }
+        }
+
+
+
+
+
     }
 }

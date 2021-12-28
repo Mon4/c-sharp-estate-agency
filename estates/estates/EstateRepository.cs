@@ -9,9 +9,29 @@ namespace estates
     class EstatesRepository
     {
 
-        string _nama;
+        string _name;
         List<Estate> _estateList;
 
+        public EstatesRepository()
+        {
+            _estateList = new List<Estate>();
+        }
+        public EstatesRepository(string n):this()
+        {
+            _name = n;
+        }
+        public void AddEstate(Estate e)
+        {
+            _estateList.Add(e);
+        }
+        public void RemoveEstate(Estate e)
+        {
+            _estateList.Remove(e);
+        }
+        public void SortEstate()
+        {
+            _estateList.Sort();
+        }
 
     }
 }
