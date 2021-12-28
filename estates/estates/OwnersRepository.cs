@@ -25,7 +25,14 @@ namespace estates
         }
         public void RemoveOwner(Owner o)
         {
-            _ownerList.Remove(o);
+            if (_ownerList.Contains(o))
+            {
+                _ownerList.Remove(o);
+            }
+            else
+            {
+                throw new NoItemFoundException();
+            }
         }
         public void FindOwnerbyNumber(string phone)
         {
@@ -35,6 +42,17 @@ namespace estates
         public void SortOwners()
         {
             _ownerList.Sort();
+        }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("Name: " + _name);
+            foreach(Owner o in _ownerList)
+            {
+                sb.AppendLine(o.ToString());
+            }
+            return sb.ToString();
         }
     }
 }

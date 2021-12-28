@@ -55,6 +55,7 @@
     <Compile Include="House.cs" />
     <Compile Include="Meeting.cs" />
     <Compile Include="MeetingsRepository.cs" />
+    <Compile Include="NoItemFoundException.cs" />
     <Compile Include="Owner.cs" />
     <Compile Include="OwnersRepository.cs" />
     <Compile Include="PrivateOwner.cs" />

@@ -26,11 +26,29 @@ namespace estates
         }
         public void RemoveEstate(Estate e)
         {
-            _estateList.Remove(e);
+            if (_estateList.Contains(e))
+            {
+                _estateList.Remove(e);
+            }
+            else
+            {
+                throw new NoItemFoundException();
+            }
         }
         public void SortEstate()
         {
             _estateList.Sort();
+        }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("Name: " + _name);
+            foreach (Estate e in _estateList)
+            {
+                sb.AppendLine(e.ToString());
+            }
+            return sb.ToString();
         }
 
     }

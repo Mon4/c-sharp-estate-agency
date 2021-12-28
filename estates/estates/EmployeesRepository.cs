@@ -25,8 +25,16 @@ namespace estates
         }
         public void RemoveEmployee(Employee e)
         {
-            _employelist.Remove(e);
+            if (_employelist.Contains(e))
+            {
+                _employelist.Remove(e);
+            }
+            else
+            {
+                throw new NoItemFoundException();
+            }
         }
+
         public void EmploySort()
         {
             _employelist.Sort();
@@ -60,6 +68,16 @@ namespace estates
                     Console.WriteLine(e);
                 }
             }
+        }
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("Name: " + _name);
+            foreach (Employee e in _employelist)
+            {
+                sb.AppendLine(e.ToString());
+            }
+            return sb.ToString();
         }
 
 

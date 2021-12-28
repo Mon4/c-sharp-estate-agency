@@ -31,7 +31,7 @@ namespace estates
             }
             else
             {
-                Console.WriteLine("Person with such data is not on our Clients list.");
+                throw new NoItemFoundException();
             }
         }
 
@@ -49,6 +49,17 @@ namespace estates
         public void SortClients()
         {
             _clientList.Sort();
+        }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("Name: " + _name);
+            foreach (Client c in _clientList)
+            {
+                sb.AppendLine(c.ToString());
+            }
+            return sb.ToString();
         }
 
 
