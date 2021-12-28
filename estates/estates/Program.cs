@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 
 namespace estates
 {
-    enum Kind_of_meeting { watching, selling }
+    enum KindOfMeeting { watching, selling }
+    
 
     internal class Program
     {
@@ -23,7 +24,7 @@ namespace estates
             Flat f1 = new Flat(id:2, adress: "Kraków", zip_code:"32-123", city:"Kraków", price: 400000, area:90, furniture:true, balcony:false, rooms_number:5,
                 description: "nice flat", bedrooms: 1, owner: po1, building_development: "kamienica", level:10);
             
-            Meeting m1 = new Meeting(client: c1, employee: e1, estate: h1, date1: "12.12.2021", Kind_of_meeting.selling);
+            Meeting m1 = new Meeting(client: c1, employee: e1, estate: h1, date1: "12.12.2021", KindOfMeeting.selling);
             
             Company co1 = new Company(adress:"Kraków", zip_code:"23-534", city:"Kraków", phone_number:"123456789", estates_number:1, nip:"123", company_name:"BUDUJEMY_SE");
 
