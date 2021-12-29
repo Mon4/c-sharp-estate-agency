@@ -17,7 +17,7 @@ namespace estates
          
             Client c1 = new Client(name: "Jan", surname: "Kowalski", phoneNumber: "512132546", date: "15.12.1980");
             
-            Employee e1 = new Employee(name: "Janina", surname: "Nowak", phoneNumber: "801234123", salary: 2500, sold_estates:0);
+            Employee e1 = new Employee(name: "Janina", surname: "Nowak", phoneNumber: "801234123", salary: 2500);
             
             House h1 = new House(id:1, adress: "Kraków", zipCode: "31-642", city:"Kraków", price: 50000, area: 50, furniture: true, balcony: true, roomsNumber:4, 
                 description:"nice house", bedrooms:2, owner: po1, levels:2, garden: true, gardenArea:20);

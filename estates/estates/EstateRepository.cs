@@ -42,6 +42,21 @@ namespace estates
                 Console.WriteLine(nife.Message);
             }
         }
+        public void SellEstate(Estate est, Employee emp)
+        {
+            int numberOfEstates = _estateList.Count;
+            decimal bonus = est.Price*(decimal)0.01;
+            RemoveEstate(est);
+            if(_estateList.Count<numberOfEstates)
+            {
+                emp.Sale_bonus += bonus;
+                emp.Sold_estates += 1;
+            }
+            else
+            {
+                return;
+            }
+        }
         public void SortEstate()
         {
             _estateList.Sort();
