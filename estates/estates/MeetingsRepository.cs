@@ -25,13 +25,20 @@ namespace estates
         }
         public void RemoveMeeting(Meeting m)
         {
-            if(_meetingslist.Contains(m))
+            try
             {
-                _meetingslist.Remove(m);
+                if (_meetingslist.Contains(m))
+                {
+                    _meetingslist.Remove(m);
+                }
+                else
+                {
+                    throw new NoItemFoundException("Meeting not found");
+                }
             }
-            else
+            catch(NoItemFoundException nife)
             {
-                throw new NoItemFoundException();
+                Console.WriteLine(nife.Message);
             }
         }
         public void FindMeetingbyDate(string date)

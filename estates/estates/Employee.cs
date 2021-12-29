@@ -1,4 +1,9 @@
 ﻿using System.Text.RegularExpressions;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace estates
 {
@@ -41,13 +46,21 @@ namespace estates
         {
             var r = new Regex(@"\d{9}");
             var re = new Regex(@"\d{3}\-\d{3}\-\d{3}");
-            if (r.IsMatch(phoneNumber) || re.IsMatch(phoneNumber))
+            try
             {
-                return _phoneNumber = phoneNumber;
+                if (r.IsMatch(phoneNumber) || re.IsMatch(phoneNumber))
+                {
+                    return _phoneNumber = phoneNumber;
+                }
+                else
+                {
+                    throw new System.Exception("Wrong phone number format!");
+                }
             }
-            else
+            catch(System.Exception ex)
             {
-                throw new System.Exception();
+                Console.WriteLine(ex.Message);
+                return "unknown phone number";
             }
         }
 

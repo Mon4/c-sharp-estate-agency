@@ -29,6 +29,9 @@ namespace estates
             
             Company co1 = new Company(adress:"Kraków", zipCode:"23-534", city:"Kraków", phoneNumber:"123456789", estatesNumber:1, nip:"123", companyName:"BUDUJEMY_SE");
 
+            OwnersRepository or1 = new OwnersRepository();
+            or1.AddOwner(co1);
+            or1.RemoveOwner(po1);
 
             System.Console.WriteLine(e1);
             Console.ReadKey();

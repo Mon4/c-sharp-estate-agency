@@ -25,13 +25,20 @@ namespace estates
         }
         public void RemoveClient(Client c)
         {
-            if (_clientList.Contains(c))
+            try
             {
-                _clientList.Remove(c);
+                if (_clientList.Contains(c))
+                {
+                    _clientList.Remove(c);
+                }
+                else
+                {
+                    throw new NoItemFoundException("Client not found");
+                }
             }
-            else
+            catch(NoItemFoundException nife)
             {
-                throw new NoItemFoundException();
+                Console.WriteLine(nife.Message);
             }
         }
 

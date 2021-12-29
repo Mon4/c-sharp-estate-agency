@@ -26,13 +26,20 @@ namespace estates
         }
         public void RemoveEstate(Estate e)
         {
-            if (_estateList.Contains(e))
+            try
             {
-                _estateList.Remove(e);
+                if (_estateList.Contains(e))
+                {
+                    _estateList.Remove(e);
+                }
+                else
+                {
+                    throw new NoItemFoundException("Estate not found");
+                }
             }
-            else
+            catch(NoItemFoundException nife)
             {
-                throw new NoItemFoundException();
+                Console.WriteLine(nife.Message);
             }
         }
         public void SortEstate()

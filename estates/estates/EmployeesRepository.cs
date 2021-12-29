@@ -25,13 +25,20 @@ namespace estates
         }
         public void RemoveEmployee(Employee e)
         {
-            if (_employelist.Contains(e))
+            try
             {
-                _employelist.Remove(e);
+                if (_employelist.Contains(e))
+                {
+                    _employelist.Remove(e);
+                }
+                else
+                {
+                    throw new NoItemFoundException("Employee not found");
+                }
             }
-            else
+            catch(NoItemFoundException nife)
             {
-                throw new NoItemFoundException();
+                Console.WriteLine(nife.Message);
             }
         }
 

@@ -25,13 +25,20 @@ namespace estates
         }
         public void RemoveOwner(Owner o)
         {
-            if (_ownerList.Contains(o))
+            try
             {
-                _ownerList.Remove(o);
+                if (_ownerList.Contains(o))
+                {
+                    _ownerList.Remove(o);
+                }
+                else
+                {
+                    throw new NoItemFoundException("Owner not found");
+                }
             }
-            else
+            catch(NoItemFoundException nife)
             {
-                throw new NoItemFoundException();
+                Console.WriteLine(nife.Message);
             }
         }
         public void FindOwnerbyNumber(string phone)
