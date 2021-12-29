@@ -46,7 +46,10 @@ namespace estates
         public string Description { get => _description; set => _description = value; }
         public int Bedrooms { get => _bedrooms; set => _bedrooms = value; }
         public Owner Owner { get => _owner; set => _owner = value; }
-
+        public override string ToString()
+        {
+            return $"{Id} Adress: {Adress} {zipCode} {City}";
+        }
         public int CompareTo(object obj)
         {
             return _price.CompareTo(obj);

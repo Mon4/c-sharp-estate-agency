@@ -24,7 +24,10 @@ namespace estates
         public string City { get => _city; set => _city = value; }
         public string PhoneNumber { get => _phoneNumber; set => _phoneNumber = value; }
         public int EstatesNumber { get => _estatesNumber; set => _estatesNumber = value; }
-
+        public override string ToString()
+        {
+            return $"Adress: {Adress} {City} {ZipCode}, [phone numer: {PhoneNumber}, estates: {EstatesNumber}]";
+        }
         public int CompareTo(Owner other)
         {
             return this._estatesNumber.CompareTo(other.EstatesNumber);

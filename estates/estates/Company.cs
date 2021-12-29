@@ -14,8 +14,16 @@ namespace estates
         public Company(string adress, string zipCode, string city, string phoneNumber, int estatesNumber,
             string nip, string companyName) : base(adress, zipCode, city, phoneNumber, estatesNumber)
         {
-            _NIP = nip;
-            _companyName = companyName;
+            NIP = nip;
+            CompanyName = companyName;
+        }
+
+        public string NIP { get => _NIP; set => _NIP = value; }
+        public string CompanyName { get => _companyName; set => _companyName = value; }
+
+        public override string ToString()
+        {
+            return $"{CompanyName} ({NIP}), " + base.ToString();
         }
     }
 }

@@ -15,7 +15,7 @@ namespace estates
             _client = client;
             _employee = employee;
             _estate = estate;
-            DateTime.TryParseExact(date1, new[]{"dd/MM/yyyy", "dd.mm.yyyy" }, null, System.Globalization.DateTimeStyles.None, out DateTime _date);
+            DateTime.TryParseExact(date1, new[]{"dd/MM/yyyy HH:mm", "dd.MM.yyyy HH:mm" }, null, System.Globalization.DateTimeStyles.None, out _date);
             _kind = kind;
             
         }
@@ -25,6 +25,11 @@ namespace estates
         public DateTime Date { get => _date; set => _date = value; }
         internal Client Client { get => _client; set => _client = value; }
         internal KindOfMeeting Kind { get => _kind; set => _kind = value; }
+
+        public override string ToString()
+        {
+            return $"Time: {_date:dd-MM-yyyy HH:mm}, Adress: {_estate.Adress} {_estate.City}, Employee: {_employee}, Client: {_client} [{_kind}]";
+        }
 
         public int CompareTo(Meeting other)
         {

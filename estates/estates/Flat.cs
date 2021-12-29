@@ -16,8 +16,16 @@ namespace estates
             int bedrooms, Owner owner, string building_development, int level) : base(id, adress, zipCode, city, price, area,
                 furniture, balcony, roomsNumber, description, bedrooms, owner)
         {
-            _building_development = building_development;
-            _level = level;
+            Building_development = building_development;
+            Level = level;
+        }
+
+        public string Building_development { get => _building_development; set => _building_development = value; }
+        public int Level { get => _level; set => _level = value; }
+
+        public override string ToString()
+        {
+            return base.ToString();
         }
     }
 }

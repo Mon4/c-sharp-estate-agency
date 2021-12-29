@@ -18,10 +18,18 @@ namespace estates
             int bedrooms, Owner owner, int levels, bool garden, decimal gardenArea) : base(id, adress, zipCode, city, price, area,
                 furniture, balcony, roomsNumber, description, bedrooms, owner)
         {
-            _levels = levels;
-            _garden = garden;
-            _gardenArea = gardenArea;
+            Levels = levels;
+            Garden = garden;
+            GardenArea = gardenArea;
            
+        }
+
+        public int Levels { get => _levels; set => _levels = value; }
+        public bool Garden { get => _garden; set => _garden = value; }
+        public decimal GardenArea { get => _gardenArea; set => _gardenArea = value; }
+        public override string ToString()
+        {
+            return base.ToString();
         }
     }
 }
