@@ -23,6 +23,7 @@ namespace estates
         public void AddEstate(Estate e)
         {
             _estateList.Add(e);
+            e.Owner.EstatesNumber += 1;
         }
         public void RemoveEstate(Estate e)
         {
@@ -31,6 +32,7 @@ namespace estates
                 if (_estateList.Contains(e))
                 {
                     _estateList.Remove(e);
+                    e.Owner.EstatesNumber -= 1;
                 }
                 else
                 {

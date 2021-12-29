@@ -13,7 +13,7 @@ namespace estates
     {
         static void Main(string[] args)
         {
-            PrivateOwner po1 = new PrivateOwner(adress: "ul. Kwiatowa 4", zipCode: "32-123", city: "Kraków", phoneNumber: "123456789", estatesNumber:1, name: "Mariusz", surname: "Grzyb");
+            PrivateOwner po1 = new PrivateOwner(adress: "ul. Kwiatowa 4", zipCode: "32-123", city: "Kraków", phoneNumber: "123456789", name: "Mariusz", surname: "Grzyb");
          
             Client c1 = new Client(name: "Jan", surname: "Kowalski", phoneNumber: "512132546", date: "15.12.1980");
             
@@ -27,7 +27,7 @@ namespace estates
             
             Meeting m1 = new Meeting(client: c1, employee: e1, estate: h1, date1: "12.12.2021 16:00", KindOfMeeting.selling);
             
-            Company co1 = new Company(adress:"ul. Zielona 12", zipCode:"23-534", city:"Kraków", phoneNumber:"123456789", estatesNumber:1, nip:"123", companyName:"BUDUJEMY_SE");
+            Company co1 = new Company(adress:"ul. Zielona 12", zipCode:"23-534", city:"Kraków", phoneNumber:"123456789", nip:"123-123-12-12", companyName:"BUDUJEMY_SE");
 
             OwnersRepository or1 = new OwnersRepository("List of the owners");
             or1.AddOwner(co1);
@@ -36,6 +36,7 @@ namespace estates
             System.Console.WriteLine(e1);
             System.Console.WriteLine(m1);
             System.Console.WriteLine(co1);
+            System.Console.WriteLine(f1);
             Console.ReadKey();
         }
     }

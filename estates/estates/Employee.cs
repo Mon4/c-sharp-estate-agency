@@ -43,8 +43,8 @@ namespace estates
         }
         public string PhoneNumber(string phoneNumber)
         {
-            var r = new Regex(@"\d{9}");
-            var re = new Regex(@"\d{3}\-\d{3}\-\d{3}");
+            var r = new Regex(@"^\d{9}$");
+            var re = new Regex(@"^\d{3}-\d{3}-\d{3}$");
             try
             {
                 if (r.IsMatch(phoneNumber) || re.IsMatch(phoneNumber))

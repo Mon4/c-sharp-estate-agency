@@ -28,7 +28,7 @@ namespace estates
 
         public override string ToString()
         {
-            return $"Time: {_date:dd-MM-yyyy HH:mm}, Adress: {_estate.Adress} {_estate.City}, Employee: {_employee}, Client: {_client} [{_kind}]";
+            return $"Time: {_date:dd-MM-yyyy HH:mm}, Adress: {_estate.Adress} {_estate.City}, Employee: {Employee.Name} {Employee.Surname}, Client: {_client} [{_kind}]";
         }
 
         public int CompareTo(Meeting other)

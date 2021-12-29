@@ -12,8 +12,8 @@ namespace estates
         string _name;
         string _surname;
 
-        public PrivateOwner(string adress, string zipCode, string city, string phoneNumber, int estatesNumber,
-            string name, string surname) : base(adress, zipCode, city, phoneNumber, estatesNumber)
+        public PrivateOwner(string adress, string zipCode, string city, string phoneNumber,
+            string name, string surname) : base(adress, zipCode, city, phoneNumber)
         {
             Name = name;
             Surname = surname;

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Text.RegularExpressions;
+
 
 namespace estates
 {
@@ -22,7 +24,7 @@ namespace estates
         {
             _id = id;
             _adress = adress;
-            _zipCode = zipCode;
+            ZipCode = zipCode;
             _city = city;
             _price = price;
             _area = area;
@@ -36,7 +38,29 @@ namespace estates
 
         public int Id { get => _id; set => _id = value; }
         public string Adress { get => _adress; set => _adress = value; }
-        public string zipCode { get => _zipCode; set => _zipCode = value; }
+        public string ZipCode
+        {
+            get => _zipCode; set
+            {
+                var r = new Regex(@"^\d{2}-\d{3}$");
+                try
+                {
+                    if (r.IsMatch(value))
+                    {
+                        _zipCode = value;
+                    }
+                    else
+                    {
+                        throw new System.Exception("Wrong zip code format!");
+                    }
+                }
+                catch (System.Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    _zipCode = "unknown";
+                }
+            }
+        }
         public string City { get => _city; set => _city = value; }
         public decimal Price { get => _price; set => _price = value; }
         public decimal Area { get => _area; set => _area = value; }
@@ -48,7 +72,7 @@ namespace estates
         public Owner Owner { get => _owner; set => _owner = value; }
         public override string ToString()
         {
-            return $"{Id} Adress: {Adress} {zipCode} {City}";
+            return $"ID: {Id:d5} Adress: {Adress} {ZipCode} {City}";
         }
         public int CompareTo(object obj)
         {
