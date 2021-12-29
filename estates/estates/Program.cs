@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace estates
 {
     enum KindOfMeeting { watching, selling }
-    
+    enum StatusOfMeeting { waiting, ended, endedWithSale}
 
     internal class Program
     {

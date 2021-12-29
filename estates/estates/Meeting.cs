@@ -9,6 +9,7 @@ namespace estates
         Estate _estate;
         DateTime _date;
         KindOfMeeting _kind;
+        StatusOfMeeting _status;
 
         public Meeting(Client client, Employee employee, Estate estate, string date1, KindOfMeeting kind)
         {
@@ -17,7 +18,7 @@ namespace estates
             _estate = estate;
             DateTime.TryParseExact(date1, new[]{"dd/MM/yyyy HH:mm", "dd.MM.yyyy HH:mm" }, null, System.Globalization.DateTimeStyles.None, out _date);
             _kind = kind;
-            
+            Status = StatusOfMeeting.waiting;
         }
 
         public Employee Employee { get => _employee; set => _employee = value; }
@@ -25,10 +26,16 @@ namespace estates
         public DateTime Date { get => _date; set => _date = value; }
         internal Client Client { get => _client; set => _client = value; }
         internal KindOfMeeting Kind { get => _kind; set => _kind = value; }
+        internal StatusOfMeeting Status { get => _status; set => _status = value; }
 
         public override string ToString()
         {
-            return $"Time: {_date:dd-MM-yyyy HH:mm}, Adress: {_estate.Adress} {_estate.City}, Employee: {Employee.Name} {Employee.Surname}, Client: {_client} [{_kind}]";
+            return $"Time: {_date:dd-MM-yyyy HH:mm}, Adress: {_estate.Adress} {_estate.City}, Employee: {Employee.Name} {Employee.Surname}, Client: {_client} [{_kind}] ({Status})";
+        }
+
+        public void ChangeStatus(StatusOfMeeting stat)
+        {
+            Status = stat;
         }
 
         public int CompareTo(Meeting other)
