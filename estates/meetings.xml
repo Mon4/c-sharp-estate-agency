@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<MeetingsRepository xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>List of the meetings</Name>
+  <Meetingslist>
+    <Meeting>
+      <Employee>
+        <Name>Janina</Name>
+        <Surname>Nowak</Surname>
+        <PhoneNumber1>801234123</PhoneNumber1>
+        <Salary>2500</Salary>
+        <Sale_bonus>0</Sale_bonus>
+        <Sold_estates>0</Sold_estates>
+      </Employee>
+      <Estate xsi:type="House">
+        <Id>1</Id>
+        <Adress>ul. Niebieska 14</Adress>
+        <ZipCode>31-642</ZipCode>
+        <City>Kraków</City>
+        <Price>50000</Price>
+        <Area>50</Area>
+        <Furniture>true</Furniture>
+        <Balcony>true</Balcony>
+        <Rooms_numer>4</Rooms_numer>
+        <Description>nice house</Description>
+        <Bedrooms>2</Bedrooms>
+        <Owner xsi:type="PrivateOwner">
+          <Adress>ul. Kwiatowa 4</Adress>
+          <ZipCode>32-123</ZipCode>
+          <City>Kraków</City>
+          <PhoneNumber>123456789</PhoneNumber>
+          <EstatesNumber>2</EstatesNumber>
+          <Name>Mariusz</Name>
+          <Surname>Grzyb</Surname>
+        </Owner>
+        <Levels>2</Levels>
+        <Garden>true</Garden>
+        <GardenArea>20</GardenArea>
+      </Estate>
+      <Date>2021-12-12T16:00:00</Date>
+      <Client>
+        <Name>Jan</Name>
+        <Surname>Kowalski</Surname>
+        <PhoneNumber>512132546</PhoneNumber>
+        <DateOfBirth>1980-12-15T00:00:00</DateOfBirth>
+      </Client>
+    </Meeting>
+  </Meetingslist>
+</MeetingsRepository>

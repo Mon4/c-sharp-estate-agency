@@ -39,26 +39,26 @@ namespace estates
 
             MeetingsRepository meet1 = new MeetingsRepository("List of the meetings");
             meet1.AddMeeting(m1);
-            meet1.SaveToXML("meetings.xml");
+            meet1.SaveToXML("../../../meetings.xml");
             crep1.AddClient(c1);
-            crep1.SaveToXML("clients.xml");
+            crep1.SaveToXML("../../../clients.xml");
             or1.AddOwner(co1);
             or1.AddOwner(po1);
-            or1.SaveToXML("owners.xml");
+            or1.SaveToXML("../../../owners.xml");
             est1.AddEstate(f1);
             est1.AddEstate(h1);
-            est1.SaveToXML("estates.xml");
+            est1.SaveToXML("../../../estates.xml");
             empr1.AddEmployee(e1);
-            empr1.SaveToXML("employees.xml");
+            empr1.SaveToXML("../../../employees.xml");
             System.Console.WriteLine(e1);
             System.Console.WriteLine(m1);
             System.Console.WriteLine(co1);
             System.Console.WriteLine(f1);
-            Console.WriteLine(EstatesRepository.ReadXML("estates.xml"));
-            Console.WriteLine(OwnersRepository.ReadXML("owners.xml"));
-            Console.WriteLine(ClientsRepository.ReadXML("clients.xml"));
-            Console.WriteLine(EmployeesRepository.ReadXML("employees.xml"));
-            Console.WriteLine(MeetingsRepository.ReadXML("meetings.xml"));
+            Console.WriteLine(EstatesRepository.ReadXML("../../../estates.xml"));
+            Console.WriteLine(OwnersRepository.ReadXML("../../../owners.xml"));
+            Console.WriteLine(ClientsRepository.ReadXML("../../../clients.xml"));
+            Console.WriteLine(EmployeesRepository.ReadXML("../../../employees.xml"));
+            Console.WriteLine(MeetingsRepository.ReadXML("../../../meetings.xml"));
             Console.ReadKey();
         }
     }

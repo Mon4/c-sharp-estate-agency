@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<OwnersRepository xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>List of the owners</Name>
+  <OwnerList>
+    <Owner xsi:type="Company">
+      <Adress>ul. Zielona 12</Adress>
+      <ZipCode>23-534</ZipCode>
+      <City>Kraków</City>
+      <PhoneNumber>123456789</PhoneNumber>
+      <EstatesNumber>0</EstatesNumber>
+      <NIP>123-123-12-12</NIP>
+      <CompanyName>BUDUJEMY_SE</CompanyName>
+    </Owner>
+    <Owner xsi:type="PrivateOwner">
+      <Adress>ul. Kwiatowa 4</Adress>
+      <ZipCode>32-123</ZipCode>
+      <City>Kraków</City>
+      <PhoneNumber>123456789</PhoneNumber>
+      <EstatesNumber>2</EstatesNumber>
+      <Name>Mariusz</Name>
+      <Surname>Grzyb</Surname>
+    </Owner>
+  </OwnerList>
+</OwnersRepository>

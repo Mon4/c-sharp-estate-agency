@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<EstatesRepository xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>List of the estates</Name>
+  <EstateList>
+    <Estate xsi:type="Flat">
+      <Id>2</Id>
+      <Adress>ul. Mickiewicza 1</Adress>
+      <ZipCode>32-123</ZipCode>
+      <City>Kraków</City>
+      <Price>400000</Price>
+      <Area>90</Area>
+      <Furniture>true</Furniture>
+      <Balcony>false</Balcony>
+      <Rooms_numer>5</Rooms_numer>
+      <Description>nice flat</Description>
+      <Bedrooms>1</Bedrooms>
+      <Owner xsi:type="PrivateOwner">
+        <Adress>ul. Kwiatowa 4</Adress>
+        <ZipCode>32-123</ZipCode>
+        <City>Kraków</City>
+        <PhoneNumber>123456789</PhoneNumber>
+        <EstatesNumber>4</EstatesNumber>
+        <Name>Mariusz</Name>
+        <Surname>Grzyb</Surname>
+      </Owner>
+      <Building_development>kamienica</Building_development>
+      <Level>10</Level>
+    </Estate>
+    <Estate xsi:type="House">
+      <Id>1</Id>
+      <Adress>ul. Niebieska 14</Adress>
+      <ZipCode>31-642</ZipCode>
+      <City>Kraków</City>
+      <Price>50000</Price>
+      <Area>50</Area>
+      <Furniture>true</Furniture>
+      <Balcony>true</Balcony>
+      <Rooms_numer>4</Rooms_numer>
+      <Description>nice house</Description>
+      <Bedrooms>2</Bedrooms>
+      <Owner xsi:type="PrivateOwner">
+        <Adress>ul. Kwiatowa 4</Adress>
+        <ZipCode>32-123</ZipCode>
+        <City>Kraków</City>
+        <PhoneNumber>123456789</PhoneNumber>
+        <EstatesNumber>4</EstatesNumber>
+        <Name>Mariusz</Name>
+        <Surname>Grzyb</Surname>
+      </Owner>
+      <Levels>2</Levels>
+      <Garden>true</Garden>
+      <GardenArea>20</GardenArea>
+    </Estate>
+  </EstateList>
+</EstatesRepository>
