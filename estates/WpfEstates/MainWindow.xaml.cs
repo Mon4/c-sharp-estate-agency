@@ -24,40 +24,46 @@ namespace WpfEstates
         {
             InitializeComponent();
         }
+        
+        private void InitalizeComponent()
+        {
+            throw new NotImplementedException();
+        }
 
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            
         }
 
         private void EstatesBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            Main.Content = new EstatePage();
         }
 
         private void EployeesBtn_Click(object sender, RoutedEventArgs e)
         {
+            Main.Content = new EmployeesPage();
 
         }
-
         private void ClientsBtn_Click(object sender, RoutedEventArgs e)
         {
+            Main.Content = new ClientsPage();
 
         }
 
         private void OwnersBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            Main.Content = new OwnersPage();
         }
 
         private void MeetingsBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            Main.Content = new MeetingsPage();
         }
 
         private void ExitBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            Close();
         }
     }
 }
