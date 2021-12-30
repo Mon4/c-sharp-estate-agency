@@ -5,15 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfEstates"
         mc:Ignorable="d"
-        Title="Main Window" Height="768" Width="1366">
+        Title="Main Window" Height="672" Width="1144">
     <Grid>
-        <Frame x:Name="Main" Margin="202,64,48,65" Content="" Grid.RowSpan="3"/>
-        <Button x:Name ="EstatesBtn" Content="Estates" HorizontalAlignment="Left" Height="68" VerticalAlignment="Top" Width="168" Click="EstatesBtn_Click" Margin="0,97,0,0"/>
-        <Button x:Name="EployeesBtn" Content="Employees" Height="68" VerticalAlignment="Top" Click="EployeesBtn_Click" Width="168" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" Margin="0,269,0,0"/>
-        <Button x:Name="ClientsBtn" Content="Clients" HorizontalAlignment="Left" Height="68" VerticalAlignment="Top" Width="168" Click="ClientsBtn_Click" Margin="0,183,0,0"/>
-        <Button x:Name="OwnersBtn" Content="Owners" HorizontalAlignment="Left" Height="68" VerticalAlignment="Top" Width="168" Click="OwnersBtn_Click" Margin="0,368,0,0"/>
-        <Button x:Name="MeetingsBtn" Content="Meetings" HorizontalAlignment="Left" Height="68" VerticalAlignment="Top" Width="168" Click="MeetingsBtn_Click" Margin="0,10,0,0" Grid.Row="1"/>
-        <Button x:Name="ExitBtn" Content="Exit" HorizontalAlignment="Left" Height="71" Margin="0,477,0,0" VerticalAlignment="Top" Width="167" Click="ExitBtn_Click"/>
+        <Frame x:Name="Main" Margin="276,96,0,95" Content="" NavigationUIVisibility="Hidden" Height="450"/>
+        <Button x:Name ="EstatesBtn" Content="Estates" HorizontalAlignment="Left" Height="68" VerticalAlignment="Top" Width="168" Click="EstatesBtn_Click" Margin="0,169,0,0"/>
+        <Button x:Name="EployeesBtn" Content="Employees" Height="68" VerticalAlignment="Top" Click="EployeesBtn_Click" Width="168" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" Margin="-1,348,0,0"/>
+        <Button x:Name="ClientsBtn" Content="Clients" HorizontalAlignment="Left" Height="68" VerticalAlignment="Top" Width="168" Click="ClientsBtn_Click" Margin="-1,260,0,0"/>
+        <Button x:Name="OwnersBtn" Content="Owners" HorizontalAlignment="Left" Height="68" VerticalAlignment="Top" Width="168" Click="OwnersBtn_Click" Margin="-1,436,0,0"/>
+        <Button x:Name="MeetingsBtn" Content="Meetings" HorizontalAlignment="Left" Height="68" VerticalAlignment="Top" Width="168" Click="MeetingsBtn_Click" Margin="0,96,0,0"/>
+        <Button x:Name="ExitBtn" Content="Exit" HorizontalAlignment="Left" Height="71" Margin="-1,527,0,0" VerticalAlignment="Top" Width="167" Click="ExitBtn_Click"/>
         <Label Content="Estates Program" HorizontalAlignment="Left" Height="43" Margin="202,21,0,0" VerticalAlignment="Top" Width="375" FontSize="22"/>
     </Grid>
 

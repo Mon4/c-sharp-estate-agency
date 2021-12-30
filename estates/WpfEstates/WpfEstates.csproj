@@ -8,12 +8,13 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>WpfEstates</RootNamespace>
     <AssemblyName>WpfEstates</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -121,6 +122,20 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Properties\DataSources\estates.Client.datasource" />
+    <None Include="Properties\DataSources\estates.ClientsRepository.datasource" />
+    <None Include="Properties\DataSources\estates.Company.datasource" />
+    <None Include="Properties\DataSources\estates.Employee.datasource" />
+    <None Include="Properties\DataSources\estates.EmployeesRepository.datasource" />
+    <None Include="Properties\DataSources\estates.Estate.datasource" />
+    <None Include="Properties\DataSources\estates.EstatesRepository.datasource" />
+    <None Include="Properties\DataSources\estates.Flat.datasource" />
+    <None Include="Properties\DataSources\estates.House.datasource" />
+    <None Include="Properties\DataSources\estates.Meeting.datasource" />
+    <None Include="Properties\DataSources\estates.MeetingsRepository.datasource" />
+    <None Include="Properties\DataSources\estates.Owner.datasource" />
+    <None Include="Properties\DataSources\estates.OwnersRepository.datasource" />
+    <None Include="Properties\DataSources\estates.PrivateOwner.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -128,6 +143,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\estates\estates.csproj">
+      <Project>{9c871c1e-b5e9-4fff-91f4-070482899bbf}</Project>
+      <Name>estates</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

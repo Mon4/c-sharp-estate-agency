@@ -1,4 +1,5 @@
 ﻿using System;
+using estates;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,21 @@ namespace WpfEstates
     /// </summary>
     public partial class EstatePage : Page
     {
+        EstatesRepository estate_rep;
         public EstatePage()
         {
+            estate_rep = EstatesRepository.ReadXML("estates.xml");
             InitializeComponent();
+            if (estate_rep is object)
+            {
+                EstatesLabel.Content = estate_rep.Name;
+                EstatesDataGrid.ItemsSource = estate_rep.EstateList;
+            }
+        }
+
+        private void EstatesDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }
