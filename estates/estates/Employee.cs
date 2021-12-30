@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace estates
 {
+    [Serializable]
     public class Employee
     {
         string _name;
@@ -23,14 +24,15 @@ namespace estates
         public decimal Sale_bonus { get => _sale_bonus; set => _sale_bonus = value; }
         public int Sold_estates { get => _sold_estates; set => _sold_estates = value; }
 
+        public Employee() { }
         public Employee(string name, string surname, string phoneNumber, decimal salary)
         {
-            _name = name;
-            _surname = surname;
-            _phoneNumber = PhoneNumber(phoneNumber);
-            _salary = salary;
-            _sale_bonus = 0;
-            _sold_estates = 0;
+            Name = name;
+            Surname = surname;
+            PhoneNumber1 = PhoneNumber(phoneNumber);
+            Salary = salary;
+            Sale_bonus = 0;
+            Sold_estates = 0;
         }
 
         public void PaySaleBonus()
@@ -65,7 +67,7 @@ namespace estates
 
         public override string ToString()
         {
-            return _name + " " + _surname + " " + _phoneNumber;
+            return _name + " " + _surname + " " + "(Phone number: "+_phoneNumber+")";
         }
     }
 

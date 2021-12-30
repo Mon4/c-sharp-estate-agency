@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Text.RegularExpressions;
-
+using System.Xml.Serialization;
 
 namespace estates
 {
+    [Serializable]
+    [XmlInclude(typeof(Flat))]
+    [XmlInclude(typeof(House))]
     public abstract class Estate :IComparable
     {
         int _id;
@@ -19,21 +22,24 @@ namespace estates
         int _bedrooms;
         Owner _owner;
 
+        public Estate()
+        { }
         protected Estate(int id, string adress, string zipCode, string city, decimal price, decimal area,
             bool furniture, bool balcony, int rooms_numer, string description, int bedrooms, Owner owner)
         {
-            _id = id;
-            _adress = adress;
+            Id = id;
+            Adress = adress;
             ZipCode = zipCode;
-            _city = city;
-            _price = price;
-            _area = area;
-            _furniture = furniture;
-            _balcony = balcony;
-            _roomsNumer = rooms_numer;
-            _description = description;
-            _bedrooms = bedrooms;
-            _owner = owner;
+            City = city;
+            Price = price;
+            Area = area;
+            Furniture = furniture;
+            Balcony = balcony;
+            Rooms_numer = rooms_numer;
+            Description = description;
+            Bedrooms = bedrooms;
+            Owner = owner;
+            owner.EstatesNumber += 1;
         }
 
         public int Id { get => _id; set => _id = value; }

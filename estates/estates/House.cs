@@ -3,16 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace estates
 {
-    class House:Estate
+    [Serializable]
+    public class House:Estate
     {
         int _levels;
         bool _garden;
         decimal _gardenArea;
 
-
+        public House() { }
         public House(int id, string adress, string zipCode, string city, decimal price,
             decimal area, bool furniture, bool balcony, int roomsNumber, string description,
             int bedrooms, Owner owner, int levels, bool garden, decimal gardenArea) : base(id, adress, zipCode, city, price, area,

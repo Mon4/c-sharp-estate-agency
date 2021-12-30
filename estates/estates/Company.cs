@@ -7,11 +7,13 @@ using System.Text.RegularExpressions;
 
 namespace estates
 {
-    class Company:Owner
+    [Serializable]
+    public class Company:Owner
     {
         string _NIP;
         string _companyName;
 
+        public Company() { }
         public Company(string adress, string zipCode, string city, string phoneNumber,
             string nip, string companyName) : base(adress, zipCode, city, phoneNumber)
         {

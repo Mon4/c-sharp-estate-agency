@@ -4,13 +4,15 @@ using System.Text.RegularExpressions;
 
 namespace estates
 {
-    class Client:IComparable
+    [Serializable]
+    public class Client:IComparable
     {
         string _name;
         string _surname;
         string _phoneNumber;
         DateTime _dateOfBirth;
 
+        public Client() { }
         public Client(string name, string surname, string phoneNumber, string date)
         {
             _name = name;

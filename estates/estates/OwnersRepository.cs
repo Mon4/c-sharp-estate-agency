@@ -1,35 +1,41 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace estates
 {
-    class OwnersRepository
+    [Serializable]
+    public class OwnersRepository
     {
         string _name;
         List<Owner> _ownerList;
 
+        public string Name { get => _name; set => _name = value; }
+        public List<Owner> OwnerList { get => _ownerList; set => _ownerList = value; }
+
         public OwnersRepository()
         {
-            _ownerList = new List<Owner>();
+            OwnerList = new List<Owner>();
         }
         public OwnersRepository(string n):this()
         {
-            _name = n;
+            Name = n;
         }
         public void AddOwner(Owner o)
         {
-            _ownerList.Add(o);
+            OwnerList.Add(o);
         }
         public void RemoveOwner(Owner o)
         {
             try
             {
-                if (_ownerList.Contains(o))
+                if (OwnerList.Contains(o))
                 {
-                    _ownerList.Remove(o);
+                    OwnerList.Remove(o);
                 }
                 else
                 {
@@ -43,23 +49,39 @@ namespace estates
         }
         public void FindOwnerbyNumber(string phone)
         {
-            var pom = _ownerList.Find(x => x.PhoneNumber == phone);
+            var pom = OwnerList.Find(x => x.PhoneNumber == phone);
             Console.WriteLine(pom);
         }
         public void SortOwners()
         {
-            _ownerList.Sort();
+            OwnerList.Sort();
         }
 
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine("Name: " + _name);
-            foreach(Owner o in _ownerList)
+            sb.AppendLine("Name: " + Name);
+            foreach(Owner o in OwnerList)
             {
                 sb.AppendLine(o.ToString());
             }
             return sb.ToString();
+        }
+        public void SaveToXML(string filename)
+        {
+            var xs = new XmlSerializer(typeof(OwnersRepository));
+            var fs = new FileStream(filename, FileMode.Create);
+            xs.Serialize(fs, this);
+            fs.Close();
+        }
+        public static OwnersRepository ReadXML(string filename)
+        {
+            OwnersRepository owners_rep;
+            var xs = new XmlSerializer(typeof(OwnersRepository));
+            var fs = new FileStream(filename, FileMode.Open);
+            owners_rep = (OwnersRepository)xs.Deserialize(fs);
+            fs.Close();
+            return owners_rep;
         }
     }
 }

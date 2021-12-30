@@ -1,35 +1,41 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace estates
 {
-    class EmployeesRepository:IComparer<Employee>
+    [Serializable]
+    public class EmployeesRepository:IComparer<Employee>
     {
         string _name;
         List<Employee> _employelist;
 
+        public string Name { get => _name; set => _name = value; }
+        public List<Employee> Employelist { get => _employelist; set => _employelist = value; }
+
         public EmployeesRepository()
         {
-            _employelist = new List<Employee>();
+            Employelist = new List<Employee>();
         }
         public EmployeesRepository(string n):this()
         {
-            _name = n;
+            Name = n;
         }
         public void AddEmployee(Employee e)
         {
-            _employelist.Add(e);
+            Employelist.Add(e);
         }
         public void RemoveEmployee(Employee e)
         {
             try
             {
-                if (_employelist.Contains(e))
+                if (Employelist.Contains(e))
                 {
-                    _employelist.Remove(e);
+                    Employelist.Remove(e);
                 }
                 else
                 {
@@ -44,7 +50,7 @@ namespace estates
 
         public void EmploySort()
         {
-            _employelist.Sort();
+            Employelist.Sort();
         }
 
         public int Compare(Employee x, Employee y)
@@ -57,7 +63,7 @@ namespace estates
 
         public void FindEmployeebyName(string name)
         {
-            foreach(Employee e in _employelist)
+            foreach(Employee e in Employelist)
             {
                 if(e.Name==name)
                 {
@@ -68,7 +74,7 @@ namespace estates
 
         public void FindEmployeebyNumber(string number)
         {
-            foreach (Employee e in _employelist)
+            foreach (Employee e in Employelist)
             {
                 if (e.PhoneNumber1 == number)
                 {
@@ -79,14 +85,29 @@ namespace estates
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine("Name: " + _name);
-            foreach (Employee e in _employelist)
+            sb.AppendLine("Name: " + Name);
+            foreach (Employee e in Employelist)
             {
                 sb.AppendLine(e.ToString());
             }
             return sb.ToString();
         }
-
+        public void SaveToXML(string filename)
+        {
+            var xs = new XmlSerializer(typeof(EmployeesRepository));
+            var fs = new FileStream(filename, FileMode.Create);
+            xs.Serialize(fs, this);
+            fs.Close();
+        }
+        public static EmployeesRepository ReadXML(string filename)
+        {
+            EmployeesRepository emp_rep;
+            var xs = new XmlSerializer(typeof(EmployeesRepository));
+            var fs = new FileStream(filename, FileMode.Open);
+            emp_rep = (EmployeesRepository)xs.Deserialize(fs);
+            fs.Close();
+            return emp_rep;
+        }
 
 
 

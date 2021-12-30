@@ -1,37 +1,43 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace estates
 {
-    class EstatesRepository
+    [Serializable]
+    public class EstatesRepository
     {
 
         string _name;
         List<Estate> _estateList;
 
+        public string Name { get => _name; set => _name = value; }
+        public List<Estate> EstateList { get => _estateList; set => _estateList = value; }
+
         public EstatesRepository()
         {
-            _estateList = new List<Estate>();
+            EstateList = new List<Estate>();
         }
         public EstatesRepository(string n):this()
         {
-            _name = n;
+            Name = n;
         }
         public void AddEstate(Estate e)
         {
-            _estateList.Add(e);
+            EstateList.Add(e);
             e.Owner.EstatesNumber += 1;
         }
         public void RemoveEstate(Estate e)
         {
             try
             {
-                if (_estateList.Contains(e))
+                if (EstateList.Contains(e))
                 {
-                    _estateList.Remove(e);
+                    EstateList.Remove(e);
                     e.Owner.EstatesNumber -= 1;
                 }
                 else
@@ -46,10 +52,10 @@ namespace estates
         }
         public void SellEstate(Estate est, Employee emp)
         {
-            int numberOfEstates = _estateList.Count;
+            int numberOfEstates = EstateList.Count;
             decimal bonus = est.Price*(decimal)0.01;
             RemoveEstate(est);
-            if(_estateList.Count<numberOfEstates)
+            if(EstateList.Count<numberOfEstates)
             {
                 emp.Sale_bonus += bonus;
                 emp.Sold_estates += 1;
@@ -61,19 +67,34 @@ namespace estates
         }
         public void SortEstate()
         {
-            _estateList.Sort();
+            EstateList.Sort();
         }
 
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine("Name: " + _name);
-            foreach (Estate e in _estateList)
+            sb.AppendLine("Name: " + Name);
+            foreach (Estate e in EstateList)
             {
                 sb.AppendLine(e.ToString());
             }
             return sb.ToString();
         }
-
+        public void SaveToXML(string filename)
+        {
+            var xs = new XmlSerializer(typeof(EstatesRepository));                      
+            var fs = new FileStream(filename, FileMode.Create);
+            xs.Serialize(fs, this);
+            fs.Close();
+        }
+        public static EstatesRepository ReadXML(string filename)
+        {
+            EstatesRepository estate_rep;
+            var xs = new XmlSerializer(typeof(EstatesRepository));
+            var fs = new FileStream(filename, FileMode.Open);
+            estate_rep = (EstatesRepository)xs.Deserialize(fs);
+            fs.Close();
+            return estate_rep;
+        }
     }
 }

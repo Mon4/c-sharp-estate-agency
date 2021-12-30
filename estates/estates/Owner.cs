@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Text.RegularExpressions;
-
+using System.Xml.Serialization;
 
 namespace estates
 {
+    [Serializable]
+    [XmlInclude(typeof(PrivateOwner))]
+    [XmlInclude(typeof(Company))]
     public abstract class Owner :IComparable<Owner>
     {
         string _adress; //street and home number
@@ -11,7 +14,7 @@ namespace estates
         string _city;
         string _phoneNumber;
         int _estatesNumber;
-
+        public Owner() { }
         protected Owner(string adress, string zipCode, string city, string phoneNumber)
         {
             _adress = adress;

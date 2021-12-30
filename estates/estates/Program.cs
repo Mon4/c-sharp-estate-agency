@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace estates
 {
-    enum KindOfMeeting { watching, selling }
-    enum StatusOfMeeting { waiting, ended, endedWithSale}
+    public enum KindOfMeeting { watching, selling }
+    public enum StatusOfMeeting { waiting, ended, endedWithSale}
 
     internal class Program
     {
@@ -30,13 +30,35 @@ namespace estates
             Company co1 = new Company(adress:"ul. Zielona 12", zipCode:"23-534", city:"Kraków", phoneNumber:"123456789", nip:"123-123-12-12", companyName:"BUDUJEMY_SE");
 
             OwnersRepository or1 = new OwnersRepository("List of the owners");
-            or1.AddOwner(co1);
-            or1.RemoveOwner(po1);
 
+            EstatesRepository est1 = new EstatesRepository("List of the estates");
+
+            ClientsRepository crep1 = new ClientsRepository("List of the clients");
+
+            EmployeesRepository empr1 = new EmployeesRepository("List of the employees");
+
+            MeetingsRepository meet1 = new MeetingsRepository("List of the meetings");
+            meet1.AddMeeting(m1);
+            meet1.SaveToXML("meetings.xml");
+            crep1.AddClient(c1);
+            crep1.SaveToXML("clients.xml");
+            or1.AddOwner(co1);
+            or1.AddOwner(po1);
+            or1.SaveToXML("owners.xml");
+            est1.AddEstate(f1);
+            est1.AddEstate(h1);
+            est1.SaveToXML("estates.xml");
+            empr1.AddEmployee(e1);
+            empr1.SaveToXML("employees.xml");
             System.Console.WriteLine(e1);
             System.Console.WriteLine(m1);
             System.Console.WriteLine(co1);
             System.Console.WriteLine(f1);
+            Console.WriteLine(EstatesRepository.ReadXML("estates.xml"));
+            Console.WriteLine(OwnersRepository.ReadXML("owners.xml"));
+            Console.WriteLine(ClientsRepository.ReadXML("clients.xml"));
+            Console.WriteLine(EmployeesRepository.ReadXML("employees.xml"));
+            Console.WriteLine(MeetingsRepository.ReadXML("meetings.xml"));
             Console.ReadKey();
         }
     }

@@ -1,35 +1,41 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace estates
 {
-    class MeetingsRepository
+    [Serializable]
+    public class MeetingsRepository
     {
         string _name;
         List<Meeting> _meetingslist;
 
+        public string Name { get => _name; set => _name = value; }
+        public List<Meeting> Meetingslist { get => _meetingslist; set => _meetingslist = value; }
+
         public MeetingsRepository()
         {
-            _meetingslist = new List<Meeting>();
+            Meetingslist = new List<Meeting>();
         }
         public MeetingsRepository(string n):this()
         {
-            _name = n;
+            Name = n;
         }
         public void AddMeeting(Meeting m)
         {
-            _meetingslist.Add(m);
+            Meetingslist.Add(m);
         }
         public void RemoveMeeting(Meeting m)
         {
             try
             {
-                if (_meetingslist.Contains(m))
+                if (Meetingslist.Contains(m))
                 {
-                    _meetingslist.Remove(m);
+                    Meetingslist.Remove(m);
                 }
                 else
                 {
@@ -45,7 +51,7 @@ namespace estates
         {
             
             DateTime.TryParseExact(date, new[] { "dd/MM/yyyy", "dd.mm.yyyy" }, null, System.Globalization.DateTimeStyles.None, out DateTime pomdate);
-            foreach(Meeting m in _meetingslist)
+            foreach(Meeting m in Meetingslist)
             {
                 if(m.Date==pomdate)
                 {
@@ -55,18 +61,33 @@ namespace estates
         }
         public void SortMeetingsbyDate()
         {
-            _meetingslist.Sort();
+            Meetingslist.Sort();
         }
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine("Name: " + _name);
-            foreach (Meeting m in _meetingslist)
+            sb.AppendLine("Name: " + Name);
+            foreach (Meeting m in Meetingslist)
             {
                 sb.AppendLine(m.ToString());
             }
             return sb.ToString();
         }
-
+        public void SaveToXML(string filename)
+        {
+            var xs = new XmlSerializer(typeof(MeetingsRepository));
+            var fs = new FileStream(filename, FileMode.Create);
+            xs.Serialize(fs, this);
+            fs.Close();
+        }
+        public static MeetingsRepository ReadXML(string filename)
+        {
+            MeetingsRepository meet_rep;
+            var xs = new XmlSerializer(typeof(MeetingsRepository));
+            var fs = new FileStream(filename, FileMode.Open);
+            meet_rep = (MeetingsRepository)xs.Deserialize(fs);
+            fs.Close();
+            return meet_rep;
+        }
     }
 }

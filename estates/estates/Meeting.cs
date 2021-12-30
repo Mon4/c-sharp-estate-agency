@@ -2,7 +2,8 @@
 
 namespace estates
 {
-    class Meeting:IComparable<Meeting>
+    [Serializable]
+    public class Meeting:IComparable<Meeting>
     {
         Client _client;
         Employee _employee;
@@ -11,6 +12,7 @@ namespace estates
         KindOfMeeting _kind;
         StatusOfMeeting _status;
 
+        public Meeting() { }
         public Meeting(Client client, Employee employee, Estate estate, string date1, KindOfMeeting kind)
         {
             _client = client;
@@ -24,7 +26,7 @@ namespace estates
         public Employee Employee { get => _employee; set => _employee = value; }
         public Estate Estate { get => _estate; set => _estate = value; }
         public DateTime Date { get => _date; set => _date = value; }
-        internal Client Client { get => _client; set => _client = value; }
+        public Client Client { get => _client; set => _client = value; }
         internal KindOfMeeting Kind { get => _kind; set => _kind = value; }
         internal StatusOfMeeting Status { get => _status; set => _status = value; }
 

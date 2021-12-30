@@ -1,35 +1,41 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace estates
 {
-    class ClientsRepository
+    [Serializable]
+    public class ClientsRepository
     {
         string _name;
         List<Client> _clientList;
 
+        public string Name { get => _name; set => _name = value; }
+        public List<Client> ClientList { get => _clientList; set => _clientList = value; }
+
         public ClientsRepository()
         {
-            _clientList = new List<Client>();
+            ClientList = new List<Client>();
         }
         public ClientsRepository(string n):this()
         {
-            _name = n;
+            Name = n;
         }
         public void AddClient(Client c)
         {
-            _clientList.Add(c);
+            ClientList.Add(c);
         }
         public void RemoveClient(Client c)
         {
             try
             {
-                if (_clientList.Contains(c))
+                if (ClientList.Contains(c))
                 {
-                    _clientList.Remove(c);
+                    ClientList.Remove(c);
                 }
                 else
                 {
@@ -44,7 +50,7 @@ namespace estates
 
         public void FindClient(string surname)
         {
-            foreach(Client c in _clientList)
+            foreach(Client c in ClientList)
             {
                 if(c.Surname==surname)
                 {
@@ -55,20 +61,35 @@ namespace estates
 
         public void SortClients()
         {
-            _clientList.Sort();
+            ClientList.Sort();
         }
 
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine("Name: " + _name);
-            foreach (Client c in _clientList)
+            sb.AppendLine("Name: " + Name);
+            foreach (Client c in ClientList)
             {
                 sb.AppendLine(c.ToString());
             }
             return sb.ToString();
         }
-
+        public void SaveToXML(string filename)
+        {
+            var xs = new XmlSerializer(typeof(ClientsRepository));
+            var fs = new FileStream(filename, FileMode.Create);
+            xs.Serialize(fs, this);
+            fs.Close();
+        }
+        public static ClientsRepository ReadXML(string filename)
+        {
+            ClientsRepository client_rep;
+            var xs = new XmlSerializer(typeof(ClientsRepository));
+            var fs = new FileStream(filename, FileMode.Open);
+            client_rep = (ClientsRepository)xs.Deserialize(fs);
+            fs.Close();
+            return client_rep;
+        }
 
     }
 }
