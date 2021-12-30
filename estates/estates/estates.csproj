@@ -50,7 +50,7 @@
     <Compile Include="Employee.cs" />
     <Compile Include="EmployeesRepository.cs" />
     <Compile Include="Estate.cs" />
-    <Compile Include="EstateRepository.cs" />
+    <Compile Include="EstatesRepository.cs" />
     <Compile Include="Flat.cs" />
     <Compile Include="House.cs" />
     <Compile Include="Meeting.cs" />

@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "estates", "estates\estates.csproj", "{9C871C1E-B5E9-4FFF-91F4-070482899BBF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfEstates", "WpfEstates\WpfEstates.csproj", "{9783DDBF-30A3-4142-91C6-9D479BEDB921}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{9C871C1E-B5E9-4FFF-91F4-070482899BBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C871C1E-B5E9-4FFF-91F4-070482899BBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C871C1E-B5E9-4FFF-91F4-070482899BBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9783DDBF-30A3-4142-91C6-9D479BEDB921}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9783DDBF-30A3-4142-91C6-9D479BEDB921}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9783DDBF-30A3-4142-91C6-9D479BEDB921}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9783DDBF-30A3-4142-91C6-9D479BEDB921}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
