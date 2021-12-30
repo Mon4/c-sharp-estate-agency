@@ -67,18 +67,18 @@ namespace estates
             }
             return sb.ToString();
         }
-        public void SaveToXML(string path)
+        public void SaveToXML()
         {
             var xs = new XmlSerializer(typeof(OwnersRepository));
-            var fs = new FileStream(path, FileMode.Create);
+            var fs = new FileStream("../../../owners.xml", FileMode.Create);
             xs.Serialize(fs, this);
             fs.Close();
         }
-        public static OwnersRepository ReadXML(string path)
+        public static OwnersRepository ReadXML()
         {
             OwnersRepository owners_rep;
             var xs = new XmlSerializer(typeof(OwnersRepository));
-            var fs = new FileStream(path, FileMode.Open);
+            var fs = new FileStream("../../../owners.xml", FileMode.Open);
             owners_rep = (OwnersRepository)xs.Deserialize(fs);
             fs.Close();
             return owners_rep;

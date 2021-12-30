@@ -1,5 +1,6 @@
-﻿using System;
-using estates;
+﻿using estates;
+using System;
+
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,7 +25,7 @@ namespace WpfEstates
         EstatesRepository estate_rep;
         public EstatePage()
         {
-            estate_rep = EstatesRepository.ReadXML("estates.xml");
+            estate_rep = EstatesRepository.ReadXML();
             InitializeComponent();
             if (estate_rep is object)
             {

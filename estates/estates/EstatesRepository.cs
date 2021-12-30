@@ -80,18 +80,18 @@ namespace estates
             }
             return sb.ToString();
         }
-        public void SaveToXML(string path)
+        public void SaveToXML()
         {
             var xs = new XmlSerializer(typeof(EstatesRepository));                      
-            var fs = new FileStream(path, FileMode.Create);
+            var fs = new FileStream("../../../estates.xml", FileMode.Create);
             xs.Serialize(fs, this);
             fs.Close();
         }
-        public static EstatesRepository ReadXML(string path)
+        public static EstatesRepository ReadXML()
         {
             EstatesRepository estate_rep;
             var xs = new XmlSerializer(typeof(EstatesRepository));
-            var fs = new FileStream(path, FileMode.Open);
+            var fs = new FileStream("../../../estates.xml", FileMode.Open);
             estate_rep = (EstatesRepository)xs.Deserialize(fs);
             fs.Close();
             return estate_rep;
