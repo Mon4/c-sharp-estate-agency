@@ -8,7 +8,8 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="ClientsPage">
 
-    <Grid>
-        <TextBlock Text="Clients" Height="150" Width="300"></TextBlock>
+    <Grid >
+        <DataGrid Name="ClientsDataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" VerticalAlignment="Top"  HorizontalAlignment="Left" Height="377" Width="800" Margin="0,63,0,0"/>
+        <Label x:Name="ClientsLabel" Content="Label" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="800" Background="#FF52BD48" FontSize="20"/>
     </Grid>
 </Page>

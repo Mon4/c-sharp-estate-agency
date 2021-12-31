@@ -9,12 +9,8 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Page1">
 
-    <Page.Resources>
-        <CollectionViewSource x:Key="employeesRepositoryViewSource" d:DesignSource="{d:DesignInstance {x:Type estates:EmployeesRepository}, CreateList=True}"/>
-    </Page.Resources>
-
-    <Grid DataContext="{StaticResource employeesRepositoryViewSource}">
-        <DataGrid x:Name="EstatesDataGrid" HorizontalAlignment="Left" Height="377" VerticalAlignment="Top" Width="800" Margin="0,63,0,0" SelectionChanged="EstatesDataGrid_SelectionChanged"/>
+    <Grid>
+        <DataGrid x:Name="EstatesDataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" HorizontalAlignment="Left" Height="377" VerticalAlignment="Top" Width="800" Margin="0,63,0,0" SelectionChanged="EstatesDataGrid_SelectionChanged"/>
         <Label x:Name="EstatesLabel" Content="Label" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="800" Background="#FF52BD48" FontSize="20"/>
     </Grid>
 </Page>
