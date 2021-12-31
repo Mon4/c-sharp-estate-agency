@@ -17,7 +17,7 @@ namespace estates
         decimal _area; //pol. powierzchnia
         bool _furniture;
         bool _balcony;
-        int _roomsNumer;
+        int _roomsNumber;
         string _description;
         int _bedrooms;
         Owner _owner;
@@ -25,7 +25,7 @@ namespace estates
         public Estate()
         { }
         protected Estate(int id, string adress, string zipCode, string city, decimal price, decimal area,
-            bool furniture, bool balcony, int rooms_numer, string description, int bedrooms, Owner owner)
+            bool furniture, bool balcony, int roomsNumber, string description, int bedrooms, Owner owner)
         {
             Id = id;
             Adress = adress;
@@ -35,7 +35,7 @@ namespace estates
             Area = area;
             Furniture = furniture;
             Balcony = balcony;
-            Rooms_numer = rooms_numer;
+            RoomsNumber = roomsNumber;
             Description = description;
             Bedrooms = bedrooms;
             Owner = owner;
@@ -72,7 +72,7 @@ namespace estates
         public decimal Area { get => _area; set => _area = value; }
         public bool Furniture { get => _furniture; set => _furniture = value; }
         public bool Balcony { get => _balcony; set => _balcony = value; }
-        public int Rooms_numer { get => _roomsNumer; set => _roomsNumer = value; }
+        public int RoomsNumber { get => _roomsNumber; set => _roomsNumber = value; }
         public string Description { get => _description; set => _description = value; }
         public int Bedrooms { get => _bedrooms; set => _bedrooms = value; }
         public Owner Owner { get => _owner; set => _owner = value; }

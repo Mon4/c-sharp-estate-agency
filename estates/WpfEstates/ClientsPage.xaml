@@ -9,7 +9,15 @@
       Title="ClientsPage">
 
     <Grid >
-        <DataGrid Name="ClientsDataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" VerticalAlignment="Top"  HorizontalAlignment="Left" Height="377" Width="800" Margin="0,63,0,0"/>
+        <DataGrid Name="ClientsDataGrid" VerticalAlignment="Top"  HorizontalAlignment="Left" Height="377" Width="800" Margin="0,63,0,0" IsReadOnly="True" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="Name" Binding="{Binding Name}" Header="Name"> </DataGridTextColumn>
+                <DataGridTextColumn x:Name="Surname" Binding="{Binding Surname}" Header="Surname"></DataGridTextColumn>
+                <DataGridTextColumn x:Name="PhoneNumber" Binding="{Binding PhoneNumber}" Header="Phone number"></DataGridTextColumn>
+                <DataGridTextColumn x:Name="DateOfBirth" Binding="{Binding DateOfBirth}" Header="Date of birth"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        
         <Label x:Name="ClientsLabel" Content="Label" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="800" Background="#FF52BD48" FontSize="20"/>
     </Grid>
 </Page>

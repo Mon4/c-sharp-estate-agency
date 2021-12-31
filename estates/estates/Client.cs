@@ -25,6 +25,8 @@ namespace estates
         public string Surname { get => _surname; set => _surname = value; }
         public string PhoneNumber { get => _phoneNumber; set => _phoneNumber = value; }
         public DateTime DateOfBirth { get => _dateOfBirth; set => _dateOfBirth = value; }
+
+
         public override string ToString()
         {
             return $"{Name} {Surname} (phone number: {PhoneNumber}, date of birth: {DateOfBirth: dd.MM.yyyy})";
