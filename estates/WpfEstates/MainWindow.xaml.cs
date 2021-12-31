@@ -38,7 +38,7 @@ namespace WpfEstates
 
         private void EstatesBtn_Click(object sender, RoutedEventArgs e)
         {
-            Main.Content = new EstatePage();
+            Main.Content = new EstatesPage();
         }
 
         private void EployeesBtn_Click(object sender, RoutedEventArgs e)

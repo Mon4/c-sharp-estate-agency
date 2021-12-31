@@ -20,10 +20,10 @@ namespace WpfEstates
     /// <summary>
     /// Interaction logic for Page1.xaml
     /// </summary>
-    public partial class EstatePage : Page
+    public partial class EstatesPage : Page
     {
         EstatesRepository estate_rep;
-        public EstatePage()
+        public EstatesPage()
         {
             estate_rep = EstatesRepository.ReadXML();
             InitializeComponent();
