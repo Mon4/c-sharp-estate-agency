@@ -24,43 +24,36 @@ namespace WpfEstates
         
         public MainWindow()
         {
-            InitializeComponent();
+            InitializeComponent(); 
             Main.Content = new StartingPage();
         }
-        private void InitalizeComponent()
-        {
-            throw new NotImplementedException();
-        }
-
-        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            
-        }
-
         private void EstatesBtn_Click(object sender, RoutedEventArgs e)
         {
             Main.Content = new EstatesPage();
+            EditingButtons.Content = new ButtonsPage();
         }
 
         private void EployeesBtn_Click(object sender, RoutedEventArgs e)
         {
             Main.Content = new EmployeesPage();
-
+            EditingButtons.Content = new ButtonsPage();
         }
         private void ClientsBtn_Click(object sender, RoutedEventArgs e)
         {
             Main.Content = new ClientsPage();
-
+            EditingButtons.Content = new ButtonsPage();
         }
 
         private void OwnersBtn_Click(object sender, RoutedEventArgs e)
         {
             Main.Content = new OwnersPage();
+            EditingButtons.Content = new ButtonsPage();
         }
 
         private void MeetingsBtn_Click(object sender, RoutedEventArgs e)
         {
             Main.Content = new MeetingsPage();
+            EditingButtons.Content = new ButtonsPage();
         }
 
         private void ExitBtn_Click(object sender, RoutedEventArgs e)

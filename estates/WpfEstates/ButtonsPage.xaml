@@ -1,0 +1,14 @@
+﻿<Page x:Class="WpfEstates.ButtonsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfEstates"
+      mc:Ignorable="d" 
+      d:DesignHeight="100" d:DesignWidth="400"
+      Title="ButtonsPage">
+
+    <StackPanel HorizontalAlignment="Right">
+        <Button x:Name="Add" Content="Add" Click="AddBtn_Click" Width="200" Height="64"/>
+    </StackPanel>
+</Page>
