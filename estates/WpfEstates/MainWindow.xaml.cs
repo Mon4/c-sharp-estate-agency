@@ -21,11 +21,12 @@ namespace WpfEstates
     /// </summary>
     public partial class MainWindow : Window
     {
+        
         public MainWindow()
         {
             InitializeComponent();
+            Main.Content = new StartingPage();
         }
-        
         private void InitalizeComponent()
         {
             throw new NotImplementedException();
