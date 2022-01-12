@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <ClientsRepository xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>List of the clients</Name>
+  <Name>List of clients</Name>
   <ClientList>
     <Client>
       <Name>Jan</Name>

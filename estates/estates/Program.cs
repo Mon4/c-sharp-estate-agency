@@ -29,15 +29,15 @@ namespace estates
             
             Company co1 = new Company(adress:"ul. Zielona 12", zipCode:"23-534", city:"Kraków", phoneNumber:"123456789", nip:"123-123-12-12", companyName:"BUDUJEMY_SE");
 
-            OwnersRepository or1 = new OwnersRepository("List of the owners");
+            OwnersRepository or1 = new OwnersRepository("List of owners");
 
-            EstatesRepository est1 = new EstatesRepository("List of the estates");
+            EstatesRepository est1 = new EstatesRepository("List of estates");
 
-            ClientsRepository crep1 = new ClientsRepository("List of the clients");
+            ClientsRepository crep1 = new ClientsRepository("List of clients");
 
-            EmployeesRepository empr1 = new EmployeesRepository("List of the employees");
+            EmployeesRepository empr1 = new EmployeesRepository("List of employees");
 
-            MeetingsRepository meet1 = new MeetingsRepository("List of the meetings");
+            MeetingsRepository meet1 = new MeetingsRepository("List of meetings");
             meet1.AddMeeting(m1);
             meet1.SaveToXML();
             crep1.AddClient(c1);
@@ -59,6 +59,8 @@ namespace estates
             Console.WriteLine(ClientsRepository.ReadXML());
             Console.WriteLine(EmployeesRepository.ReadXML());
             Console.WriteLine(MeetingsRepository.ReadXML());
+            Console.WriteLine(EstatesRepository.ReadXML());
+
             Console.ReadKey();
         }
     }

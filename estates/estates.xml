@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <EstatesRepository xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>List of the estates</Name>
+  <Name>List of estates</Name>
   <EstateList>
     <Estate xsi:type="Flat">
       <Id>2</Id>
@@ -11,7 +11,7 @@
       <Area>90</Area>
       <Furniture>true</Furniture>
       <Balcony>false</Balcony>
-      <Rooms_numer>5</Rooms_numer>
+      <RoomsNumber>5</RoomsNumber>
       <Description>nice flat</Description>
       <Bedrooms>1</Bedrooms>
       <Owner xsi:type="PrivateOwner">
@@ -35,7 +35,7 @@
       <Area>50</Area>
       <Furniture>true</Furniture>
       <Balcony>true</Balcony>
-      <Rooms_numer>4</Rooms_numer>
+      <RoomsNumber>4</RoomsNumber>
       <Description>nice house</Description>
       <Bedrooms>2</Bedrooms>
       <Owner xsi:type="PrivateOwner">

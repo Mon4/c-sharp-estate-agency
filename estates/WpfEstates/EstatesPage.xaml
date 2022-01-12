@@ -22,11 +22,11 @@
                 <DataGridTextColumn x:Name="Area" Binding="{Binding Area}" Header="Area"></DataGridTextColumn>
                 <DataGridCheckBoxColumn x:Name="Balcony" Binding="{Binding Balcony}" Header="Balcony"></DataGridCheckBoxColumn>
                 <DataGridCheckBoxColumn x:Name="Furniture" Binding="{Binding Furniture}" Header="Furniture"></DataGridCheckBoxColumn>
-                <DataGridTextColumn x:Name="RoomsNumber" Binding="{Binding RoomsNumber}" Header="Rooms number"></DataGridTextColumn>
+                <DataGridTextColumn x:Name="RoomsNumber" Binding="{Binding RoomsNumber}" Header="Rooms Number"></DataGridTextColumn>
                 <DataGridTextColumn x:Name="Descrition" Binding="{Binding Description}" Header="Description"></DataGridTextColumn>
                 <DataGridTextColumn x:Name="Bedrooms" Binding="{Binding Bedrooms}" Header="Bedrooms"></DataGridTextColumn>
                 <DataGridTextColumn x:Name="Owner" Binding="{Binding Owner}" Header="Owner"></DataGridTextColumn>
-
+                
             </DataGrid.Columns>
         </DataGrid>
         <Label x:Name="EstatesLabel" Content="Label" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="800" Background="#FF52BD48" FontSize="20"/>

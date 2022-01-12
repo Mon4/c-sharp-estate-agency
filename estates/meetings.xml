@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <MeetingsRepository xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>List of the meetings</Name>
+  <Name>List of meetings</Name>
   <Meetingslist>
     <Meeting>
       <Employee>
@@ -20,7 +20,7 @@
         <Area>50</Area>
         <Furniture>true</Furniture>
         <Balcony>true</Balcony>
-        <Rooms_numer>4</Rooms_numer>
+        <RoomsNumber>4</RoomsNumber>
         <Description>nice house</Description>
         <Bedrooms>2</Bedrooms>
         <Owner xsi:type="PrivateOwner">

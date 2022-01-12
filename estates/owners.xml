@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <OwnersRepository xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>List of the owners</Name>
+  <Name>List of owners</Name>
   <OwnerList>
     <Owner xsi:type="Company">
       <Adress>ul. Zielona 12</Adress>
