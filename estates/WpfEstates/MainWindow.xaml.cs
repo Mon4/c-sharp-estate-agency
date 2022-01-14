@@ -30,12 +30,14 @@ namespace WpfEstates
         }
         private void EstatesBtn_Click(object sender, RoutedEventArgs e)
         {
+            Globalls.currentPage = "Estates";
             Main.Content = new EstatesPage();
             EditingButtons.Content = new ButtonsPage();
         }
 
         private void EployeesBtn_Click(object sender, RoutedEventArgs e)
         {
+            Globalls.currentPage = "Employees";
             Main.Content = new EmployeesPage();
             EditingButtons.Content = new ButtonsPage();
         }
@@ -48,12 +50,14 @@ namespace WpfEstates
 
         private void OwnersBtn_Click(object sender, RoutedEventArgs e)
         {
+            Globalls.currentPage = "Owners";
             Main.Content = new OwnersPage();
             EditingButtons.Content = new ButtonsPage();
         }
 
         private void MeetingsBtn_Click(object sender, RoutedEventArgs e)
         {
+            Globalls.currentPage = "Meetings";
             Main.Content = new MeetingsPage();
             EditingButtons.Content = new ButtonsPage();
         }

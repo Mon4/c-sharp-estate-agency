@@ -32,8 +32,26 @@ namespace WpfEstates
                 AddClientWindow clientWindow = new AddClientWindow();
                 clientWindow.Show();
             }
-            else
-                throw new NotImplementedException();
+            else if(Globalls.currentPage=="Employees")
+            {
+                AddEmployeeWindow employeeWindow = new AddEmployeeWindow();
+                employeeWindow.Show();
+            }
+            else if (Globalls.currentPage == "Estates")
+            {
+                AddEstateWindow estateWindow = new AddEstateWindow();
+                estateWindow.Show();
+            }
+            else if (Globalls.currentPage == "Meetings")
+            {
+                AddMeetingWindow meetingWindow = new AddMeetingWindow();
+                meetingWindow.Show();
+            }
+            else if (Globalls.currentPage == "Owners")
+            {
+                AddOwnerWindow ownerWindow = new AddOwnerWindow();
+                ownerWindow.Show();
+            }
         }
     }
 }
