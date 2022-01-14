@@ -2,6 +2,7 @@
 using estates;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -37,6 +38,11 @@ namespace WpfEstates
         private void EstatesDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
+        }
+
+        private void DeleteBtnClick(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }

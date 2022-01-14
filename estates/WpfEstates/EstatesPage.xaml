@@ -26,7 +26,13 @@
                 <DataGridTextColumn x:Name="Descrition" Binding="{Binding Description}" Header="Description"></DataGridTextColumn>
                 <DataGridTextColumn x:Name="Bedrooms" Binding="{Binding Bedrooms}" Header="Bedrooms"></DataGridTextColumn>
                 <DataGridTextColumn x:Name="Owner" Binding="{Binding Owner}" Header="Owner"></DataGridTextColumn>
-                
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button x:Name="Delete" Click="DeleteBtnClick" >Delete</Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
         <Label x:Name="EstatesLabel" Content="Label" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="800" Background="#FF52BD48" FontSize="20"/>
