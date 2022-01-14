@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="AddMeetingWindow" Height="450" Width="300">
     <Grid>
-        <Label Content="AddMeeting" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="300" Background="#FF52BD48" FontSize="20"/>
+        <Label Content="New Meeting" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="300" Background="#FF52BD48" FontSize="20"/>
     </Grid>
 </Window>
