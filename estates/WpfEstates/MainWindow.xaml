@@ -8,7 +8,7 @@
         Title="Main Window" Height="672" Width="1144">
     <Grid>
         <Frame x:Name="Main" Margin="200,104,0,102" NavigationUIVisibility="Hidden" Height="450"/>
-        <Frame x:Name="EditingButtons" Margin="0,562,-66,-2" NavigationUIVisibility="Hidden" HorizontalAlignment="Right" Height="96" Width="375"/>
+        <Frame x:Name="EditingButtons" Margin="0,559,0,1" NavigationUIVisibility="Hidden" HorizontalAlignment="Right" Height="96" Width="375"/>
         <Button x:Name ="EstatesBtn" Content="Estates" HorizontalAlignment="Left" Height="68" VerticalAlignment="Top" Width="168" Click="EstatesBtn_Click" Margin="0,179,0,0"/>
         <Button x:Name="EployeesBtn" Content="Employees" Height="68" VerticalAlignment="Top" Click="EployeesBtn_Click" Width="168" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" Margin="-1,350,0,0"/>
         <Button x:Name="ClientsBtn" Content="Clients" HorizontalAlignment="Left" Height="68" VerticalAlignment="Top" Width="168" Click="ClientsBtn_Click" Margin="-1,262,0,0"/>

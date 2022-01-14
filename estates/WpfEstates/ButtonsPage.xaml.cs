@@ -27,19 +27,13 @@ namespace WpfEstates
 
         private void AddBtn_Click(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
-        }
-
-        private void EditBtn_Click(object sender, RoutedEventArgs e)
-        {
-            throw new NotImplementedException();
-
-        }
-
-        private void RemoveBtn_Click(object sender, RoutedEventArgs e)
-        {
-            throw new NotImplementedException();
-
+            if (Globalls.currentPage=="Clients")
+            {
+                AddClientWindow clientWindow = new AddClientWindow();
+                clientWindow.Show();
+            }
+            else
+                throw new NotImplementedException();
         }
     }
 }

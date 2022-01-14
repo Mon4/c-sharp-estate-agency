@@ -75,6 +75,7 @@
     <Compile Include="ButtonsPage.xaml.cs">
       <DependentUpon>ButtonsPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Globalls.cs" />
     <Compile Include="StartingPage.xaml.cs">
       <DependentUpon>StartingPage.xaml</DependentUpon>
     </Compile>

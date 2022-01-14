@@ -21,11 +21,12 @@ namespace WpfEstates
     /// </summary>
     public partial class MainWindow : Window
     {
-        
+     
         public MainWindow()
         {
             InitializeComponent(); 
             Main.Content = new StartingPage();
+            
         }
         private void EstatesBtn_Click(object sender, RoutedEventArgs e)
         {
@@ -40,6 +41,7 @@ namespace WpfEstates
         }
         private void ClientsBtn_Click(object sender, RoutedEventArgs e)
         {
+            Globalls.currentPage = "Clients";
             Main.Content = new ClientsPage();
             EditingButtons.Content = new ButtonsPage();
         }
