@@ -57,12 +57,47 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddClientWindow.xaml.cs">
+      <DependentUpon>AddClientWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddEmployeeWindow.xaml.cs">
+      <DependentUpon>AddEmployeeWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddEstateWindow.xaml.cs">
+      <DependentUpon>AddEstateWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddMeetingWindow.xaml.cs">
+      <DependentUpon>AddMeetingWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddOwnerWindow.xaml.cs">
+      <DependentUpon>AddOwnerWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ButtonsPage.xaml.cs">
       <DependentUpon>ButtonsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="StartingPage.xaml.cs">
       <DependentUpon>StartingPage.xaml</DependentUpon>
     </Compile>
+    <Page Include="AddClientWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddEmployeeWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddEstateWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddMeetingWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddOwnerWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ButtonsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
