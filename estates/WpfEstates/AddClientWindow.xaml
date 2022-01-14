@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="AddClientWindow" Height="450" Width="300" >
     <Grid>
-        <Label Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="300" Background="#FF52BD48" FontSize="20"/>
+        <Label Content="New Client" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="300" Background="#FF52BD48" FontSize="20"/>
+        <Label Content="Name:" HorizontalAlignment="Left" Width="65" Margin="22,45,212,353"/>
+        <Label Content="Surname: " HorizontalAlignment="Left" Margin="22,86,188,313"/>
+        <Label Content="Phone Number" HorizontalAlignment="Left" Margin="22,126,188,273"/>
+        <Label Content="Date of Birth" HorizontalAlignment="Left"  Margin="22,166,188,233"/>
     </Grid>
 </Window>
