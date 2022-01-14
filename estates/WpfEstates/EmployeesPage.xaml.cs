@@ -29,9 +29,9 @@ namespace WpfEstates
             InitializeComponent();
             if (employeesRep is object)
             {
-                //uncomment when page is build !!!!!!!!!!!!!!!!!
-                //EmployeesLabel.Content = employeesRep.Name;
-                //EmployeesDataGrid.ItemsSource = new ObservableCollection<Employee>(employeesRep.Employelist);
+                
+                EmployeesLabel.Content = employeesRep.Name;
+                EmployeesDataGrid.ItemsSource = new ObservableCollection<Employee>(employeesRep.Employelist);
             }
 
         }

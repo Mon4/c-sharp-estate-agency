@@ -29,9 +29,9 @@ namespace WpfEstates
             InitializeComponent();
             if (meetingsRep is object)
             {
-                //Uncomment when page is ready!!!!!!!
-                //MeetingsLabel.Content = meetingsRep.Name;
-                //MeetingsDataGrid.ItemsSource = new ObservableCollection<Meeting>(meetingsRep.Meetingslist);
+                
+                MeetingsLabel.Content = meetingsRep.Name;
+                MeetingsDataGrid.ItemsSource = new ObservableCollection<Meeting>(meetingsRep.Meetingslist);
             }
         }
     }

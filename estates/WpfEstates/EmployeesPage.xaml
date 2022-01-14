@@ -9,7 +9,17 @@
       Title="EmployeesPage">
 
     <Grid>
-        <TextBlock Text="Employees" Height="150" Width="300"></TextBlock>
-        
+
+        <DataGrid Name ="EmployeesDataGrid" HorizontalAlignment="Left" Height="329" Margin="75,59,0,0" VerticalAlignment="Top" Width="656">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="Name" Binding="{Binding Name}" Header="Name"></DataGridTextColumn>
+                <DataGridTextColumn x:Name="Surname" Binding="{Binding Surname}" Header="Surname"></DataGridTextColumn>
+                <DataGridTextColumn x:Name="PhoneNumber" Binding="{Binding PhoneNumber1}" Header="PhoneNumber"></DataGridTextColumn>
+                <DataGridTextColumn x:Name="Salary" Binding="{Binding Salary}" Header="Salary"></DataGridTextColumn>
+                <DataGridTextColumn x:Name="Sale_bonus" Binding="{Binding Sale_bonus}" Header="Sale_bonus"></DataGridTextColumn>
+                <DataGridTextColumn x:Name="Sold_estates" Binding="{Binding Sold_estates}" Header="Sold_estates"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label x:Name="EmployeesLabel" Content="Employees" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="800" Background="#FF52BD48" FontSize="20"/>
     </Grid>
 </Page>

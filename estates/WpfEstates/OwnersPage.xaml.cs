@@ -29,9 +29,9 @@ namespace WpfEstates
             InitializeComponent();
             if (ownersRep is object)
             {
-                //Uncomment!!!!
-                //OwnersLabel.Content = ownersRep.Name;
-                //OwnersDataGrid.ItemsSource = new ObservableCollection<Owner>(ownersRep.OwnerList);
+                
+                OwnersLabel.Content = ownersRep.Name;
+                OwnersDataGrid.ItemsSource = new ObservableCollection<Owner>(ownersRep.OwnerList);
             }
         }
     }
