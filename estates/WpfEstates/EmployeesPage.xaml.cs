@@ -1,5 +1,7 @@
-﻿using System;
+﻿using estates;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,9 +22,18 @@ namespace WpfEstates
     /// </summary>
     public partial class EmployeesPage : Page
     {
+        EmployeesRepository employeesRep;
         public EmployeesPage()
         {
+            employeesRep = EmployeesRepository.ReadXML();
             InitializeComponent();
+            if (employeesRep is object)
+            {
+                //uncomment when page is build !!!!!!!!!!!!!!!!!
+                //EmployeesLabel.Content = employeesRep.Name;
+                //EmployeesDataGrid.ItemsSource = new ObservableCollection<Employee>(employeesRep.Employelist);
+            }
+
         }
     }
 }

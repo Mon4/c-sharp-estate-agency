@@ -14,7 +14,6 @@ namespace estates
 
         string _name;
         List<Estate> _estateList;
-
         public string Name { get => _name; set => _name = value; }
         public List<Estate> EstateList { get => _estateList; set => _estateList = value; }
 

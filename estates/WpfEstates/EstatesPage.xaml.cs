@@ -2,6 +2,7 @@
 using estates;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Data;
 using System.Linq;
 using System.Text;
@@ -23,15 +24,15 @@ namespace WpfEstates
     /// </summary>
     public partial class EstatesPage : Page
     {
-        EstatesRepository estate_rep;
+        EstatesRepository estatesRep;
         public EstatesPage()
         {
-            estate_rep = EstatesRepository.ReadXML();
+            estatesRep = EstatesRepository.ReadXML();
             InitializeComponent();
-            if (estate_rep is object)
+            if (estatesRep is object)
             {
-                EstatesLabel.Content = estate_rep.Name;
-                EstatesDataGrid.ItemsSource = estate_rep.EstateList;
+                EstatesLabel.Content = estatesRep.Name;
+                EstatesDataGrid.ItemsSource = new ObservableCollection<Estate>(estatesRep.EstateList);
             }
         }
 

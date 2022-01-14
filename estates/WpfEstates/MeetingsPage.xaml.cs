@@ -1,5 +1,7 @@
-﻿using System;
+﻿using estates;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,9 +22,17 @@ namespace WpfEstates
     /// </summary>
     public partial class MeetingsPage : Page
     {
+        MeetingsRepository meetingsRep;
         public MeetingsPage()
         {
+            meetingsRep = MeetingsRepository.ReadXML();
             InitializeComponent();
+            if (meetingsRep is object)
+            {
+                //Uncomment when page is ready!!!!!!!
+                //MeetingsLabel.Content = meetingsRep.Name;
+                //MeetingsDataGrid.ItemsSource = new ObservableCollection<Meeting>(meetingsRep.Meetingslist);
+            }
         }
     }
 }
