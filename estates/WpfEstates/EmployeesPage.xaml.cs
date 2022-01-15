@@ -35,5 +35,9 @@ namespace WpfEstates
             }
 
         }
+        private void DeleteBtnClick(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

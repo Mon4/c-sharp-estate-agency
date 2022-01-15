@@ -34,5 +34,14 @@ namespace WpfEstates
                 OwnersDataGrid.ItemsSource = new ObservableCollection<Owner>(ownersRep.OwnerList);
             }
         }
+
+        private void OwnersDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            //throw new NotImplementedException();
+        }
+        private void DeleteBtnClick(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -10,13 +10,21 @@
 
     <Grid>
         
-        <DataGrid Name="OwnersDataGrid" VerticalAlignment="Top"  HorizontalAlignment="Left" Height="377" Width="800" Margin="0,63,0,0" IsReadOnly="True" AutoGenerateColumns="False">
+        <DataGrid Name="OwnersDataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" VerticalAlignment="Top"  HorizontalAlignment="Left" Height="377" Width="800" Margin="0,63,0,0" IsReadOnly="True" AutoGenerateColumns="False" SelectionChanged="OwnersDataGrid_SelectionChanged">
             <DataGrid.Columns>
                 <DataGridTextColumn x:Name="Adress" Binding="{Binding Adress}" Header="Adress"></DataGridTextColumn>
                 <DataGridTextColumn x:Name="ZipCode" Binding="{Binding ZipCode}" Header="ZipCode"></DataGridTextColumn>
                 <DataGridTextColumn x:Name="City" Binding="{Binding City}" Header="City"></DataGridTextColumn>
                 <DataGridTextColumn x:Name="PhoneNumber" Binding="{Binding PhoneNumber}" Header="PhoneNumber"></DataGridTextColumn>
                 <DataGridTextColumn x:Name="EstatesNumber" Binding="{Binding EstatesNumber}" Header="EstatesNumber"></DataGridTextColumn>
+               
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button x:Name="Delete" Click="DeleteBtnClick" >Delete</Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
 
             </DataGrid.Columns>
         </DataGrid>

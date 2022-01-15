@@ -29,10 +29,13 @@ namespace WpfEstates
             InitializeComponent();
             if (meetingsRep is object)
             {
-                
                 MeetingsLabel.Content = meetingsRep.Name;
                 MeetingsDataGrid.ItemsSource = new ObservableCollection<Meeting>(meetingsRep.Meetingslist);
             }
+        }
+        private void DeleteBtnClick(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

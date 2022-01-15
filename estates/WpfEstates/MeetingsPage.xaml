@@ -17,7 +17,14 @@
                 <DataGridTextColumn x:Name="Client" Binding="{Binding Client}" Header="Client"></DataGridTextColumn>
                 <DataGridTextColumn x:Name="KindOfMeeting" Binding="{Binding KindOfMeeting}" Header="KindOfMeeting"></DataGridTextColumn>
                 <DataGridTextColumn x:Name="StatusOfMeeting" Binding="{Binding StatusOfMeeting}" Header="StatusOfMeeting"></DataGridTextColumn>
-
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button x:Name="Delete" Click="DeleteBtnClick" >Delete</Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+               
             </DataGrid.Columns>
         </DataGrid>
         <Label x:Name="MeetingsLabel" Content="Meetings" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="800" Background="#FF52BD48" FontSize="20"/>

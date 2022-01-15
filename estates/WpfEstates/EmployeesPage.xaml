@@ -18,6 +18,14 @@
                 <DataGridTextColumn x:Name="Salary" Binding="{Binding Salary}" Header="Salary"></DataGridTextColumn>
                 <DataGridTextColumn x:Name="Sale_bonus" Binding="{Binding Sale_bonus}" Header="Sale_bonus"></DataGridTextColumn>
                 <DataGridTextColumn x:Name="Sold_estates" Binding="{Binding Sold_estates}" Header="Sold_estates"></DataGridTextColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button x:Name="Delete" Click="DeleteBtnClick" >Delete</Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            
             </DataGrid.Columns>
         </DataGrid>
         <Label x:Name="EmployeesLabel" Content="Employees" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="800" Background="#FF52BD48" FontSize="20"/>
