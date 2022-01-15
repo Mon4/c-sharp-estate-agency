@@ -9,7 +9,24 @@
     <Grid>
         <Label Content="New Employee" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="300" Background="#FF52BD48" FontSize="20"/>
 
-        <Button x:Name="Save" FontSize="15" Margin="10 370 170 0" Click="Save_Click">Save</Button>
-        <Button x:Name="Cancel" FontSize="15" Margin="170 370 10 0" Click="Cancel_Click">Cancel</Button>
+        <StackPanel Orientation="Vertical">
+            <Label Content="Name"           FontSize="15" Margin="0 50 150 0"></Label>
+            <Label Content="Surname"        FontSize="15" Margin="0 0 150 0"></Label>
+            <Label Content="Phone number"   FontSize="15" Margin="0 0 150 0"></Label>
+            <Label Content="Salary"         FontSize="15" Margin="0 0 150 0"></Label>
+            <Label Content="Sale bonus"     FontSize="15" Margin="0 0 150 0"></Label>
+            <Label Content="Solden states"  FontSize="15" Margin="0 0 150 0"></Label>
+        </StackPanel>
+        <StackPanel>
+            <TextBox x:Name="Name"          FontSize="15" Margin="150 56 5 0"></TextBox>
+            <TextBox x:Name="Surname"       FontSize="15" Margin="150 8 5 0"></TextBox>
+            <TextBox x:Name="PhoneNumber"   FontSize="15" Margin="150 8 5 0"></TextBox>
+            <TextBox x:Name="Salary"        FontSize="15" Margin="150 8 5 0"></TextBox>
+            <TextBox x:Name="SaleBonus"     FontSize="15" Margin="150 8 5 0"></TextBox>
+            <TextBox x:Name="SoldenStates"  FontSize="15" Margin="150 8 5 0"></TextBox>
+        </StackPanel>
+        
+        <Button x:Name="Save"   FontSize="15" Margin="10 370 170 5" Click="Save_Click">Save</Button>
+        <Button x:Name="Cancel" FontSize="15" Margin="170 370 10 5" Click="Cancel_Click">Cancel</Button>
     </Grid>
 </Window>
