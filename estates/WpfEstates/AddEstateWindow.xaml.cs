@@ -23,5 +23,15 @@ namespace WpfEstates
         {
             InitializeComponent();
         }
+
+        private void Save_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void Cancel_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }

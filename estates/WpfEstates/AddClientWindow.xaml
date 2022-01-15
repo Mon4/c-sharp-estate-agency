@@ -11,16 +11,16 @@
         <StackPanel Orientation="Vertical">
             <Label Content="Name" FontSize="15" Margin="0 50 150 0"></Label>
             <Label Content="Surname" FontSize="15" Margin="0 0 150 0"></Label>
-            <Label Content="Phone Number" FontSize="15" Margin="0 0 150 0"></Label>
+            <Label Content="Phone number" FontSize="15" Margin="0 0 150 0"></Label>
             <Label Content="Date of birth" FontSize="15" Margin="0 0 150 0"></Label>
         </StackPanel>
         <StackPanel Orientation="Vertical">
-            <TextBox FontSize="15" Margin="150 60 0 0"></TextBox>
-            <TextBox FontSize="15" Margin="150 5 0 0"></TextBox>
-            <TextBox FontSize="15" Margin="150 5 0 0"></TextBox>
-            <DatePicker  FontSize="15" Margin="150 5 0 0"></DatePicker>
+            <TextBox x:Name="Name" FontSize="15" Margin="150 60 0 0"></TextBox>
+            <TextBox x:Name="Surname" FontSize="15" Margin="150 5 0 0"></TextBox>
+            <TextBox x:Name="PhoneNumber" FontSize="15" Margin="150 5 0 0"></TextBox>
+            <DatePicker x:Name="DateOfBirth" FontSize="15" Margin="150 5 0 0"></DatePicker>
         </StackPanel>
-        <Button x:Name="Save" FontSize="15" Margin="10 400 170 0" Click="Save_Click">Save</Button>
-        <Button x:Name="Cancel" FontSize="15" Margin="170 400 10 0" Click="Cancel_Click">Cancel</Button>
+        <Button x:Name="Save" FontSize="15" Margin="10 370 170 0" Click="Save_Click">Save</Button>
+        <Button x:Name="Cancel" FontSize="15" Margin="170 370 10 0" Click="Cancel_Click">Cancel</Button>
     </Grid>
 </Window>
