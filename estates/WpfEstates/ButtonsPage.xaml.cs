@@ -31,6 +31,7 @@ namespace WpfEstates
             {
                 AddClientWindow clientWindow = new AddClientWindow();
                 clientWindow.Show();
+
             }
             else if(Globalls.currentPage=="Employees")
             {

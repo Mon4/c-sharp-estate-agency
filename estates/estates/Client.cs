@@ -29,7 +29,7 @@ namespace estates
 
         public override string ToString()
         {
-            return $"{Name} {Surname} (phone number: {PhoneNumber}, date of birth: {DateOfBirth: dd.MM.yyyy})";
+            return $"{Name} {Surname} (phone number: {PhoneNumber}, date of birth: {DateOfBirth: dd.mm.yyyy})";
         }
 
         public string CheckPhoneNumber(string phoneNumber)
