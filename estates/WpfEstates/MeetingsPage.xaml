@@ -26,7 +26,7 @@
                
             </DataGrid.Columns>
         </DataGrid>
-        <Label x:Name="MeetingsLabel" Content="Meetings" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="800" Background="#FF52BD48" FontSize="20"/>
-        <Button x:Name="AddMeeting" Content="Add new meeting&#xD;&#xA;" HorizontalAlignment="Left" Height="43" Margin="604,407,0,0" VerticalAlignment="Top" Width="196" Click="Button_Click"/>
+        <Label x:Name="MeetingsLabel" Content="Meetings" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="800" Background="#FFADCFAA" FontSize="20"/>
+        <Button x:Name="AddMeeting" Content="Add new meeting&#xD;&#xA;" HorizontalAlignment="Left" Height="43" Margin="604,407,0,0" VerticalAlignment="Top" Width="196" Click="Button_Click" BorderBrush="{x:Null}"/>
     </Grid>
 </Page>

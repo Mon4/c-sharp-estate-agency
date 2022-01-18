@@ -28,8 +28,8 @@
 
             </DataGrid.Columns>
         </DataGrid>
-        <Label x:Name="OwnersLabel" Content="Owners" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="800" Background="#FF52BD48" FontSize="20"/>
-        <Button x:Name="AddCompany" Content="Add new company" HorizontalAlignment="Left" Margin="622,407,0,0" VerticalAlignment="Top" Width="178" Height="43" Click="AddCompany_Click"/>
-        <Button x:Name="AddPrivateOwner" Content="Add new private owner" HorizontalAlignment="Left" Margin="444,407,0,0" VerticalAlignment="Top" Width="178" Height="43" Click="AddPrivateOwner_Click"/>
+        <Label x:Name="OwnersLabel" Content="Owners" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="800" Background="#FFADCFAA" FontSize="20"/>
+        <Button x:Name="AddCompany" Content="Add new company" HorizontalAlignment="Left" Margin="622,407,0,0" VerticalAlignment="Top" Width="178" Height="43" Click="AddCompany_Click" BorderBrush="{x:Null}"/>
+        <Button x:Name="AddPrivateOwner" Content="Add new private owner" HorizontalAlignment="Left" Margin="444,407,0,0" VerticalAlignment="Top" Width="178" Height="43" Click="AddPrivateOwner_Click" BorderBrush="{x:Null}"/>
     </Grid>
 </Page>

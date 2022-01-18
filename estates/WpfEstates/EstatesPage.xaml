@@ -35,8 +35,8 @@
                 </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <Label x:Name="EstatesLabel" Content="Label" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="800" Background="#FF52BD48" FontSize="20"/>
-        <Button x:Name="AddHouse" Content="Add new house" HorizontalAlignment="Left" Margin="633,402,0,0" VerticalAlignment="Top" Width="167" Height="48" Click="Button_Click"/>
-        <Button x:Name="AddFlat" Content="Add new flat" HorizontalAlignment="Left" Height="48" Margin="448,402,0,0" VerticalAlignment="Top" Width="185" Click="Button_Click_1"/>
+        <Label x:Name="EstatesLabel" Content="Label" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="800" Background="#FFADCFAA" FontSize="20"/>
+        <Button x:Name="AddHouse" Content="Add new house" HorizontalAlignment="Left" Margin="633,402,0,0" VerticalAlignment="Top" Width="167" Height="48" Click="Button_Click" BorderBrush="{x:Null}"/>
+        <Button x:Name="AddFlat" Content="Add new flat" HorizontalAlignment="Left" Height="48" Margin="448,402,0,0" VerticalAlignment="Top" Width="185" Click="Button_Click_1" BorderBrush="{x:Null}"/>
     </Grid>
 </Page>

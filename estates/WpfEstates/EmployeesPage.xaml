@@ -28,7 +28,7 @@
 
             </DataGrid.Columns>
         </DataGrid>
-        <Label x:Name="EmployeesLabel" Content="Employees" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="800" Background="#FF52BD48" FontSize="20"/>
-        <Button x:Name="AddEmployee" Content="Add new employee" HorizontalAlignment="Left" Margin="622,404,0,0" VerticalAlignment="Top" Width="178" Height="46" Click="AddEmployee_Click"/>
+        <Label x:Name="EmployeesLabel" Content="Employees" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="800" Background="#FFADCFAA" FontSize="20"/>
+        <Button x:Name="AddEmployee" Content="Add new employee" HorizontalAlignment="Left" Margin="622,404,0,0" VerticalAlignment="Top" Width="178" Height="46" Click="AddEmployee_Click" BorderBrush="{x:Null}"/>
     </Grid>
 </Page>
