@@ -7,7 +7,7 @@
       <ZipCode>23-534</ZipCode>
       <City>Kraków</City>
       <PhoneNumber>123456789</PhoneNumber>
-      <EstatesNumber>1</EstatesNumber>
+      <EstatesNumber>0</EstatesNumber>
       <NIP>123-123-12-12</NIP>
       <CompanyName>BUDUJEMY_SE</CompanyName>
     </Owner>
@@ -16,27 +16,27 @@
       <ZipCode>32-123</ZipCode>
       <City>Kraków</City>
       <PhoneNumber>123056789</PhoneNumber>
-      <EstatesNumber>5</EstatesNumber>
+      <EstatesNumber>2</EstatesNumber>
       <Name>Mariusz</Name>
       <Surname>Grzyb</Surname>
     </Owner>
     <Owner xsi:type="PrivateOwner">
-      <Adress>dasefd</Adress>
-      <ZipCode>23-000</ZipCode>
-      <City>efsa</City>
-      <PhoneNumber>122122122</PhoneNumber>
+      <Adress>Morska 12</Adress>
+      <ZipCode>34-100</ZipCode>
+      <City>Zakopane</City>
+      <PhoneNumber>098000123</PhoneNumber>
       <EstatesNumber>0</EstatesNumber>
-      <Name>dsf</Name>
-      <Surname>fsafe</Surname>
+      <Name>Mariusz</Name>
+      <Surname>Bogdan</Surname>
     </Owner>
     <Owner xsi:type="Company">
-      <Adress>sdv</Adress>
-      <ZipCode>34-100</ZipCode>
-      <City>fs</City>
-      <PhoneNumber>123456780</PhoneNumber>
-      <EstatesNumber>0</EstatesNumber>
-      <NIP>1010101010</NIP>
-      <CompanyName>sffe</CompanyName>
+      <Adress>Podmorska 12</Adress>
+      <ZipCode>34-900</ZipCode>
+      <City>Biurkowice</City>
+      <PhoneNumber>900800100</PhoneNumber>
+      <EstatesNumber>1</EstatesNumber>
+      <NIP>1001001005</NIP>
+      <CompanyName>Budowanko</CompanyName>
     </Owner>
   </OwnerList>
 </OwnersRepository>

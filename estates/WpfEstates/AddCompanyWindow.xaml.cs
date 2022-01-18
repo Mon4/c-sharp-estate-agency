@@ -77,7 +77,7 @@ namespace WpfEstates
                 Nip.Text == "")
                 {
                     working = 0;
-                    ExceptionLabelCompany.Content = "Some fields are blank!";
+                    ExceptionLabelCompany.Content = "Some fields are empty!";
                 }
                 if (working == 1)
                 {

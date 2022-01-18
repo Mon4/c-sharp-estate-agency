@@ -78,21 +78,64 @@
         <Building_development>kamienica</Building_development>
         <Level>10</Level>
       </Estate>
-      <Date>2014-03-12T12:12:00</Date>
+      <Date>0001-01-01T00:00:00</Date>
       <Client>
         <Name>Jan</Name>
         <Surname>Kowalski</Surname>
         <PhoneNumber>512132546</PhoneNumber>
         <DateOfBirth>1980-12-15T00:00:00</DateOfBirth>
       </Client>
+      <Kind>selling</Kind>
+    </Meeting>
+    <Meeting>
+      <Employee>
+        <Name>Bogdan</Name>
+        <Surname>Sprzedawca</Surname>
+        <PhoneNumber1>123456003</PhoneNumber1>
+        <Salary>3400</Salary>
+        <Sale_bonus>0</Sale_bonus>
+        <Sold_estates>0</Sold_estates>
+      </Employee>
+      <Estate xsi:type="House">
+        <Id>1</Id>
+        <Adress>ul. Niebieska 14</Adress>
+        <ZipCode>31-642</ZipCode>
+        <City>Kraków</City>
+        <Price>50000</Price>
+        <Area>50</Area>
+        <Furniture>true</Furniture>
+        <Balcony>true</Balcony>
+        <RoomsNumber>4</RoomsNumber>
+        <Description>nice house</Description>
+        <Bedrooms>2</Bedrooms>
+        <Owner xsi:type="PrivateOwner">
+          <Adress>ul. Kwiatowa 4</Adress>
+          <ZipCode>32-123</ZipCode>
+          <City>Kraków</City>
+          <PhoneNumber>123056789</PhoneNumber>
+          <EstatesNumber>2</EstatesNumber>
+          <Name>Mariusz</Name>
+          <Surname>Grzyb</Surname>
+        </Owner>
+        <Levels>2</Levels>
+        <Garden>true</Garden>
+        <GardenArea>20</GardenArea>
+      </Estate>
+      <Date>0001-01-01T00:00:00</Date>
+      <Client>
+        <Name>Ryszard</Name>
+        <Surname>Ryszardowicz</Surname>
+        <PhoneNumber>450670213</PhoneNumber>
+        <DateOfBirth>2003-01-01T00:00:00</DateOfBirth>
+      </Client>
       <Kind>watching</Kind>
     </Meeting>
     <Meeting>
       <Employee>
-        <Name>dsad</Name>
-        <Surname>dewd</Surname>
-        <PhoneNumber1>efdwe</PhoneNumber1>
-        <Salary>23</Salary>
+        <Name>Bogdan</Name>
+        <Surname>Sprzedawca</Surname>
+        <PhoneNumber1>123456003</PhoneNumber1>
+        <Salary>3400</Salary>
         <Sale_bonus>0</Sale_bonus>
         <Sold_estates>0</Sold_estates>
       </Employee>
@@ -120,14 +163,14 @@
         <Building_development>kamienica</Building_development>
         <Level>10</Level>
       </Estate>
-      <Date>0001-01-01T00:00:00</Date>
+      <Date>2013-09-23T12:00:00</Date>
       <Client>
-        <Name>Jan</Name>
-        <Surname>Kowalski</Surname>
-        <PhoneNumber>512132546</PhoneNumber>
-        <DateOfBirth>1980-12-15T00:00:00</DateOfBirth>
+        <Name>Ryszard</Name>
+        <Surname>Ryszardowicz</Surname>
+        <PhoneNumber>450670213</PhoneNumber>
+        <DateOfBirth>2003-01-01T00:00:00</DateOfBirth>
       </Client>
-      <Kind>watching</Kind>
+      <Kind>selling</Kind>
     </Meeting>
   </Meetingslist>
 </MeetingsRepository>

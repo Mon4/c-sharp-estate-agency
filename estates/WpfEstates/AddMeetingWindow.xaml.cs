@@ -49,13 +49,22 @@ namespace WpfEstates
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
-            if(EmployeeBox.Text!="")
             {
+                int working = 1;
                 meeting.Employee = emprep.FindEmployeebyToString(EmployeeBox.Text);
                 meeting.Estate = est.FindEstatebyToString(EstatesBox.Text);
-                DateTime.TryParseExact(DateBox.Text, new[] { "yyyy-MM-dd HH:mm", "yyyy/MM/dd HH:mm", "MM/dd/yy HH:mm", "dd-MM-yyyy HH:mm", "dd.MM.yyyy HH:mm",
-                "dd-MMM-yy HH:mm", "dd-MMM-yyyy HH:mm","dd.MMM.yyyy HH:mm" }, null, DateTimeStyles.None, out DateTime date);
-                meeting.Date = date;
+                try
+                {
+                    meeting.Date = DateTime.Parse(DateBox.Text);
+                }
+                catch(FormatException)
+                {
+                    working = 0;
+                    ExceptionLabelMeeting.Content = "Wrong date format!";
+                }
+                //DateTime.TryParseExact(DateBox.Text, new[] { "yyyy-MM-dd HH:mm", "yyyy/MM/dd HH:mm", "MM/dd/yy HH:mm", "dd-MM-yyyy HH:mm", "dd.MM.yyyy HH:mm",
+                //"dd-MMM-yy HH:mm", "dd-MMM-yyyy HH:mm","dd.MMM.yyyy HH:mm" }, null, DateTimeStyles.None, out DateTime date);
+                //meeting.Date = date;
                 meeting.Client = clients.FindClientbyToString(ClientBox.Text);
                 if (KindBox.Text == "Watching")
                 {
@@ -65,10 +74,18 @@ namespace WpfEstates
                 {
                     meeting.Kind = KindOfMeeting.selling;
                 }
-                DialogResult = true;
-                this.Close();
+                if(DateBox.Text=="" | EmployeeBox.SelectedIndex==-1 | EstatesBox.SelectedIndex==-1 | 
+                    ClientBox.SelectedIndex==-1 | KindBox.SelectedIndex==-1)
+                {
+                    working = 0;
+                    ExceptionLabelMeeting.Content = "Some fields are empty!";
+                }
+                if (working == 1)
+                {
+                    DialogResult = true;
+                    this.Close();
+                }
             }
-            Close();
         }
     }
 }

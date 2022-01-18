@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -37,7 +38,6 @@ namespace WpfEstates
         }
         private void Save_Click(object sender, RoutedEventArgs e)
         {
-            if(Name.Text!="")
             {
                 int working = 1;
                 emp.Name = Name.Text;
@@ -45,15 +45,40 @@ namespace WpfEstates
                 emp.PhoneNumber1 = PhoneNumber.Text;
                 try
                 {
+                    var r1 = new Regex(@"^\d{9}$");
+                    var r2 = new Regex(@"^\d{3}-\d{3}-\d{3}$");
+                    if (!r1.IsMatch(PhoneNumber.Text) & !r2.IsMatch(PhoneNumber.Text))
+                    {
+                        throw new WrongFormatInTextBoxException("Wrong phone number format!");
+                    }
+                    else
+                    {
+                        emp.PhoneNumber1 = PhoneNumber.Text;
+                    }
+                }
+                catch (WrongFormatInTextBoxException wfit)
+                {
+                    ExceptionLabelEmp.Content = wfit.Message;
+                    working = 0;
+                }
+                try
+                {
                     emp.Salary = decimal.Parse(Salary.Text);
                 }
-                catch(System.FormatException)
+                catch (System.FormatException)
                 {
+                    ExceptionLabelEmp.Content = "Wrong format!";
                     emp.Salary = 0;
                     working = 0;
+
                 }
                 emp.Sale_bonus = 0;
                 emp.Sold_estates = 0;
+                if(Name.Text=="" | Surname.Text=="" | Salary.Text=="" | PhoneNumber.Text=="")
+                {
+                    working = 0;
+                    ExceptionLabelEmp.Content = "Some fields are empty!";
+                }
                 if (working==1)
                 {
                     DialogResult = true;

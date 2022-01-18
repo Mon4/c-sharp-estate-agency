@@ -93,7 +93,7 @@ namespace WpfEstates
                 Price.Text == "" | RoomsNumber.Text == "" | Bedrooms.Text == "" | Level.Text == "" |
                  OwnerBox.SelectedItem == null | Area.Text == "0" | Price.Text == "0" | BuildingDevelopment.Text=="")
                 {
-                    ExceptionLabelFlat.Content = "Some fields are blank!";
+                    ExceptionLabelFlat.Content = "Some fields are ampty!";
                     working = 0;
                 }
                 if (working==1)

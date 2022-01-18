@@ -68,7 +68,7 @@ namespace WpfEstates
                 Surname.Text=="")
             {
                 working = 0;
-                ExceptionLabelPO.Content = "Some fields are blank!";
+                ExceptionLabelPO.Content = "Some fields are empty!";
             }
             if(working==1)
             {
