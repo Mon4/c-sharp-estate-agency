@@ -24,5 +24,6 @@
         </StackPanel>
         <Button x:Name="Save"   FontSize="15" Margin="10 370 170 5" Click="Save_Click">Save</Button>
         <Button x:Name="Cancel" FontSize="15" Margin="170 370 10 5" Click="Cancel_Click">Cancel</Button>
+        <Label x:Name="ExceptionLabel" Content="&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,328,0,0" Width="272" Foreground="#FFBD1212" FontSize="16"/>
     </Grid>
 </Window>

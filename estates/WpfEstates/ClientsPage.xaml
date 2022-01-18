@@ -14,7 +14,7 @@
                 <DataGridTextColumn x:Name="Name" Binding="{Binding Name}" Header="Name"> </DataGridTextColumn>
                 <DataGridTextColumn x:Name="Surname" Binding="{Binding Surname}" Header="Surname"></DataGridTextColumn>
                 <DataGridTextColumn x:Name="PhoneNumber" Binding="{Binding PhoneNumber}" Header="Phone number"></DataGridTextColumn>
-                <DataGridTextColumn x:Name="DateOfBirth" Binding="{Binding DateOfBirth}" Header="Date of birth"></DataGridTextColumn>
+                <DataGridTextColumn x:Name="DateOfBirth" Binding="{Binding DateOfBirth, StringFormat=\{0:dd.MM.yyyy\}}" Header="Date of birth"></DataGridTextColumn>
 
                 <DataGridTemplateColumn>
                     <DataGridTemplateColumn.CellTemplate>

@@ -43,21 +43,41 @@ namespace WpfEstates
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
-            if (client.CheckPhoneNumber(PhoneNumber.Text)=="unknown phone number")
+            if (Name.Text != "" || Surname.Text != "" || PhoneNumber.Text != "" | DateBirth.Text!="")
             {
-                
-            }
-
-            if (Name.Text != "" || Surname.Text != "" || PhoneNumber.Text != "")
-            {
+                int working = 1;
+                try
+                {
+                    client.PhoneNumber = client.CheckPhoneNumber(PhoneNumber.Text);
+                    if (client.PhoneNumber=="unknown phone number")
+                    {
+                        throw new WrongFormatInTextBoxException("Wrong phone number!");
+                    }
+                }
+                catch(WrongFormatInTextBoxException wfit)
+                {
+                    working = 0;
+                    ExceptionLabel.Content = wfit.Message;
+                }
                 client.PhoneNumber=client.CheckPhoneNumber(PhoneNumber.Text);
                 client.Name = Name.Text;
                 client.Surname = Surname.Text;
-                DateTime.TryParseExact(DateBirth.Text, new[] { "yyyy-MM-dd", "yyyy/MM/dd", "MM/dd/yy", "dd-MM-yyyy", "dd.MM.yyyy",
-                "dd-MMM-yy", "dd-MMM-yyyy","dd.MMM.yyyy" }, null, DateTimeStyles.None, out DateTime date);
-                client.DateOfBirth = date;
-                DialogResult = true;
-                this.Close();
+                try
+                {
+                    client.DateOfBirth = DateTime.Parse(DateBirth.Text);
+                }
+                catch(Exception)
+                {
+                    working = 0;
+                    ExceptionLabel.Content = "Wrong date format!";
+                }
+                //DateTime.TryParseExact(DateBirth.Text, new[] { "yyyy-MM-dd", "yyyy/MM/dd", "MM/dd/yy", "dd-MM-yyyy", "dd.MM.yyyy",
+                //"dd-MMM-yy", "dd-MMM-yyyy","dd.MMM.yyyy" }, null, DateTimeStyles.None, out DateTime date);
+                if (working == 1)
+                {
+                    DialogResult = true;
+                    this.Close();
+                }
             }
         }
     }
