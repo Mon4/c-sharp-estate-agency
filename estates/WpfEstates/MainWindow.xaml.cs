@@ -52,7 +52,7 @@ namespace WpfEstates
         {
             Globalls.currentPage = "Owners";
             Main.Content = new OwnersPage();
-            EditingButtons.Content = new ButtonsPage();
+            EditingButtons.Content = new ButtonsAddOwnerPage();
         }
 
         private void MeetingsBtn_Click(object sender, RoutedEventArgs e)

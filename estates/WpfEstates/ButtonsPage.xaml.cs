@@ -43,11 +43,6 @@ namespace WpfEstates
                 AddMeetingWindow meetingWindow = new AddMeetingWindow();
                 meetingWindow.Show();
             }
-            else if (Globalls.currentPage == "Owners")
-            {
-                AddOwnerWindow ownerWindow = new AddOwnerWindow();
-                ownerWindow.Show();
-            }
         }
     }
 }

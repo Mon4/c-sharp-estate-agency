@@ -75,11 +75,14 @@
     <Compile Include="AddMeetingWindow.xaml.cs">
       <DependentUpon>AddMeetingWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AddOwnerWindow.xaml.cs">
-      <DependentUpon>AddOwnerWindow.xaml</DependentUpon>
+    <Compile Include="AddPrivateOwnerWindow.xaml.cs">
+      <DependentUpon>AddPrivateOwnerWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="ButtonsAddEstatePage.xaml.cs">
       <DependentUpon>ButtonsAddEstatePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ButtonsAddOwnerPage.xaml.cs">
+      <DependentUpon>ButtonsAddOwnerPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ButtonsPage.xaml.cs">
       <DependentUpon>ButtonsPage.xaml</DependentUpon>
@@ -112,11 +115,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="AddOwnerWindow.xaml">
+    <Page Include="AddPrivateOwnerWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ButtonsAddEstatePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ButtonsAddOwnerPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

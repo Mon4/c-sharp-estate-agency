@@ -17,16 +17,16 @@ namespace WpfEstates
     /// <summary>
     /// Interaction logic for AddOwnerWindow.xaml
     /// </summary>
-    public partial class AddOwnerWindow : Window
+    public partial class AddPrivateOwnerWindow : Window
     {
-        public AddOwnerWindow()
+        public AddPrivateOwnerWindow()
         {
             InitializeComponent();
         }
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
-            Close();
+            
         }
 
         private void Cancel_Click(object sender, RoutedEventArgs e)
