@@ -45,7 +45,7 @@ namespace WpfEstates
                 emp.PhoneNumber1 = PhoneNumber.Text;
                 try
                 {
-                    emp.Salary = decimal.Parse(Salary.Text, CultureInfo.InvariantCulture);
+                    emp.Salary = decimal.Parse(Salary.Text);
                 }
                 catch(System.FormatException)
                 {

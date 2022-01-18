@@ -47,10 +47,10 @@ namespace estates
                 Console.WriteLine(nife.Message);
             }
         }
-        public void FindOwnerbyNumber(string phone)
+        public Owner FindOwnerbyNumber(string phone)
         {
             var pom = OwnerList.Find(x => x.PhoneNumber == phone);
-            Console.WriteLine(pom);
+            return pom;
         }
         public void SortOwners()
         {

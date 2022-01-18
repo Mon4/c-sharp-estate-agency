@@ -10,8 +10,8 @@
       Title="Page1">
 
     <Grid>
-        <DataGrid x:Name="EstatesDataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" HorizontalAlignment="Left" 
-                  Height="377" VerticalAlignment="Top" Width="800" Margin="0,63,0,0" 
+        <DataGrid x:Name="EstatesDataGrid" HorizontalAlignment="Left" 
+                  Height="339" VerticalAlignment="Top" Width="800" Margin="0,63,0,0" 
                   SelectionChanged="EstatesDataGrid_SelectionChanged" IsReadOnly="True" AutoGenerateColumns="False">
             <DataGrid.Columns>
                 <DataGridTextColumn x:Name="Id" Binding="{Binding Id}" Header="Id"></DataGridTextColumn>
@@ -36,5 +36,7 @@
             </DataGrid.Columns>
         </DataGrid>
         <Label x:Name="EstatesLabel" Content="Label" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="800" Background="#FF52BD48" FontSize="20"/>
+        <Button x:Name="AddHouse" Content="Add new house" HorizontalAlignment="Left" Margin="633,402,0,0" VerticalAlignment="Top" Width="167" Height="48" Click="Button_Click"/>
+        <Button x:Name="AddFlat" Content="Add new flat" HorizontalAlignment="Left" Height="48" Margin="448,402,0,0" VerticalAlignment="Top" Width="185" Click="Button_Click_1"/>
     </Grid>
 </Page>

@@ -16,9 +16,9 @@ namespace estates
         {
 
         }
-        public Flat(int id, string adress, string zipCode, string city, decimal price,
+        public Flat(string adress, string zipCode, string city, decimal price,
             decimal area, bool furniture, bool balcony, int roomsNumber, string description,
-            int bedrooms, Owner owner, string building_development, int level) : base(id, adress, zipCode, city, price, area,
+            int bedrooms, Owner owner, string building_development, int level) : base( adress, zipCode, city, price, area,
                 furniture, balcony, roomsNumber, description, bedrooms, owner)
         {
             Building_development = building_development;

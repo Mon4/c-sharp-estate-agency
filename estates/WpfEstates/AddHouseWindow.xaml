@@ -5,46 +5,46 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfEstates"
         mc:Ignorable="d"
-        Title="AddHouseWindow" Height="580" Width="800">
+        Title="AddHouseWindow" Height="653" Width="800">
     <Grid>
         <StackPanel Orientation="Vertical" >
-            <Label Content="id"          FontSize="15" Margin="0 50 150 0"></Label>
-            <Label Content="Adress"       FontSize="15" Margin="0 0 150 0"></Label>
-            <Label Content="zipCode"  FontSize="15" Margin="0 0 150 0"></Label>
-            <Label Content="City" FontSize="15" Margin="0 0 150 0"></Label>
-            <Label Content="Price" FontSize="15" Margin="0 0 150 0"></Label>
-            <Label Content="Area" FontSize="15" Margin="0 0 150 0"></Label>
-            <Label Content="Furniture" FontSize="15" Margin="0 0 150 0"></Label>
-            <Label Content="Balcony" FontSize="15" Margin="0 0 150 0"></Label>
-            <Label Content="RoomsNumber" FontSize="15" Margin="0 0 150 0"></Label>
-            <Label Content="Description" FontSize="15" Margin="0 0 150 0"></Label>
-            <Label Content="Bedrooms" FontSize="15" Margin="0 0 150 0"></Label>
-            <Label Content="Owner" FontSize="15" Margin="0 0 150 0"></Label>
-            <Label Content="Levels" FontSize="15" Margin="0 0 150 0"></Label>
-            <Label Content="Garden" FontSize="15" Margin="0 0 150 0"></Label>
-            <Label Content="GardenArea" FontSize="15" Margin="0 0 150 0"></Label>
+            <Label Content="&#xD;&#xA;&#xD;&#xA;Adress"       FontSize="15" Margin="0,0,666,0" Height="66"></Label>
+            <Label Content="zipCode"  FontSize="15" Margin="0,0,666,0" Height="26"></Label>
+            <Label Content="City" FontSize="15" Margin="0,0,666,0"></Label>
+            <Label Content="Price" FontSize="15" Margin="0,0,666,0"></Label>
+            <Label Content="Area" FontSize="15" Margin="0,0,666,0" Height="34"></Label>
+            <Label Content="Furniture" FontSize="15" Margin="0,0,666,0"></Label>
+            <Label Content="Balcony" FontSize="15" Margin="0,0,666,0"></Label>
+            <Label Content="RoomsNumber" FontSize="15" Margin="0,0,666,0"></Label>
+            <Label Content="Description" FontSize="15" Margin="0,0,666,0"></Label>
+            <Label Content="Bedrooms" FontSize="15" Margin="0,0,666,0"></Label>
+            <Label Content="Owner" FontSize="15" Margin="0,0,666,0" Height="82"></Label>
+            <Label Content="Levels" FontSize="15" Margin="0,0,666,0"></Label>
+            <Label Content="Garden" FontSize="15" Margin="0,0,666,0"></Label>
+            <Label Content="GardenArea" FontSize="15" Margin="0,0,666,0"></Label>
 
         </StackPanel>
         <StackPanel Orientation="Vertical">
-            <TextBox    x:Name="id"        FontSize="15" Margin="150 60 5 0"></TextBox>
-            <TextBox    x:Name="Adress"     FontSize="15" Margin="150 5 5 0"></TextBox>
-            <TextBox    x:Name="ZipCode" FontSize="15" Margin="150 5 5 0"></TextBox>
-            <TextBox    x:Name="City"        FontSize="15" Margin="150 5 5 0"></TextBox>
-            <TextBox    x:Name="Price"     FontSize="15" Margin="150 5 5 0"></TextBox>
-            <TextBox    x:Name="Area" FontSize="15" Margin="150 5 5 0"></TextBox>
+            <Label Content="New Flat" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" 
+                Width="792" Background="#FF52BD48" FontSize="20"/>
+            <TextBox    x:Name="Adress"     FontSize="15" Margin="150 5 5 0"/>
+            <TextBox    x:Name="ZipCode" FontSize="15" Margin="150 5 5 0"/>
+            <TextBox    x:Name="City"        FontSize="15" Margin="150 5 5 0"/>
+            <TextBox    x:Name="Price"     FontSize="15" Margin="150 5 5 0"/>
+            <TextBox    x:Name="Area" FontSize="15" Margin="150 5 5 0"/>
             <CheckBox x:Name="Furniture" HorizontalAlignment="Left" Height="34" Margin="150,5,0,0"/>
-            <CheckBox x:Name="Balcony" HorizontalAlignment="Left" Height="34" Margin="150,5,5,0"></CheckBox>
-            <TextBox    x:Name="RoomsNumber"        FontSize="15" Margin="150 5 5 0"></TextBox>
-            <TextBox    x:Name="Description"     FontSize="15" Margin="150 5 5 0" ></TextBox>
-            <TextBox    x:Name="Bedrooms"        FontSize="15" Margin="150 5 5 0" ></TextBox>
-            <ListBox HorizontalAlignment="Left" Height="28" Margin="150,5,0,0" Width="624" />
-            <TextBox    x:Name="Levels" FontSize="15" Margin="150 5 5 0" ></TextBox>
-            <TextBox    x:Name="Garden" FontSize="15" Margin="150,5,5,0"/>
+            <CheckBox x:Name="Balcony" HorizontalAlignment="Left" Height="34" Margin="150,5,5,0"/>
+            <TextBox    x:Name="RoomsNumber"        FontSize="15" Margin="150 5 5 0"/>
+            <TextBox    x:Name="Description"     FontSize="15" Margin="150 5 5 0" />
+            <TextBox    x:Name="Bedrooms"        FontSize="15" Margin="150 5 5 0" />
+            <ListBox x:Name="OwnerBox" HorizontalAlignment="Left" Height="83" Margin="150,5,0,0" Width="624" />
+            <TextBox    x:Name="Levels" FontSize="15" Margin="150 5 5 0" />
+            <CheckBox x:Name="Garden" Content="" HorizontalAlignment="Left" Height="24" Margin="150,5,0,0" Checked="Garden_Checked" Unchecked="Garden_Unchecked"/>
             <TextBox    x:Name="GardenArea" FontSize="15" Margin="150,5,5,0"/>
 
         </StackPanel>
-        <Button x:Name="Save"   FontSize="15" Margin="319,491,321.6,17.4" Click="Save_Click">Save</Button>
-        <Button x:Name="Cancel" FontSize="15" Margin="514,491,122.6,17.4" Click="Cancel_Click">Cancel</Button>
+        <Button x:Name="Save"   FontSize="15" Margin="319,557,322,17" Click="Save_Click">Save</Button>
+        <Button x:Name="Cancel" FontSize="15" Margin="514,557,123,17" Click="Cancel_Click">Cancel</Button>
 
     </Grid>
 </Window>

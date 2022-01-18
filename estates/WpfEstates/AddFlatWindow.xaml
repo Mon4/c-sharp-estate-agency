@@ -8,9 +8,8 @@
         Title="AddFlatWindow" Height="580" Width="800">
     <Grid>
         <Label Content="New Flat" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" 
-               Width="300" Background="#FF52BD48" FontSize="20"/>
-        <StackPanel Orientation="Vertical" >
-            <Label Content="id"          FontSize="15" Margin="0 50 150 0"></Label>
+               Width="792" Background="#FF52BD48" FontSize="20"/>
+        <StackPanel Orientation="Vertical" Margin="0,40,0,-40" >
             <Label Content="Adress"       FontSize="15" Margin="0 0 150 0"></Label>
             <Label Content="zipCode"  FontSize="15" Margin="0 0 150 0"></Label>
             <Label Content="City" FontSize="15" Margin="0 0 150 0"></Label>
@@ -19,16 +18,15 @@
             <Label Content="Furniture" FontSize="15" Margin="0 0 150 0"></Label>
             <Label Content="Balcony" FontSize="15" Margin="0 0 150 0"></Label>
             <Label Content="RoomsNumber" FontSize="15" Margin="0 0 150 0"></Label>
-            <Label Content="Description" FontSize="15" Margin="0 0 150 0"></Label>
+            <Label Content="Short description" FontSize="15" Margin="0 0 150 0"></Label>
             <Label Content="Bedrooms" FontSize="15" Margin="0 0 150 0"></Label>
-            <Label Content="Owner" FontSize="15" Margin="0 0 150 0"></Label>
-            <Label Content="BuildingDevelopment" FontSize="15" Margin="0 0 150 0"></Label>
+            <Label Content="Owner" FontSize="15" Margin="0 0 150 0" Height="86"></Label>
+            <Label Content="BuildingDevelopment" FontSize="15" Margin="0 0 150 0"/>
             <Label Content="Level" FontSize="15" Margin="0 0 150 0"></Label>
-         
+
 
         </StackPanel>
-        <StackPanel Orientation="Vertical">
-            <TextBox    x:Name="id"        FontSize="15" Margin="150 60 5 0"></TextBox>
+        <StackPanel Orientation="Vertical" Margin="0,40,0,-40">
             <TextBox    x:Name="Adress"     FontSize="15" Margin="150 5 5 0"></TextBox>
             <TextBox    x:Name="ZipCode" FontSize="15" Margin="150 5 5 0"></TextBox>
             <TextBox    x:Name="City"        FontSize="15" Margin="150 5 5 0"></TextBox>
@@ -39,10 +37,10 @@
             <TextBox    x:Name="RoomsNumber"        FontSize="15" Margin="150 5 5 0"></TextBox>
             <TextBox    x:Name="Description"     FontSize="15" Margin="150 5 5 0" ></TextBox>
             <TextBox    x:Name="Bedrooms"        FontSize="15" Margin="150 5 5 0" ></TextBox>
-            <ListBox HorizontalAlignment="Left" Height="28" Margin="150,5,5,0" Width="624"></ListBox>
+            <ListBox x:Name="OwnerBox" HorizontalAlignment="Left" Height="89" Margin="150,5,0,0" Width="618"></ListBox>
             <TextBox    x:Name="BuildingDevelopment"     FontSize="15" Margin="150 5 5 0" ></TextBox>
             <TextBox    x:Name="Level" FontSize="15" Margin="150 5 5 0" ></TextBox>
-          
+
         </StackPanel>
 
         <Button x:Name="Save"   FontSize="15" Margin="319,491,321.6,17.4" Click="Save_Click">Save</Button>

@@ -51,7 +51,7 @@ namespace estates
         public int EstatesNumber { get => _estatesNumber; set => _estatesNumber = value; }
         public override string ToString()
         {
-            return $"Adress: {Adress} {ZipCode} {City}, [phone numer: {PhoneNumber}, estates: {EstatesNumber}]";
+            return $"Adress: {Adress} {ZipCode} {City}, [phone numer: {PhoneNumber}]";
         }
         public string CheckPhoneNumber(string phoneNumber)
         {

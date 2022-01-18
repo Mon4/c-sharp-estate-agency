@@ -10,21 +10,5 @@
       <Sale_bonus>0</Sale_bonus>
       <Sold_estates>0</Sold_estates>
     </Employee>
-    <Employee>
-      <Name>Adam</Name>
-      <Surname>Nowak</Surname>
-      <PhoneNumber1>123-123-123</PhoneNumber1>
-      <Salary>1200</Salary>
-      <Sale_bonus>0</Sale_bonus>
-      <Sold_estates>0</Sold_estates>
-    </Employee>
-    <Employee>
-      <Name>saf</Name>
-      <Surname>fwaef</Surname>
-      <PhoneNumber1>fewaf</PhoneNumber1>
-      <Salary>3560</Salary>
-      <Sale_bonus>0</Sale_bonus>
-      <Sold_estates>0</Sold_estates>
-    </Employee>
   </Employelist>
 </EmployeesRepository>

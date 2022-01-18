@@ -10,6 +10,7 @@ namespace estates
     public abstract class Estate :IComparable
     {
         int _id;
+        static int id_now;
         string _adress;
         string _zipCode;
         string _city;
@@ -22,12 +23,17 @@ namespace estates
         int _bedrooms;
         Owner _owner;
 
+        static Estate()
+        {
+            id_now = 0;
+        }
         public Estate()
         { }
-        protected Estate(int id, string adress, string zipCode, string city, decimal price, decimal area,
+        protected Estate(string adress, string zipCode, string city, decimal price, decimal area,
             bool furniture, bool balcony, int roomsNumber, string description, int bedrooms, Owner owner)
         {
-            Id = id;
+            Id = id_now + 1 ;
+            id_now++;
             Adress = adress;
             ZipCode = zipCode;
             City = city;
@@ -39,7 +45,7 @@ namespace estates
             Description = description;
             Bedrooms = bedrooms;
             Owner = owner;
-            owner.EstatesNumber += 1;
+            //owner.EstatesNumber += 1;
         }
 
         public int Id { get => _id; set => _id = value; }
@@ -78,7 +84,7 @@ namespace estates
         public Owner Owner { get => _owner; set => _owner = value; }
         public override string ToString()
         {
-            return $"ID: {Id:d5} Adress: {Adress} {ZipCode} {City}";
+            return $"ID: {Id:d5} Adress: {Adress} {ZipCode} {City} {Owner.EstatesNumber}";
         }
         public int CompareTo(object obj)
         {

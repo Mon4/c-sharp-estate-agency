@@ -27,8 +27,8 @@
           <Adress>ul. Kwiatowa 4</Adress>
           <ZipCode>32-123</ZipCode>
           <City>Kraków</City>
-          <PhoneNumber>123456789</PhoneNumber>
-          <EstatesNumber>2</EstatesNumber>
+          <PhoneNumber>123056789</PhoneNumber>
+          <EstatesNumber>0</EstatesNumber>
           <Name>Mariusz</Name>
           <Surname>Grzyb</Surname>
         </Owner>

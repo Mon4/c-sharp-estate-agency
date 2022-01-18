@@ -15,9 +15,9 @@ namespace estates
         decimal _gardenArea;
 
         public House() { }
-        public House(int id, string adress, string zipCode, string city, decimal price,
+        public House(string adress, string zipCode, string city, decimal price,
             decimal area, bool furniture, bool balcony, int roomsNumber, string description,
-            int bedrooms, Owner owner, int levels, bool garden, decimal gardenArea) : base(id, adress, zipCode, city, price, area,
+            int bedrooms, Owner owner, int levels, bool garden, decimal gardenArea) : base(adress, zipCode, city, price, area,
                 furniture, balcony, roomsNumber, description, bedrooms, owner)
         {
             Levels = levels;
