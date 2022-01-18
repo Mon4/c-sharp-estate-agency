@@ -14,16 +14,12 @@
             <Label Content="Surname"        FontSize="15" Margin="0 0 150 0"></Label>
             <Label Content="Phone number"   FontSize="15" Margin="0 0 150 0"></Label>
             <Label Content="Salary"         FontSize="15" Margin="0 0 150 0"></Label>
-            <Label Content="Sale bonus"     FontSize="15" Margin="0 0 150 0"></Label>
-            <Label Content="Solden states"  FontSize="15" Margin="0 0 150 0"></Label>
         </StackPanel>
         <StackPanel>
             <TextBox x:Name="Name"          FontSize="15" Margin="150 56 5 0"></TextBox>
             <TextBox x:Name="Surname"       FontSize="15" Margin="150 8 5 0"></TextBox>
             <TextBox x:Name="PhoneNumber"   FontSize="15" Margin="150 8 5 0"></TextBox>
             <TextBox x:Name="Salary"        FontSize="15" Margin="150 8 5 0"></TextBox>
-            <TextBox x:Name="SaleBonus"     FontSize="15" Margin="150 8 5 0"></TextBox>
-            <TextBox x:Name="SoldenStates"  FontSize="15" Margin="150 8 5 0"></TextBox>
         </StackPanel>
         
         <Button x:Name="Save"   FontSize="15" Margin="10 370 170 5" Click="Save_Click">Save</Button>

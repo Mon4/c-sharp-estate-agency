@@ -20,5 +20,41 @@
       <Name>Mariusz</Name>
       <Surname>Grzyb</Surname>
     </Owner>
+    <Owner xsi:type="Company">
+      <Adress>wefwefe</Adress>
+      <ZipCode>unknown</ZipCode>
+      <City>wfefe</City>
+      <PhoneNumber>wefe</PhoneNumber>
+      <EstatesNumber>0</EstatesNumber>
+      <NIP>unknown</NIP>
+      <CompanyName>dwef</CompanyName>
+    </Owner>
+    <Owner xsi:type="Company">
+      <Adress>dsv</Adress>
+      <ZipCode>unknown</ZipCode>
+      <City>sgeeg</City>
+      <PhoneNumber>geg</PhoneNumber>
+      <EstatesNumber>0</EstatesNumber>
+      <NIP>unknown</NIP>
+      <CompanyName>esreggre</CompanyName>
+    </Owner>
+    <Owner xsi:type="PrivateOwner">
+      <Adress>ewdw</Adress>
+      <ZipCode>12-345</ZipCode>
+      <City>sdff</City>
+      <PhoneNumber>fsf</PhoneNumber>
+      <EstatesNumber>0</EstatesNumber>
+      <Name>fs</Name>
+      <Surname>sf</Surname>
+    </Owner>
+    <Owner xsi:type="PrivateOwner">
+      <Adress>ewffe</Adress>
+      <ZipCode>unknown</ZipCode>
+      <City>ewadw</City>
+      <PhoneNumber>ewd</PhoneNumber>
+      <EstatesNumber>0</EstatesNumber>
+      <Name>cde</Name>
+      <Surname>dw</Surname>
+    </Owner>
   </OwnerList>
 </OwnersRepository>

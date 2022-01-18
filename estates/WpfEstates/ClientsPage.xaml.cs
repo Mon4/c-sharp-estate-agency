@@ -47,12 +47,17 @@ namespace WpfEstates
                 clientsRep.RemoveClient((Client)grid.SelectedItem);
             }
         }
-        private void BtnDel_Click(object sender, RoutedEventArgs e)
+
+        private void AddClient_Click(object sender, RoutedEventArgs e)
         {
-            var grid = ClientsDataGrid;
-            if (grid.SelectedItem != null)
+            Client client = new Client();
+            AddClientWindow clientWindow = new AddClientWindow(client);
+            bool? result = clientWindow.ShowDialog();
+            if (result == true)
             {
-                clientsRep.RemoveClient((Client)grid.SelectedItem);
+                clientsRep.AddClient(client);
+                ClientsDataGrid.ItemsSource = new ObservableCollection<Client>(clientsRep.ClientList);
+                clientsRep.SaveToXML();
             }
         }
     }

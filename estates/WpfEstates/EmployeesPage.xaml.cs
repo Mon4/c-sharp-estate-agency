@@ -39,5 +39,18 @@ namespace WpfEstates
         {
 
         }
+
+        private void AddEmployee_Click(object sender, RoutedEventArgs e)
+        {
+            Employee emp = new Employee();
+            AddEmployeeWindow employeeWindow = new AddEmployeeWindow(emp);
+            bool? result = employeeWindow.ShowDialog();
+            if (result == true)
+            {
+                employeesRep.AddEmployee(emp);
+                EmployeesDataGrid.ItemsSource = new ObservableCollection<Employee>(employeesRep.Employelist);
+                employeesRep.SaveToXML();
+            }
+        }
     }
 }

@@ -9,15 +9,15 @@
       Title="OwnersPage">
 
     <Grid>
-        
-        <DataGrid Name="OwnersDataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" VerticalAlignment="Top"  HorizontalAlignment="Left" Height="377" Width="800" Margin="0,63,0,0" IsReadOnly="True" AutoGenerateColumns="False" SelectionChanged="OwnersDataGrid_SelectionChanged">
+
+        <DataGrid Name="OwnersDataGrid" VerticalAlignment="Top"  HorizontalAlignment="Left" Height="344" Width="800" Margin="0,63,0,0" IsReadOnly="True" AutoGenerateColumns="False" SelectionChanged="OwnersDataGrid_SelectionChanged">
             <DataGrid.Columns>
                 <DataGridTextColumn x:Name="Adress" Binding="{Binding Adress}" Header="Adress"></DataGridTextColumn>
                 <DataGridTextColumn x:Name="ZipCode" Binding="{Binding ZipCode}" Header="ZipCode"></DataGridTextColumn>
                 <DataGridTextColumn x:Name="City" Binding="{Binding City}" Header="City"></DataGridTextColumn>
                 <DataGridTextColumn x:Name="PhoneNumber" Binding="{Binding PhoneNumber}" Header="PhoneNumber"></DataGridTextColumn>
                 <DataGridTextColumn x:Name="EstatesNumber" Binding="{Binding EstatesNumber}" Header="EstatesNumber"></DataGridTextColumn>
-               
+
                 <DataGridTemplateColumn>
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
@@ -29,5 +29,7 @@
             </DataGrid.Columns>
         </DataGrid>
         <Label x:Name="OwnersLabel" Content="Owners" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="800" Background="#FF52BD48" FontSize="20"/>
+        <Button x:Name="AddCompany" Content="Add new company" HorizontalAlignment="Left" Margin="622,407,0,0" VerticalAlignment="Top" Width="178" Height="43" Click="AddCompany_Click"/>
+        <Button x:Name="AddPrivateOwner" Content="Add new private owner" HorizontalAlignment="Left" Margin="444,407,0,0" VerticalAlignment="Top" Width="178" Height="43" Click="AddPrivateOwner_Click"/>
     </Grid>
 </Page>

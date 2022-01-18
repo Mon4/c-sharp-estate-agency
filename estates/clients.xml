@@ -74,5 +74,17 @@
       <PhoneNumber>unknown phone number</PhoneNumber>
       <DateOfBirth>1994-05-12T00:00:00</DateOfBirth>
     </Client>
+    <Client>
+      <Name>432</Name>
+      <Surname>fase</Surname>
+      <PhoneNumber>unknown phone number</PhoneNumber>
+      <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+    </Client>
+    <Client>
+      <Name>r3</Name>
+      <Surname>r3</Surname>
+      <PhoneNumber>unknown phone number</PhoneNumber>
+      <DateOfBirth>1990-02-01T00:00:00</DateOfBirth>
+    </Client>
   </ClientList>
 </ClientsRepository>

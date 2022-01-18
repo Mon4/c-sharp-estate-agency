@@ -9,7 +9,7 @@
       Title="ClientsPage">
 
     <Grid >
-        <DataGrid Name="ClientsDataGrid" VerticalAlignment="Top"  HorizontalAlignment="Left" Height="377" Width="800" Margin="0,63,0,0" IsReadOnly="True" AutoGenerateColumns="False">
+        <DataGrid Name="ClientsDataGrid" VerticalAlignment="Top"  HorizontalAlignment="Left" Height="343" Width="800" Margin="0,63,0,0" IsReadOnly="True" AutoGenerateColumns="False">
             <DataGrid.Columns>
                 <DataGridTextColumn x:Name="Name" Binding="{Binding Name}" Header="Name"> </DataGridTextColumn>
                 <DataGridTextColumn x:Name="Surname" Binding="{Binding Surname}" Header="Surname"></DataGridTextColumn>
@@ -28,5 +28,6 @@
         </DataGrid>
         
         <Label x:Name="ClientsLabel" Content="Label" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="800" Background="#FF52BD48" FontSize="20"/>
+        <Button x:Name="AddClient" Content="Add new client" HorizontalAlignment="Left" Height="44" Margin="626,406,0,0" VerticalAlignment="Top" Width="174" Click="AddClient_Click"/>
     </Grid>
 </Page>

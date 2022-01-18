@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using estates;
 
 namespace WpfEstates
 {
@@ -27,8 +28,16 @@ namespace WpfEstates
 
         private void AddCompanyBtn_Click(object sender, RoutedEventArgs e)
         {
-            AddCompanyWindow companyWindow = new AddCompanyWindow();
-            companyWindow.Show();
+            Company c = new Company();
+            OwnersRepository ownersRep2 = new OwnersRepository();
+            AddCompanyWindow comWindow = new AddCompanyWindow(c);
+            bool? result = comWindow.ShowDialog();
+            if (result == true)
+            {
+                ownersRep2 = OwnersRepository.ReadXML();
+                ownersRep2.AddOwner(c);
+                ownersRep2.SaveToXML();
+            }
         }
 
         private void AddPrivateOwnerBtn_Click(object sender, RoutedEventArgs e)

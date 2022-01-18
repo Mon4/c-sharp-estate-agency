@@ -57,8 +57,8 @@ namespace WpfEstates
                 "dd-MMM-yy" }, null, DateTimeStyles.None, out DateTime date);
                 client.DateOfBirth = date;
                 DialogResult = true;
+                this.Close();
             }
-            this.Close();
         }
     }
 }

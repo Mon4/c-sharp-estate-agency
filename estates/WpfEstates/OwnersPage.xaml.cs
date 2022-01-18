@@ -43,5 +43,31 @@ namespace WpfEstates
         {
 
         }
+
+        private void AddCompany_Click(object sender, RoutedEventArgs e)
+        {
+            Company c = new Company();
+            AddCompanyWindow comWindow = new AddCompanyWindow(c);
+            bool? result = comWindow.ShowDialog();
+            if (result == true)
+            {
+                ownersRep.AddOwner(c);
+                OwnersDataGrid.ItemsSource= new ObservableCollection<Owner>(ownersRep.OwnerList);
+                ownersRep.SaveToXML();
+            }
+        }
+
+        private void AddPrivateOwner_Click(object sender, RoutedEventArgs e)
+        {
+            PrivateOwner c = new PrivateOwner();
+            AddPrivateOwnerWindow comWindow = new AddPrivateOwnerWindow(c);
+            bool? result = comWindow.ShowDialog();
+            if (result == true)
+            {
+                ownersRep.AddOwner(c);
+                OwnersDataGrid.ItemsSource = new ObservableCollection<Owner>(ownersRep.OwnerList);
+                ownersRep.SaveToXML();
+            }
+        }
     }
 }
