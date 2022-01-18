@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -43,16 +44,46 @@ namespace WpfEstates
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
-            if(CompanyName.Text!="")
             {
+                int working = 1;
                 company.Adress = Adress.Text;
-                company.ZipCode = ZipCode.Text;
                 company.City = City.Text;
-                company.PhoneNumber = PhoneNumber.Text;
-                company.NIP = Nip.Text;
                 company.CompanyName = CompanyName.Text;
-                DialogResult = true;
-                this.Close();
+                try
+                {
+                    var r = new Regex(@"^\d{2}-\d{3}$");
+                    var r2 = new Regex(@"^\d{9}$");
+                    var r3 = new Regex(@"^\d{3}-\d{3}-\d{3}$");
+                    var r4 = new Regex(@"^\d{3}-\d{3}-\d{2}-\d{2}$");
+                    var r5 = new Regex(@"^\d{10}$");
+                    if (!r.IsMatch(ZipCode.Text) | (!r2.IsMatch(PhoneNumber.Text) & !r.IsMatch(PhoneNumber.Text))|
+                        (!r4.IsMatch(Nip.Text) & !r5.IsMatch(Nip.Text)))
+                    {
+                        throw new WrongFormatInTextBoxException("Wrong zip code/phone number/NIP format!");
+                    }
+                    else
+                    {
+                        company.ZipCode = ZipCode.Text;
+                        company.PhoneNumber = PhoneNumber.Text;
+                        company.NIP = Nip.Text;
+                    }
+                }
+                catch (WrongFormatInTextBoxException wfit)
+                {
+                    ExceptionLabelCompany.Content = wfit.Message;
+                    working = 0;
+                }
+                if (Adress.Text == "" | ZipCode.Text == "" | City.Text == "" | PhoneNumber.Text == "" | CompanyName.Text == "" |
+                Nip.Text == "")
+                {
+                    working = 0;
+                    ExceptionLabelCompany.Content = "Some fields are blank!";
+                }
+                if (working == 1)
+                {
+                    DialogResult = true;
+                    this.Close();
+                }
             }
         }
     }

@@ -25,6 +25,8 @@
             <TextBox    x:Name="Nip"     FontSize="15" Margin="150 5 5 0"></TextBox>
             <TextBox    x:Name="CompanyName" FontSize="15" Margin="150 5 5 0"></TextBox>
         </StackPanel>
+        <Label x:Name="ExceptionLabelCompany" Content="" Margin="10,318,10,54" FontSize="16" Foreground="#FFBD1212"/>
+
         <Button x:Name="Save"   FontSize="15" Margin="10 370 170 5" Click="Save_Click">Save</Button>
         <Button x:Name="Cancel" FontSize="15" Margin="170 370 10 5" Click="Cancel_Click">Cancel</Button>
         

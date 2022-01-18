@@ -20,5 +20,23 @@
       <Name>Mariusz</Name>
       <Surname>Grzyb</Surname>
     </Owner>
+    <Owner xsi:type="PrivateOwner">
+      <Adress>dasefd</Adress>
+      <ZipCode>23-000</ZipCode>
+      <City>efsa</City>
+      <PhoneNumber>122122122</PhoneNumber>
+      <EstatesNumber>0</EstatesNumber>
+      <Name>dsf</Name>
+      <Surname>fsafe</Surname>
+    </Owner>
+    <Owner xsi:type="Company">
+      <Adress>sdv</Adress>
+      <ZipCode>34-100</ZipCode>
+      <City>fs</City>
+      <PhoneNumber>123456780</PhoneNumber>
+      <EstatesNumber>0</EstatesNumber>
+      <NIP>1010101010</NIP>
+      <CompanyName>sffe</CompanyName>
+    </Owner>
   </OwnerList>
 </OwnersRepository>
