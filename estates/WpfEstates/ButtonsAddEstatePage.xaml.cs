@@ -27,8 +27,8 @@ namespace WpfEstates
 
         private void AddFlatBtn_Click(object sender, RoutedEventArgs e)
         {
-            AddEstateWindow estateWindow = new AddEstateWindow();
-            estateWindow.Show();
+            AddFlatWindow flatWindow = new AddFlatWindow();
+            flatWindow.Show();
         }
 
         private void AddHouseBtn_Click(object sender, RoutedEventArgs e)

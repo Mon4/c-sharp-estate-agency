@@ -1,11 +1,11 @@
-﻿<Window x:Class="WpfEstates.AddEstateWindow"
+﻿<Window x:Class="WpfEstates.AddFlatWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfEstates"
         mc:Ignorable="d"
-        Title="AddEstateWindow" Height="580" Width="800">
+        Title="AddFlatWindow" Height="580" Width="800">
     <Grid>
         <Label Content="New Flat" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" 
                Width="300" Background="#FF52BD48" FontSize="20"/>

@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace WpfEstates
 {
     /// <summary>
-    /// Interaction logic for AddEstateWindow.xaml
+    /// Interaction logic for AddFlatWindow.xaml
     /// </summary>
-    public partial class AddEstateWindow : Window
+    public partial class AddFlatWindow : Window
     {
-        public AddEstateWindow()
+        public AddFlatWindow()
         {
             InitializeComponent();
         }
