@@ -43,6 +43,91 @@
         <PhoneNumber>512132546</PhoneNumber>
         <DateOfBirth>1980-12-15T00:00:00</DateOfBirth>
       </Client>
+      <Kind>selling</Kind>
+    </Meeting>
+    <Meeting>
+      <Employee>
+        <Name>Janina</Name>
+        <Surname>Nowak</Surname>
+        <PhoneNumber1>801234123</PhoneNumber1>
+        <Salary>2500</Salary>
+        <Sale_bonus>0</Sale_bonus>
+        <Sold_estates>0</Sold_estates>
+      </Employee>
+      <Estate xsi:type="Flat">
+        <Id>2</Id>
+        <Adress>ul. Mickiewicza 1</Adress>
+        <ZipCode>32-123</ZipCode>
+        <City>Kraków</City>
+        <Price>400000</Price>
+        <Area>90</Area>
+        <Furniture>true</Furniture>
+        <Balcony>false</Balcony>
+        <RoomsNumber>5</RoomsNumber>
+        <Description>nice flat</Description>
+        <Bedrooms>1</Bedrooms>
+        <Owner xsi:type="PrivateOwner">
+          <Adress>ul. Kwiatowa 4</Adress>
+          <ZipCode>32-123</ZipCode>
+          <City>Kraków</City>
+          <PhoneNumber>123056789</PhoneNumber>
+          <EstatesNumber>2</EstatesNumber>
+          <Name>Mariusz</Name>
+          <Surname>Grzyb</Surname>
+        </Owner>
+        <Building_development>kamienica</Building_development>
+        <Level>10</Level>
+      </Estate>
+      <Date>2014-03-12T12:12:00</Date>
+      <Client>
+        <Name>Jan</Name>
+        <Surname>Kowalski</Surname>
+        <PhoneNumber>512132546</PhoneNumber>
+        <DateOfBirth>1980-12-15T00:00:00</DateOfBirth>
+      </Client>
+      <Kind>watching</Kind>
+    </Meeting>
+    <Meeting>
+      <Employee>
+        <Name>dsad</Name>
+        <Surname>dewd</Surname>
+        <PhoneNumber1>efdwe</PhoneNumber1>
+        <Salary>23</Salary>
+        <Sale_bonus>0</Sale_bonus>
+        <Sold_estates>0</Sold_estates>
+      </Employee>
+      <Estate xsi:type="Flat">
+        <Id>2</Id>
+        <Adress>ul. Mickiewicza 1</Adress>
+        <ZipCode>32-123</ZipCode>
+        <City>Kraków</City>
+        <Price>400000</Price>
+        <Area>90</Area>
+        <Furniture>true</Furniture>
+        <Balcony>false</Balcony>
+        <RoomsNumber>5</RoomsNumber>
+        <Description>nice flat</Description>
+        <Bedrooms>1</Bedrooms>
+        <Owner xsi:type="PrivateOwner">
+          <Adress>ul. Kwiatowa 4</Adress>
+          <ZipCode>32-123</ZipCode>
+          <City>Kraków</City>
+          <PhoneNumber>123056789</PhoneNumber>
+          <EstatesNumber>2</EstatesNumber>
+          <Name>Mariusz</Name>
+          <Surname>Grzyb</Surname>
+        </Owner>
+        <Building_development>kamienica</Building_development>
+        <Level>10</Level>
+      </Estate>
+      <Date>0001-01-01T00:00:00</Date>
+      <Client>
+        <Name>Jan</Name>
+        <Surname>Kowalski</Surname>
+        <PhoneNumber>512132546</PhoneNumber>
+        <DateOfBirth>1980-12-15T00:00:00</DateOfBirth>
+      </Client>
+      <Kind>watching</Kind>
     </Meeting>
   </Meetingslist>
 </MeetingsRepository>

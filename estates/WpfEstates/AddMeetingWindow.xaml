@@ -15,20 +15,18 @@
             <Label x:Name="Estate"          Content="Estate"            Margin="0 0 150 0" FontSize="15"></Label>
             <Label x:Name="Date"            Content="Date"              Margin="0 0 150 0" FontSize="15"></Label>
             <Label x:Name="Client"          Content="Client"            Margin="0 0 150 0" FontSize="15"></Label>
-            <Label x:Name="KindOfMeeting"   Content="Kind of meeting"   Margin="0 0 150 0" FontSize="15"></Label>
-            <Label x:Name="StatusOfMeeting" Content="Status of meeting" Margin="0 0 150 0" FontSize="15"></Label>
+            <Label x:Name="KindOfMeeting1"   Content="Kind of meeting"   Margin="0 0 150 0" FontSize="15"></Label>
         </StackPanel>
 
         <StackPanel Orientation="Vertical">
-            <ComboBox FontSize="15" Margin="150 50 5 0"></ComboBox>
-            <ComboBox FontSize="15" Margin="150 5 5 0"></ComboBox>
-            <ComboBox FontSize="15" Margin="150 5 5 0"></ComboBox>
-            <ComboBox FontSize="15" Margin="150 5 5 0"></ComboBox>
-            <ComboBox FontSize="15" Margin="150 5 5 0"></ComboBox>
-            <ComboBox FontSize="15" Margin="150 5 5 0"></ComboBox>
+            <ComboBox x:Name="EmployeeBox" FontSize="15" Margin="150 50 5 0"></ComboBox>
+            <ComboBox x:Name="EstatesBox" FontSize="15" Margin="150 5 5 0"></ComboBox>
+            <TextBox x:Name="DateBox" FontSize="15" Margin="150 5 5 0"></TextBox>
+            <ComboBox x:Name="ClientBox" FontSize="15" Margin="150 5 5 0"></ComboBox>
+            <ComboBox x:Name="KindBox" FontSize="15" Margin="150 5 5 0"></ComboBox>
         </StackPanel>
         
-        <Button x:Name="Save"   FontSize="15" Margin="10 370 170 5" Click="Save_Click">Save</Button>
-        <Button x:Name="Cancel" FontSize="15" Margin="170 370 10 5" Click="Cancel_Click">Cancel</Button>
+        <Button x:Name="Save"   FontSize="15" Margin="10,335,170,40" Click="Save_Click">Save</Button>
+        <Button x:Name="Cancel" FontSize="15" Margin="170,335,10,40" Click="Cancel_Click">Cancel</Button>
     </Grid>
 </Window>

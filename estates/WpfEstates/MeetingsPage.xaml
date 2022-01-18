@@ -9,14 +9,13 @@
       Title="MeetingsPage">
 
     <Grid>
-        <DataGrid Name="MeetingsDataGrid" VerticalAlignment="Top"  HorizontalAlignment="Left" Height="377" Width="800" Margin="0,63,0,0" IsReadOnly="True" AutoGenerateColumns="False">
+        <DataGrid Name="MeetingsDataGrid" VerticalAlignment="Top"  HorizontalAlignment="Left" Height="344" Width="800" Margin="0,63,0,0" IsReadOnly="True" AutoGenerateColumns="False">
             <DataGrid.Columns>
                 <DataGridTextColumn x:Name="Employee" Binding="{Binding Employee}" Header="Employee"></DataGridTextColumn>
                 <DataGridTextColumn x:Name="Estate" Binding="{Binding Estate}" Header="Estate"></DataGridTextColumn>
                 <DataGridTextColumn x:Name="Date" Binding="{Binding Date}" Header="Date"></DataGridTextColumn>
                 <DataGridTextColumn x:Name="Client" Binding="{Binding Client}" Header="Client"></DataGridTextColumn>
                 <DataGridTextColumn x:Name="KindOfMeeting" Binding="{Binding KindOfMeeting}" Header="KindOfMeeting"></DataGridTextColumn>
-                <DataGridTextColumn x:Name="StatusOfMeeting" Binding="{Binding StatusOfMeeting}" Header="StatusOfMeeting"></DataGridTextColumn>
                 <DataGridTemplateColumn>
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
@@ -28,5 +27,6 @@
             </DataGrid.Columns>
         </DataGrid>
         <Label x:Name="MeetingsLabel" Content="Meetings" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="800" Background="#FF52BD48" FontSize="20"/>
+        <Button x:Name="AddMeeting" Content="Add new meeting&#xD;&#xA;" HorizontalAlignment="Left" Height="43" Margin="604,407,0,0" VerticalAlignment="Top" Width="196" Click="Button_Click"/>
     </Grid>
 </Page>

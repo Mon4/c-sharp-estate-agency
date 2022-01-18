@@ -37,5 +37,18 @@ namespace WpfEstates
         {
 
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Meeting meeting = new Meeting();
+            AddMeetingWindow meetingWindow = new AddMeetingWindow(meeting);
+            bool? result = meetingWindow.ShowDialog();
+            if (result == true)
+            {
+                meetingsRep.AddMeeting(meeting);
+                MeetingsDataGrid.ItemsSource = new ObservableCollection<Meeting>(meetingsRep.Meetingslist);
+                meetingsRep.SaveToXML();
+            }
+        }
     }
 }

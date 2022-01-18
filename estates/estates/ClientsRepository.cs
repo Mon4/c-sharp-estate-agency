@@ -63,7 +63,18 @@ namespace estates
         {
             ClientList.Sort();
         }
-
+        public Client FindClientbyToString(string text)
+        {
+            foreach (var emp in ClientList)
+            {
+                if (emp.ToString() == text)
+                {
+                    return emp;
+                }
+            }
+            Client emp1 = new Client();
+            return emp1;
+        }
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();

@@ -54,7 +54,7 @@ namespace WpfEstates
                 client.Name = Name.Text;
                 client.Surname = Surname.Text;
                 DateTime.TryParseExact(DateBirth.Text, new[] { "yyyy-MM-dd", "yyyy/MM/dd", "MM/dd/yy", "dd-MM-yyyy", "dd.MM.yyyy",
-                "dd-MMM-yy" }, null, DateTimeStyles.None, out DateTime date);
+                "dd-MMM-yy", "dd-MMM-yyyy","dd.MMM.yyyy" }, null, DateTimeStyles.None, out DateTime date);
                 client.DateOfBirth = date;
                 DialogResult = true;
                 this.Close();

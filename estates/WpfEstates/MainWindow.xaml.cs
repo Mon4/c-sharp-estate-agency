@@ -32,34 +32,29 @@ namespace WpfEstates
         {
             Globalls.currentPage = "Estates";
             Main.Content = new EstatesPage();
-            EditingButtons.Content = new ButtonsAddEstatePage();
         }
 
         private void EployeesBtn_Click(object sender, RoutedEventArgs e)
         {
             Globalls.currentPage = "Employees";
             Main.Content = new EmployeesPage();
-            EditingButtons.Content = new ButtonsPage();
         }
         private void ClientsBtn_Click(object sender, RoutedEventArgs e)
         {
             Globalls.currentPage = "Clients";
             Main.Content = new ClientsPage();
-            EditingButtons.Content = new ButtonsPage();
         }
 
         private void OwnersBtn_Click(object sender, RoutedEventArgs e)
         {
             Globalls.currentPage = "Owners";
             Main.Content = new OwnersPage();
-            EditingButtons.Content = new ButtonsAddOwnerPage();
         }
 
         private void MeetingsBtn_Click(object sender, RoutedEventArgs e)
         {
             Globalls.currentPage = "Meetings";
             Main.Content = new MeetingsPage();
-            EditingButtons.Content = new ButtonsPage();
         }
 
         private void ExitBtn_Click(object sender, RoutedEventArgs e)

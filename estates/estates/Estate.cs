@@ -28,12 +28,13 @@ namespace estates
             id_now = 0;
         }
         public Estate()
-        { }
-        protected Estate(string adress, string zipCode, string city, decimal price, decimal area,
-            bool furniture, bool balcony, int roomsNumber, string description, int bedrooms, Owner owner)
         {
-            Id = id_now + 1 ;
+            Id = id_now + 1;
             id_now++;
+        }
+        protected Estate(string adress, string zipCode, string city, decimal price, decimal area,
+            bool furniture, bool balcony, int roomsNumber, string description, int bedrooms, Owner owner):this()
+        {
             Adress = adress;
             ZipCode = zipCode;
             City = city;

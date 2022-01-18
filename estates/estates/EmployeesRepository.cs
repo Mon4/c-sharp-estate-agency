@@ -72,6 +72,18 @@ namespace estates
             }
         }
 
+        public Employee FindEmployeebyToString(string text)
+        {
+            foreach(var emp in Employelist)
+            {
+                if(emp.ToString()==text)
+                {
+                    return emp;
+                }
+            }
+            Employee emp1=new Employee();
+            return emp1;
+        }
         public void FindEmployeebyNumber(string number)
         {
             foreach (Employee e in Employelist)

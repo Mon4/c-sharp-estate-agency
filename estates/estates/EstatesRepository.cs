@@ -79,6 +79,19 @@ namespace estates
             }
             return sb.ToString();
         }
+
+        public Estate FindEstatebyToString(string text)
+        {
+            foreach (var emp in EstateList)
+            {
+                if (emp.ToString() == text)
+                {
+                    return emp;
+                }
+            }
+            Flat emp1 = new Flat();
+            return emp1;
+        }
         public void SaveToXML()
         {
             var xs = new XmlSerializer(typeof(EstatesRepository));                      
