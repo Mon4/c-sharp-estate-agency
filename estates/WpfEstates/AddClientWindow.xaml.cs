@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,22 +21,21 @@ namespace WpfEstates
     /// </summary>
     public partial class AddClientWindow : Window
     {
-        
+        Client client;
         public AddClientWindow()
         {
             InitializeComponent();
-        }
-        /*public AddClientWindow(Client c):this()
-        {
-            cl = c;
-            if (cl is Client osobaClient)
-            {
-                Name.Text = osobaClient.Name;
-                Surname.Text = osobaClient.Surname;
-                PhoneNumber.Text = osobaClient.PhoneNumber;
-            }
 
-        }*/
+        }
+
+        public AddClientWindow(Client c):this()
+        {
+            client = c;
+            Name.Text = client.Name;
+            Surname.Text = client.Surname;
+            PhoneNumber.Text = client.PhoneNumber;
+            DateBirth.Text = $"{client.DateOfBirth:dd-MMM-yyyy}";
+        }
         private void Cancel_Click(object sender, RoutedEventArgs e)
         {
             Close();
@@ -43,18 +43,22 @@ namespace WpfEstates
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
-
-            /*if (Name.Text != "" || Surname.Text != "" || PhoneNumber.Text != "")
+            if (client.CheckPhoneNumber(PhoneNumber.Text)=="unknown phone number")
             {
-                cl.PhoneNumber = PhoneNumber.Text;
-                cl.Name = Name.Text;
-                cl.Surname = Surname.Text;
                 
+            }
+
+            if (Name.Text != "" || Surname.Text != "" || PhoneNumber.Text != "")
+            {
+                client.PhoneNumber=client.CheckPhoneNumber(PhoneNumber.Text);
+                client.Name = Name.Text;
+                client.Surname = Surname.Text;
+                DateTime.TryParseExact(DateBirth.Text, new[] { "yyyy-MM-dd", "yyyy/MM/dd", "MM/dd/yy", "dd-MM-yyyy", "dd.MM.yyyy",
+                "dd-MMM-yy" }, null, DateTimeStyles.None, out DateTime date);
+                client.DateOfBirth = date;
                 DialogResult = true;
             }
-            DialogResult = false;
-
-            */
+            this.Close();
         }
     }
 }

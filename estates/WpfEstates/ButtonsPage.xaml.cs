@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using estates;
 
 namespace WpfEstates
 {
@@ -29,8 +30,16 @@ namespace WpfEstates
         {
             if (Globalls.currentPage=="Clients")
             {
-                AddClientWindow clientWindow = new AddClientWindow();
-                clientWindow.Show();
+                Client client = new Client();
+                ClientsRepository clientsRep2 = new ClientsRepository();
+                AddClientWindow clientWindow = new AddClientWindow(client);
+                bool? result = clientWindow.ShowDialog();
+                if (result == true)
+                {
+                    clientsRep2 = ClientsRepository.ReadXML();
+                    clientsRep2.AddClient(client);
+                    clientsRep2.SaveToXML();
+                }
 
             }
             else if(Globalls.currentPage=="Employees")

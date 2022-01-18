@@ -8,5 +8,71 @@
       <PhoneNumber>512132546</PhoneNumber>
       <DateOfBirth>1980-12-15T00:00:00</DateOfBirth>
     </Client>
+    <Client>
+      <Name>Stefan</Name>
+      <Surname>Truskawka</Surname>
+      <PhoneNumber>123456012</PhoneNumber>
+      <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+    </Client>
+    <Client>
+      <Name>Barbara</Name>
+      <Surname>Kowalewicz</Surname>
+      <PhoneNumber>213w</PhoneNumber>
+      <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+    </Client>
+    <Client>
+      <Name>212321</Name>
+      <Surname>3212</Surname>
+      <PhoneNumber>121</PhoneNumber>
+      <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+    </Client>
+    <Client>
+      <Name>Miłosz</Name>
+      <Surname>Gracz</Surname>
+      <PhoneNumber>980-212-340</PhoneNumber>
+      <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+    </Client>
+    <Client>
+      <Name>Miłosz</Name>
+      <Surname>Gracz</Surname>
+      <PhoneNumber>908765234</PhoneNumber>
+      <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+    </Client>
+    <Client>
+      <Name>Milosz</Name>
+      <Surname>Gracz</Surname>
+      <PhoneNumber>098765123</PhoneNumber>
+      <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+    </Client>
+    <Client>
+      <Name>Ala</Name>
+      <Surname>dadwe</Surname>
+      <PhoneNumber>unknown phone number</PhoneNumber>
+      <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+    </Client>
+    <Client>
+      <Name>ala</Name>
+      <Surname>fwaf</Surname>
+      <PhoneNumber>unknown phone number</PhoneNumber>
+      <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+    </Client>
+    <Client>
+      <Name>Antoni</Name>
+      <Surname>Pudliszki</Surname>
+      <PhoneNumber>123456789</PhoneNumber>
+      <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+    </Client>
+    <Client>
+      <Name>wer</Name>
+      <Surname>rwer</Surname>
+      <PhoneNumber>unknown phone number</PhoneNumber>
+      <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+    </Client>
+    <Client>
+      <Name>fwfe</Name>
+      <Surname>fewaf</Surname>
+      <PhoneNumber>unknown phone number</PhoneNumber>
+      <DateOfBirth>1994-05-12T00:00:00</DateOfBirth>
+    </Client>
   </ClientList>
 </ClientsRepository>

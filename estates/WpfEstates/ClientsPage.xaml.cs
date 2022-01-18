@@ -22,7 +22,8 @@ namespace WpfEstates
     /// </summary>
     public partial class ClientsPage : Page
     {
-        ClientsRepository clientsRep;
+        public ClientsRepository clientsRep;
+
         public ClientsPage()
         {
             clientsRep = ClientsRepository.ReadXML();
@@ -40,7 +41,19 @@ namespace WpfEstates
         }
         private void DeleteBtnClick(object sender, RoutedEventArgs e)
         {
-
+            var grid = ClientsDataGrid;
+            if (grid.SelectedItem != null)
+            {
+                clientsRep.RemoveClient((Client)grid.SelectedItem);
+            }
+        }
+        private void BtnDel_Click(object sender, RoutedEventArgs e)
+        {
+            var grid = ClientsDataGrid;
+            if (grid.SelectedItem != null)
+            {
+                clientsRep.RemoveClient((Client)grid.SelectedItem);
+            }
         }
     }
 }
