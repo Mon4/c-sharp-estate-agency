@@ -41,6 +41,7 @@
             <TextBox    x:Name="Levels" FontSize="15" Margin="150 5 5 0" />
             <CheckBox x:Name="Garden" Content="" HorizontalAlignment="Left" Height="24" Margin="150,5,0,0" Checked="Garden_Checked" Unchecked="Garden_Unchecked"/>
             <TextBox    x:Name="GardenArea" FontSize="15" Margin="150,5,5,0"/>
+            <Label x:Name="ExceptionLabelHouse" Content="" HorizontalAlignment="Right" Width="642" FontSize="16" Foreground="#FFBD1212"/>
 
         </StackPanel>
         <Button x:Name="Save"   FontSize="15" Margin="319,557,322,17" Click="Save_Click">Save</Button>

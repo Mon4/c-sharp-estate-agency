@@ -7,7 +7,7 @@
       <ZipCode>23-534</ZipCode>
       <City>Kraków</City>
       <PhoneNumber>123456789</PhoneNumber>
-      <EstatesNumber>0</EstatesNumber>
+      <EstatesNumber>1</EstatesNumber>
       <NIP>123-123-12-12</NIP>
       <CompanyName>BUDUJEMY_SE</CompanyName>
     </Owner>
@@ -16,7 +16,7 @@
       <ZipCode>32-123</ZipCode>
       <City>Kraków</City>
       <PhoneNumber>123056789</PhoneNumber>
-      <EstatesNumber>2</EstatesNumber>
+      <EstatesNumber>5</EstatesNumber>
       <Name>Mariusz</Name>
       <Surname>Grzyb</Surname>
     </Owner>

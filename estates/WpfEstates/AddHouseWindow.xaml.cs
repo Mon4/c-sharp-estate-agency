@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -53,12 +54,30 @@ namespace WpfEstates
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
-            if (Adress.Text != "")
+            if (Adress.Text != "" | ZipCode.Text!="" | City.Text!="" | Area.Text!="" | 
+                Price.Text!="" | RoomsNumber.Text!="" | Bedrooms.Text!="" | Levels.Text!="" | 
+                GardenArea.Text!="" | OwnerBox.SelectedItem==null)
             {
                 int working = 1;
                 house.Adress = Adress.Text;
-                house.ZipCode = ZipCode.Text;
                 house.City = City.Text;
+                try
+                {
+                    var r = new Regex(@"^\d{2}-\d{3}$");
+                    if (!r.IsMatch(ZipCode.Text))
+                    {
+                        throw new WrongFormatInTextBoxException("Wrong zip code format!");
+                    }
+                    else
+                    {
+                        house.ZipCode = ZipCode.Text;
+                    }
+                }
+                catch(WrongFormatInTextBoxException wfit)
+                {
+                    ExceptionLabelHouse.Content = wfit.Message;
+                    working = 0;
+                }
                 try
                 {
                     house.Price = Decimal.Parse(Price.Text);
@@ -71,13 +90,21 @@ namespace WpfEstates
                 catch (System.FormatException)
                 {
                     working = 0;
+                    ExceptionLabelHouse.Content = "Wrong format!";
                 }
                 house.Balcony = (bool)Balcony.IsChecked;
                 house.Furniture = (bool)Furniture.IsChecked;
                 house.Description = Description.Text;
                 house.Garden = (bool)Garden.IsChecked;
                 house.Owner = (Owner)OwnerBox.SelectedItem;
-                if (working == 1)
+                if (Adress.Text =="" | ZipCode.Text =="" | City.Text == "" | Area.Text == "" |
+                Price.Text == "" | RoomsNumber.Text == "" | Bedrooms.Text == "" | Levels.Text == "" |
+                 OwnerBox.SelectedItem == null | Area.Text=="0" | Price.Text=="0")
+                {
+                    ExceptionLabelHouse.Content = "Some fields are blank!";
+                    working = 0;
+                }
+                    if (working == 1)
                 {
                     DialogResult = true;
                     this.Close();

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -47,12 +48,10 @@ namespace WpfEstates
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
-            if(Adress.Text!="")
             {
                 int working = 1;
                 
                 flat.Adress = Adress.Text;
-                flat.ZipCode = ZipCode.Text;
                 flat.City = City.Text;
                 try
                 {
@@ -65,13 +64,39 @@ namespace WpfEstates
                 catch(System.FormatException)
                 {
                     working = 0;
+                    ExceptionLabelFlat.Content = "Wrong format!";
+
+                }
+                try
+                {
+                    var r = new Regex(@"^\d{2}-\d{3}$");
+                    if (!r.IsMatch(ZipCode.Text))
+                    {
+                        throw new WrongFormatInTextBoxException("Wrong zip code format!");
+                    }
+                    else
+                    {
+                        flat.ZipCode = ZipCode.Text;
+                    }
+                }
+                catch (WrongFormatInTextBoxException wfit)
+                {
+                    ExceptionLabelFlat.Content = wfit.Message;
+                    working = 0;
                 }
                 flat.Balcony = (bool)Balcony.IsChecked;
                 flat.Furniture = (bool)Furniture.IsChecked;
                 flat.Description = Description.Text;
                 flat.Building_development = BuildingDevelopment.Text;
                 flat.Owner = (Owner)OwnerBox.SelectedItem;
-                if(working==1)
+                if (Adress.Text == "" | ZipCode.Text == "" | City.Text == "" | Area.Text == "" |
+                Price.Text == "" | RoomsNumber.Text == "" | Bedrooms.Text == "" | Level.Text == "" |
+                 OwnerBox.SelectedItem == null | Area.Text == "0" | Price.Text == "0" | BuildingDevelopment.Text=="")
+                {
+                    ExceptionLabelFlat.Content = "Some fields are blank!";
+                    working = 0;
+                }
+                if (working==1)
                 {
                     DialogResult = true;
                     this.Close();

@@ -51,5 +51,104 @@
       <Garden>true</Garden>
       <GardenArea>20</GardenArea>
     </Estate>
+    <Estate xsi:type="House">
+      <Id>3</Id>
+      <Adress />
+      <ZipCode>unknown</ZipCode>
+      <City />
+      <Price>0</Price>
+      <Area>0</Area>
+      <Furniture>false</Furniture>
+      <Balcony>false</Balcony>
+      <RoomsNumber>0</RoomsNumber>
+      <Description />
+      <Bedrooms>0</Bedrooms>
+      <Owner xsi:type="Company">
+        <Adress>ul. Zielona 12</Adress>
+        <ZipCode>23-534</ZipCode>
+        <City>Kraków</City>
+        <PhoneNumber>123456789</PhoneNumber>
+        <EstatesNumber>1</EstatesNumber>
+        <NIP>123-123-12-12</NIP>
+        <CompanyName>BUDUJEMY_SE</CompanyName>
+      </Owner>
+      <Levels>0</Levels>
+      <Garden>false</Garden>
+      <GardenArea>0</GardenArea>
+    </Estate>
+    <Estate xsi:type="House">
+      <Id>4</Id>
+      <Adress>Nowa 12</Adress>
+      <ZipCode>12-345</ZipCode>
+      <City>Kraków</City>
+      <Price>134</Price>
+      <Area>900</Area>
+      <Furniture>true</Furniture>
+      <Balcony>false</Balcony>
+      <RoomsNumber>12</RoomsNumber>
+      <Description />
+      <Bedrooms>3</Bedrooms>
+      <Owner xsi:type="PrivateOwner">
+        <Adress>ul. Kwiatowa 4</Adress>
+        <ZipCode>32-123</ZipCode>
+        <City>Kraków</City>
+        <PhoneNumber>123056789</PhoneNumber>
+        <EstatesNumber>3</EstatesNumber>
+        <Name>Mariusz</Name>
+        <Surname>Grzyb</Surname>
+      </Owner>
+      <Levels>4</Levels>
+      <Garden>false</Garden>
+      <GardenArea>0</GardenArea>
+    </Estate>
+    <Estate xsi:type="House">
+      <Id>5</Id>
+      <Adress>efwafe</Adress>
+      <ZipCode>12-456</ZipCode>
+      <City>fwwaf</City>
+      <Price>120000</Price>
+      <Area>12</Area>
+      <Furniture>false</Furniture>
+      <Balcony>false</Balcony>
+      <RoomsNumber>0</RoomsNumber>
+      <Description />
+      <Bedrooms>0</Bedrooms>
+      <Owner xsi:type="PrivateOwner">
+        <Adress>ul. Kwiatowa 4</Adress>
+        <ZipCode>32-123</ZipCode>
+        <City>Kraków</City>
+        <PhoneNumber>123056789</PhoneNumber>
+        <EstatesNumber>4</EstatesNumber>
+        <Name>Mariusz</Name>
+        <Surname>Grzyb</Surname>
+      </Owner>
+      <Levels>0</Levels>
+      <Garden>false</Garden>
+      <GardenArea>0</GardenArea>
+    </Estate>
+    <Estate xsi:type="Flat">
+      <Id>9</Id>
+      <Adress>fsf</Adress>
+      <ZipCode>21-345</ZipCode>
+      <City>fsf</City>
+      <Price>123</Price>
+      <Area>123</Area>
+      <Furniture>false</Furniture>
+      <Balcony>false</Balcony>
+      <RoomsNumber>0</RoomsNumber>
+      <Description />
+      <Bedrooms>0</Bedrooms>
+      <Owner xsi:type="PrivateOwner">
+        <Adress>ul. Kwiatowa 4</Adress>
+        <ZipCode>32-123</ZipCode>
+        <City>Kraków</City>
+        <PhoneNumber>123056789</PhoneNumber>
+        <EstatesNumber>5</EstatesNumber>
+        <Name>Mariusz</Name>
+        <Surname>Grzyb</Surname>
+      </Owner>
+      <Building_development>kamienica</Building_development>
+      <Level>0</Level>
+    </Estate>
   </EstateList>
 </EstatesRepository>

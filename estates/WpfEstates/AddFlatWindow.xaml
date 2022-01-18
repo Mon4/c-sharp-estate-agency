@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfEstates"
         mc:Ignorable="d"
-        Title="AddFlatWindow" Height="580" Width="800">
+        Title="AddFlatWindow" Height="613" Width="800">
     <Grid>
         <Label Content="New Flat" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" 
                Width="792" Background="#FF52BD48" FontSize="20"/>
@@ -40,10 +40,11 @@
             <ListBox x:Name="OwnerBox" HorizontalAlignment="Left" Height="89" Margin="150,5,0,0" Width="618"></ListBox>
             <TextBox    x:Name="BuildingDevelopment"     FontSize="15" Margin="150 5 5 0" ></TextBox>
             <TextBox    x:Name="Level" FontSize="15" Margin="150 5 5 0" ></TextBox>
+            <Label x:Name="ExceptionLabelFlat" Content="" Margin="150,0,0,0" Foreground="#FFBD1212" FontSize="16"/>
 
         </StackPanel>
 
-        <Button x:Name="Save"   FontSize="15" Margin="319,491,321.6,17.4" Click="Save_Click">Save</Button>
-        <Button x:Name="Cancel" FontSize="15" Margin="514,491,122.6,17.4" Click="Cancel_Click">Cancel</Button>
+        <Button x:Name="Save"   FontSize="15" Margin="319,529,324,10" Click="Save_Click">Save</Button>
+        <Button x:Name="Cancel" FontSize="15" Margin="514,529,123,10" Click="Cancel_Click">Cancel</Button>
     </Grid>
 </Window>
