@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="AddEstateWindow" Height="580" Width="800">
     <Grid>
-        <Label Content="New Estate" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" 
+        <Label Content="New Flat" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" 
                Width="300" Background="#FF52BD48" FontSize="20"/>
         <StackPanel Orientation="Vertical" >
             <Label Content="id"          FontSize="15" Margin="0 50 150 0"></Label>

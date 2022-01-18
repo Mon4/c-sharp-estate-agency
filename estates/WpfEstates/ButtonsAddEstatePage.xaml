@@ -1,4 +1,4 @@
-﻿<Page x:Class="WpfEstates.ButtonsPage"
+﻿<Page x:Class="WpfEstates.ButtonsAddEstatePage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,9 +6,10 @@
       xmlns:local="clr-namespace:WpfEstates"
       mc:Ignorable="d" 
       d:DesignHeight="80" d:DesignWidth="400"
-      Title="ButtonsPage">
+      Title="ButtonsAddEstatePage">
 
-    <StackPanel HorizontalAlignment="Right">
-        <Button x:Name="Add" Content="Add" Click="AddBtn_Click" Width="200" Height="80"/>
-    </StackPanel>
+    <Grid>
+        <Button x:Name="Flat"  HorizontalAlignment="Right"  Content="Add Flat"  Click="AddFlatBtn_Click"  Width="200" Height="80"/>
+        <Button x:Name="House" HorizontalAlignment="Left"   Content="Add House" Click="AddHouseBtn_Click" Width="200" Height="80"/>
+    </Grid>
 </Page>

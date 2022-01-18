@@ -78,6 +78,9 @@
     <Compile Include="AddOwnerWindow.xaml.cs">
       <DependentUpon>AddOwnerWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ButtonsAddEstatePage.xaml.cs">
+      <DependentUpon>ButtonsAddEstatePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ButtonsPage.xaml.cs">
       <DependentUpon>ButtonsPage.xaml</DependentUpon>
     </Compile>
@@ -110,6 +113,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="AddOwnerWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ButtonsAddEstatePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

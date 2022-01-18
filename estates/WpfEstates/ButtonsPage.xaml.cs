@@ -38,11 +38,6 @@ namespace WpfEstates
                 AddEmployeeWindow employeeWindow = new AddEmployeeWindow();
                 employeeWindow.Show();
             }
-            else if (Globalls.currentPage == "Estates")
-            {
-                AddEstateWindow estateWindow = new AddEstateWindow();
-                estateWindow.Show();
-            }
             else if (Globalls.currentPage == "Meetings")
             {
                 AddMeetingWindow meetingWindow = new AddMeetingWindow();

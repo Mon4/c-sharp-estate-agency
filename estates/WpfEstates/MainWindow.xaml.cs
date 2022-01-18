@@ -32,7 +32,7 @@ namespace WpfEstates
         {
             Globalls.currentPage = "Estates";
             Main.Content = new EstatesPage();
-            EditingButtons.Content = new ButtonsPage();
+            EditingButtons.Content = new ButtonsAddEstatePage();
         }
 
         private void EployeesBtn_Click(object sender, RoutedEventArgs e)
