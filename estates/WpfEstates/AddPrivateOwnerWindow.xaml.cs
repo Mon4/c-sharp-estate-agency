@@ -63,7 +63,7 @@ namespace WpfEstates
                 var r = new Regex(@"^\d{2}-\d{3}$");
                 var r2 = new Regex(@"^\d{9}$");
                 var r3 = new Regex(@"^\d{3}-\d{3}-\d{3}$");
-                if (!r.IsMatch(ZipCode.Text) | (!r2.IsMatch(PhoneNumber.Text) & !r.IsMatch(PhoneNumber.Text)))
+                if (!r.IsMatch(ZipCode.Text) | (!r2.IsMatch(PhoneNumber.Text) & !r3.IsMatch(PhoneNumber.Text)))
                 {
                     throw new WrongFormatInTextBoxException("Wrong zip code/phone number format!");
                 }

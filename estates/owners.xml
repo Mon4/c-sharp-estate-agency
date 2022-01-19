@@ -7,18 +7,18 @@
       <ZipCode>23-534</ZipCode>
       <City>Kraków</City>
       <PhoneNumber>123456789</PhoneNumber>
-      <EstatesNumber>0</EstatesNumber>
+      <EstatesNumber>2</EstatesNumber>
       <NIP>123-123-12-12</NIP>
       <CompanyName>BUDUJEMY_SE</CompanyName>
     </Owner>
     <Owner xsi:type="PrivateOwner">
-      <Adress>ul. Kwiatowa 4</Adress>
-      <ZipCode>32-123</ZipCode>
-      <City>Kraków</City>
-      <PhoneNumber>123056789</PhoneNumber>
+      <Adress>Kocia 3</Adress>
+      <ZipCode>12-356</ZipCode>
+      <City>Andrychów</City>
+      <PhoneNumber>901902906</PhoneNumber>
       <EstatesNumber>2</EstatesNumber>
       <Name>Mariusz</Name>
-      <Surname>Grzyb</Surname>
+      <Surname>Skała</Surname>
     </Owner>
   </OwnerList>
 </OwnersRepository>

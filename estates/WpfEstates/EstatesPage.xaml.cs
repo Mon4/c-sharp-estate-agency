@@ -55,9 +55,12 @@ namespace WpfEstates
         {
             if (EstatesDataGrid.SelectedItem != null)
             {
+                ownersRep = OwnersRepository.ReadXML();
                 Estate es = (Estate)EstatesDataGrid.SelectedItem;
+                ownersRep.FindOwnerbyNumber(es.Owner.PhoneNumber).EstatesNumber--;
                 estatesRep.RemoveEstate(es);
                 estatesRep.SaveToXML();
+                ownersRep.SaveToXML();
                 EstatesDataGrid.ItemsSource = new ObservableCollection<Estate>(estatesRep.EstateList);
             }
         }
