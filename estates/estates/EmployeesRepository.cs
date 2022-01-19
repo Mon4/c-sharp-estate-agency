@@ -9,7 +9,7 @@ using System.Xml.Serialization;
 namespace estates
 {
     [Serializable]
-    public class EmployeesRepository:IComparer<Employee>
+    public class EmployeesRepository:IComparer<Employee>,IRepository
     {
         string _name;
         List<Employee> _employelist;
