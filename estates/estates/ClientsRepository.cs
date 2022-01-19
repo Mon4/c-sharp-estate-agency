@@ -16,19 +16,33 @@ namespace estates
 
         public string Name { get => _name; set => _name = value; }
         public List<Client> ClientList { get => _clientList; set => _clientList = value; }
-
+        /// <summary>
+        /// Default constructor, initializes ClientList
+        /// </summary>
         public ClientsRepository()
         {
             ClientList = new List<Client>();
         }
+        /// <summary>
+        /// Creates ClientsRepository and gives its name
+        /// </summary>
+        /// <param name="n">given name</param>
         public ClientsRepository(string n):this()
         {
             Name = n;
         }
+        /// <summary>
+        /// Adds client to clientlist, invoked to default constructor
+        /// </summary>
+        /// <param name="c"></param>
         public void AddClient(Client c)
         {
             ClientList.Add(c);
         }
+        /// <summary>
+        /// Removes client from clientlist (if the list contains this client otherwise it throws exception)
+        /// </summary>
+        /// <param name="c"></param>
         public void RemoveClient(Client c)
         {
             try
@@ -47,7 +61,10 @@ namespace estates
                 Console.WriteLine(nife.Message);
             }
         }
-
+        /// <summary>
+        /// Find Client with given surname
+        /// </summary>
+        /// <param name="surname"></param>
         public void FindClient(string surname)
         {
             foreach(Client c in ClientList)
@@ -58,11 +75,18 @@ namespace estates
                 }
             }
         }
-
+        /// <summary>
+        /// sorts clients (Compares surnames and names)
+        /// </summary>
         public void SortClients()
         {
             ClientList.Sort();
         }
+        /// <summary>
+        /// Finds client after string (import for GUI)
+        /// </summary>
+        /// <param name="text"></param>
+        /// <returns></returns>
         public Client FindClientbyToString(string text)
         {
             foreach (var emp in ClientList)
@@ -75,6 +99,10 @@ namespace estates
             Client emp1 = new Client();
             return emp1;
         }
+        /// <summary>
+        /// Return informations about ClientsRepository in text.
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
@@ -85,6 +113,9 @@ namespace estates
             }
             return sb.ToString();
         }
+        /// <summary>
+        /// Saves repository to xml file
+        /// </summary>
         public void SaveToXML()
         {
             var xs = new XmlSerializer(typeof(ClientsRepository));
@@ -92,6 +123,10 @@ namespace estates
             xs.Serialize(fs, this);
             fs.Close();
         }
+        /// <summary>
+        /// Reads xml file to repository.
+        /// </summary>
+        /// <returns></returns>
         public static ClientsRepository ReadXML()
         {
             ClientsRepository client_rep;
