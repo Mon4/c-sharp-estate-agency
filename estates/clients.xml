@@ -20,5 +20,11 @@
       <PhoneNumber>123123123</PhoneNumber>
       <DateOfBirth>1980-12-09T00:00:00</DateOfBirth>
     </Client>
+    <Client>
+      <Name>Aleksander</Name>
+      <Surname>Chrypka</Surname>
+      <PhoneNumber>450980754</PhoneNumber>
+      <DateOfBirth>1987-12-26T00:00:00</DateOfBirth>
+    </Client>
   </ClientList>
 </ClientsRepository>
