@@ -44,7 +44,13 @@ namespace WpfEstates
 
         private void DeleteBtnClick(object sender, RoutedEventArgs e)
         {
-            
+            if (EstatesDataGrid.SelectedItem != null)
+            {
+                Estate es = (Estate)EstatesDataGrid.SelectedItem;
+                estatesRep.RemoveEstate(es);
+                estatesRep.SaveToXML();
+                EstatesDataGrid.ItemsSource = new ObservableCollection<Estate>(estatesRep.EstateList);
+            }
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)

@@ -172,5 +172,47 @@
       </Client>
       <Kind>selling</Kind>
     </Meeting>
+    <Meeting>
+      <Employee>
+        <Name>Bogdan</Name>
+        <Surname>Sprzedawca</Surname>
+        <PhoneNumber1>123456003</PhoneNumber1>
+        <Salary>3400</Salary>
+        <Sale_bonus>0</Sale_bonus>
+        <Sold_estates>0</Sold_estates>
+      </Employee>
+      <Estate xsi:type="Flat">
+        <Id>22</Id>
+        <Adress>Niebieska</Adress>
+        <ZipCode>12-000</ZipCode>
+        <City>Gdynia</City>
+        <Price>340000</Price>
+        <Area>123.4</Area>
+        <Furniture>false</Furniture>
+        <Balcony>true</Balcony>
+        <RoomsNumber>5</RoomsNumber>
+        <Description />
+        <Bedrooms>3</Bedrooms>
+        <Owner xsi:type="Company">
+          <Adress>ul. Zielona 12</Adress>
+          <ZipCode>23-534</ZipCode>
+          <City>Kraków</City>
+          <PhoneNumber>123456789</PhoneNumber>
+          <EstatesNumber>2</EstatesNumber>
+          <NIP>123-123-12-12</NIP>
+          <CompanyName>BUDUJEMY_SE</CompanyName>
+        </Owner>
+        <Building_development>kamienica</Building_development>
+        <Level>2</Level>
+      </Estate>
+      <Date>0001-01-01T00:00:00</Date>
+      <Client>
+        <Name>Sławek</Name>
+        <Surname>Tenor</Surname>
+        <PhoneNumber>908765124</PhoneNumber>
+        <DateOfBirth>1990-12-24T00:00:00</DateOfBirth>
+      </Client>
+      <Kind>selling</Kind>
+    </Meeting>
   </Meetingslist>
 </MeetingsRepository>

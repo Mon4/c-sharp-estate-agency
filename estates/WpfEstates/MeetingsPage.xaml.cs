@@ -35,7 +35,13 @@ namespace WpfEstates
         }
         private void DeleteBtnClick(object sender, RoutedEventArgs e)
         {
-
+            if (MeetingsDataGrid.SelectedItem != null)
+            {
+                Meeting m = (Meeting)MeetingsDataGrid.SelectedItem;
+                meetingsRep.RemoveMeeting(m);
+                meetingsRep.SaveToXML();
+                MeetingsDataGrid.ItemsSource = new ObservableCollection<Meeting>(meetingsRep.Meetingslist);
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

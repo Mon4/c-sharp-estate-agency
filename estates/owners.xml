@@ -1,42 +1,5 @@
 <?xml version="1.0"?>
 <OwnersRepository xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Name>List of owners</Name>
-  <OwnerList>
-    <Owner xsi:type="Company">
-      <Adress>ul. Zielona 12</Adress>
-      <ZipCode>23-534</ZipCode>
-      <City>Kraków</City>
-      <PhoneNumber>123456789</PhoneNumber>
-      <EstatesNumber>2</EstatesNumber>
-      <NIP>123-123-12-12</NIP>
-      <CompanyName>BUDUJEMY_SE</CompanyName>
-    </Owner>
-    <Owner xsi:type="PrivateOwner">
-      <Adress>ul. Kwiatowa 4</Adress>
-      <ZipCode>32-123</ZipCode>
-      <City>Kraków</City>
-      <PhoneNumber>123056789</PhoneNumber>
-      <EstatesNumber>2</EstatesNumber>
-      <Name>Mariusz</Name>
-      <Surname>Grzyb</Surname>
-    </Owner>
-    <Owner xsi:type="PrivateOwner">
-      <Adress>Morska 12</Adress>
-      <ZipCode>34-100</ZipCode>
-      <City>Zakopane</City>
-      <PhoneNumber>098000123</PhoneNumber>
-      <EstatesNumber>0</EstatesNumber>
-      <Name>Mariusz</Name>
-      <Surname>Bogdan</Surname>
-    </Owner>
-    <Owner xsi:type="Company">
-      <Adress>Podmorska 12</Adress>
-      <ZipCode>34-900</ZipCode>
-      <City>Biurkowice</City>
-      <PhoneNumber>900800100</PhoneNumber>
-      <EstatesNumber>1</EstatesNumber>
-      <NIP>1001001005</NIP>
-      <CompanyName>Budowanko</CompanyName>
-    </Owner>
-  </OwnerList>
+  <OwnerList />
 </OwnersRepository>

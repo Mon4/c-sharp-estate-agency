@@ -41,10 +41,12 @@ namespace WpfEstates
         }
         private void DeleteBtnClick(object sender, RoutedEventArgs e)
         {
-            var grid = ClientsDataGrid;
-            if (grid.SelectedItem != null)
+            if (ClientsDataGrid.SelectedItem != null)
             {
-                clientsRep.RemoveClient((Client)grid.SelectedItem);
+                Client c = (Client)ClientsDataGrid.SelectedItem;
+                clientsRep.RemoveClient(c);
+                clientsRep.SaveToXML();
+                ClientsDataGrid.ItemsSource = new ObservableCollection<Client>(clientsRep.ClientList);
             }
         }
 

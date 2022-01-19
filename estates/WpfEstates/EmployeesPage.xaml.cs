@@ -37,7 +37,13 @@ namespace WpfEstates
         }
         private void DeleteBtnClick(object sender, RoutedEventArgs e)
         {
-
+            if (EmployeesDataGrid.SelectedItem != null)
+            {
+                Employee em = (Employee) EmployeesDataGrid.SelectedItem;
+                employeesRep.RemoveEmployee(em);
+                employeesRep.SaveToXML();
+                EmployeesDataGrid.ItemsSource = new ObservableCollection<Employee>(employeesRep.Employelist);
+            }
         }
 
         private void AddEmployee_Click(object sender, RoutedEventArgs e)

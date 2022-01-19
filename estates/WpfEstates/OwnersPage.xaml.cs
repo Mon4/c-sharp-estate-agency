@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,7 +30,7 @@ namespace WpfEstates
             InitializeComponent();
             if (ownersRep is object)
             {
-                
+
                 OwnersLabel.Content = ownersRep.Name;
                 OwnersDataGrid.ItemsSource = new ObservableCollection<Owner>(ownersRep.OwnerList);
             }
@@ -37,13 +38,19 @@ namespace WpfEstates
 
         private void OwnersDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            //throw new NotImplementedException();
+           
         }
+
         private void DeleteBtnClick(object sender, RoutedEventArgs e)
         {
-
+            if (OwnersDataGrid.SelectedItem != null)
+            {
+                Owner o = (Owner)OwnersDataGrid.SelectedItem;
+                ownersRep.RemoveOwner(o);
+                ownersRep.SaveToXML();
+                OwnersDataGrid.ItemsSource = new ObservableCollection<Owner>(ownersRep.OwnerList);
+            }
         }
-
         private void AddCompany_Click(object sender, RoutedEventArgs e)
         {
             Company c = new Company();
@@ -52,7 +59,7 @@ namespace WpfEstates
             if (result == true)
             {
                 ownersRep.AddOwner(c);
-                OwnersDataGrid.ItemsSource= new ObservableCollection<Owner>(ownersRep.OwnerList);
+                OwnersDataGrid.ItemsSource = new ObservableCollection<Owner>(ownersRep.OwnerList);
                 ownersRep.SaveToXML();
             }
         }
