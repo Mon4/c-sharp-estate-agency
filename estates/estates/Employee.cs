@@ -14,15 +14,12 @@ namespace estates
         string _surname;
         string _phoneNumber;
         decimal _salary;
-        decimal _sale_bonus;
-        int _sold_estates = 0;
+
 
         public string Name { get => _name; set => _name = value; }
         public string Surname { get => _surname; set => _surname = value; }
         public string PhoneNumber1 { get => _phoneNumber; set => _phoneNumber = value; }
         public decimal Salary { get => _salary; set => _salary = value; }
-        public decimal Sale_bonus { get => _sale_bonus; set => _sale_bonus = value; }
-        public int Sold_estates { get => _sold_estates; set => _sold_estates = value; }
 
         public Employee() { }
         public Employee(string name, string surname, string phoneNumber, decimal salary)
@@ -31,14 +28,8 @@ namespace estates
             Surname = surname;
             PhoneNumber1 = PhoneNumber(phoneNumber);
             Salary = salary;
-            Sale_bonus = 0;
-            Sold_estates = 0;
         }
 
-        public void PaySaleBonus()
-        {
-            _sale_bonus = 0;
-        }
         public void ChangeSalary(decimal newSalary)
         {
             _salary = newSalary;
