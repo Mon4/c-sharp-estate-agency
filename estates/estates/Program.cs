@@ -51,8 +51,8 @@ namespace estates
             crep1.SaveToXML();
             or1.AddOwner(co1);
             or1.AddOwner(po1);
-            est1.AddEstate(f1);
             est1.AddEstate(h1);
+            est1.AddEstate(f1);
             est1.SaveToXML();
             empr1.AddEmployee(e1);
             empr1.SaveToXML();

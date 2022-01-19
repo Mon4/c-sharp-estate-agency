@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <ClientsRepository xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Repository of the clients</Name>
+  <Name>List of clients</Name>
   <ClientList>
     <Client>
-      <Name>Adam</Name>
-      <Surname>Nowak</Surname>
-      <PhoneNumber>000111222</PhoneNumber>
-      <DateOfBirth>1900-12-11T00:00:00</DateOfBirth>
+      <Name>Jan</Name>
+      <Surname>Kowalski</Surname>
+      <PhoneNumber>512132546</PhoneNumber>
+      <DateOfBirth>1980-12-15T00:00:00</DateOfBirth>
     </Client>
   </ClientList>
 </ClientsRepository>

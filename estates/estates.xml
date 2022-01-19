@@ -2,30 +2,6 @@
 <EstatesRepository xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Name>List of estates</Name>
   <EstateList>
-    <Estate xsi:type="Flat">
-      <Id>2</Id>
-      <Adress>ul. Mickiewicza 1</Adress>
-      <ZipCode>32-123</ZipCode>
-      <City>Kraków</City>
-      <Price>400000</Price>
-      <Area>90</Area>
-      <Furniture>true</Furniture>
-      <Balcony>false</Balcony>
-      <RoomsNumber>5</RoomsNumber>
-      <Description>nice flat</Description>
-      <Bedrooms>1</Bedrooms>
-      <Owner xsi:type="PrivateOwner">
-        <Adress>ul. Kwiatowa 4</Adress>
-        <ZipCode>32-123</ZipCode>
-        <City>Kraków</City>
-        <PhoneNumber>123056789</PhoneNumber>
-        <EstatesNumber>2</EstatesNumber>
-        <Name>Mariusz</Name>
-        <Surname>Grzyb</Surname>
-      </Owner>
-      <Building_development>kamienica</Building_development>
-      <Level>10</Level>
-    </Estate>
     <Estate xsi:type="House">
       <Id>1</Id>
       <Adress>ul. Niebieska 14</Adress>
@@ -50,6 +26,30 @@
       <Levels>2</Levels>
       <Garden>true</Garden>
       <GardenArea>20</GardenArea>
+    </Estate>
+    <Estate xsi:type="Flat">
+      <Id>2</Id>
+      <Adress>Kamienna 4</Adress>
+      <ZipCode>56-970</ZipCode>
+      <City>Kraków</City>
+      <Price>123000</Price>
+      <Area>67</Area>
+      <Furniture>true</Furniture>
+      <Balcony>true</Balcony>
+      <RoomsNumber>6</RoomsNumber>
+      <Description />
+      <Bedrooms>4</Bedrooms>
+      <Owner xsi:type="Company">
+        <Adress>ul. Zielona 12</Adress>
+        <ZipCode>23-534</ZipCode>
+        <City>Kraków</City>
+        <PhoneNumber>123456789</PhoneNumber>
+        <EstatesNumber>1</EstatesNumber>
+        <NIP>123-123-12-12</NIP>
+        <CompanyName>BUDUJEMY_SE</CompanyName>
+      </Owner>
+      <Building_development>blok</Building_development>
+      <Level>0</Level>
     </Estate>
   </EstateList>
 </EstatesRepository>

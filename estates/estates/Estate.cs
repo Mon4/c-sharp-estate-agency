@@ -15,7 +15,7 @@ namespace estates
     public abstract class Estate : IComparable
     {
         int _id;
-        static int id_now;
+        private static int id_now;
         string _adress;
         string _zipCode;
         string _city;
@@ -32,15 +32,15 @@ namespace estates
         /// </summary>
         static Estate()
         {
-            id_now = 0;
+            Id_now = 0;
         }
         /// <summary>
         /// Default constructor, sets id to id_now +1, increments id_now.
         /// </summary>
         public Estate()
         {
-            Id = id_now + 1;
-            id_now++;
+            Id = Id_now + 1;
+            Id_now++;
         }
         /// <summary>
         /// Creates new Estate with given information and refers to default constructor
@@ -143,6 +143,8 @@ namespace estates
         /// Estate owner property
         /// </summary>
         public Owner Owner { get => _owner; set => _owner = value; }
+        public static int Id_now { get => id_now; set => id_now = value; }
+
         /// <summary>
         /// Returns informations about Estates in text.
         /// </summary>

@@ -75,12 +75,15 @@ namespace WpfEstates
             AddFlatWindow flatWindow = new AddFlatWindow(flat);
             bool? result = flatWindow.ShowDialog();
             ownersRep = OwnersRepository.ReadXML();
+            EstatesRepository estatesRep2;
+            estatesRep2 = EstatesRepository.ReadXML();
             if (result == true)
             {
-                estatesRep.AddEstate(flat);
-                EstatesDataGrid.ItemsSource = new ObservableCollection<Estate>(estatesRep.EstateList);
+                flat.Id = estatesRep2.EstateList.Last().Id + 1;
+                estatesRep2.AddEstate(flat);
+                EstatesDataGrid.ItemsSource = new ObservableCollection<Estate>(estatesRep2.EstateList);
                 ownersRep.FindOwnerbyNumber(flat.Owner.PhoneNumber).EstatesNumber = flat.Owner.EstatesNumber;
-                estatesRep.SaveToXML();
+                estatesRep2.SaveToXML();
                 ownersRep.SaveToXML();
             }
         }
@@ -95,12 +98,15 @@ namespace WpfEstates
             AddHouseWindow houseWindow = new AddHouseWindow(house);
             bool? result = houseWindow.ShowDialog();
             ownersRep = OwnersRepository.ReadXML();
+            EstatesRepository estatesRep2;
+            estatesRep2 = EstatesRepository.ReadXML();
             if (result == true)
             {
-                estatesRep.AddEstate(house);
-                EstatesDataGrid.ItemsSource = new ObservableCollection<Estate>(estatesRep.EstateList);
+                house.Id = estatesRep2.EstateList.Last().Id + 1;
+                estatesRep2.AddEstate(house);
+                EstatesDataGrid.ItemsSource = new ObservableCollection<Estate>(estatesRep2.EstateList);
                 ownersRep.FindOwnerbyNumber(house.Owner.PhoneNumber).EstatesNumber = house.Owner.EstatesNumber;
-                estatesRep.SaveToXML();
+                estatesRep2.SaveToXML();
                 ownersRep.SaveToXML();
             }
         }
