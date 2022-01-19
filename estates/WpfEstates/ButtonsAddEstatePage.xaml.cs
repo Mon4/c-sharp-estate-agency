@@ -17,6 +17,7 @@ namespace WpfEstates
 {
     /// <summary>
     /// Interaction logic for ButtonsAddEstatePage.xaml
+    /// 
     /// </summary>
     public partial class ButtonsAddEstatePage : Page
     {

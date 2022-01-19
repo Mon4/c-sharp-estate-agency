@@ -20,10 +20,14 @@ namespace WpfEstates
 {
     /// <summary>
     /// Interaction logic for OwnersPage.xaml
+    /// Page with information about Owners in datagrid.
     /// </summary>
     public partial class OwnersPage : Page
     {
         OwnersRepository ownersRep;
+        /// <summary>
+        ///  Reads xml file to OwnersDataGrid.
+        /// </summary>
         public OwnersPage()
         {
             ownersRep = OwnersRepository.ReadXML();
@@ -40,7 +44,11 @@ namespace WpfEstates
         {
            
         }
-
+        /// <summary>
+        /// Deletes row of data from datagrid where selected owner is.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void DeleteBtnClick(object sender, RoutedEventArgs e)
         {
             if (OwnersDataGrid.SelectedItem != null)
@@ -51,6 +59,11 @@ namespace WpfEstates
                 OwnersDataGrid.ItemsSource = new ObservableCollection<Owner>(ownersRep.OwnerList);
             }
         }
+        /// <summary>
+        /// Adds company to datagrid if result is true(if data is correct and user wants to save it).
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AddCompany_Click(object sender, RoutedEventArgs e)
         {
             Company c = new Company();
@@ -63,7 +76,11 @@ namespace WpfEstates
                 ownersRep.SaveToXML();
             }
         }
-
+        /// <summary>
+        /// Adds Private owner to datagrid if result is true(if data is correct and user wants to save it).
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AddPrivateOwner_Click(object sender, RoutedEventArgs e)
         {
             PrivateOwner c = new PrivateOwner();

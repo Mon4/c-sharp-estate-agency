@@ -7,8 +7,12 @@
       <Surname>Nowak</Surname>
       <PhoneNumber1>801234123</PhoneNumber1>
       <Salary>2500</Salary>
-      <Sale_bonus>0</Sale_bonus>
-      <Sold_estates>0</Sold_estates>
+    </Employee>
+    <Employee>
+      <Name>Maria</Name>
+      <Surname>Zawadzka</Surname>
+      <PhoneNumber1>334768522</PhoneNumber1>
+      <Salary>2000</Salary>
     </Employee>
   </Employelist>
 </EmployeesRepository>

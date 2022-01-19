@@ -19,10 +19,14 @@ namespace WpfEstates
 {
     /// <summary>
     /// Interaction logic for MeetingsPage.xaml
+    /// Page with information about Meetings in datagrid.
     /// </summary>
     public partial class MeetingsPage : Page
     {
         MeetingsRepository meetingsRep;
+        /// <summary>
+        /// Reads xml file to MeetingsDataGrid.
+        /// </summary>
         public MeetingsPage()
         {
             meetingsRep = MeetingsRepository.ReadXML();
@@ -33,6 +37,11 @@ namespace WpfEstates
                 MeetingsDataGrid.ItemsSource = new ObservableCollection<Meeting>(meetingsRep.Meetingslist);
             }
         }
+        /// <summary>
+        /// Deletes row of data from datagrid where selected meeting is.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void DeleteBtnClick(object sender, RoutedEventArgs e)
         {
             if (MeetingsDataGrid.SelectedItem != null)
@@ -43,7 +52,11 @@ namespace WpfEstates
                 MeetingsDataGrid.ItemsSource = new ObservableCollection<Meeting>(meetingsRep.Meetingslist);
             }
         }
-
+        /// <summary>
+        /// Adds meeting to datagrid if result is true(if data is correct and user wants to save it)
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Meeting meeting = new Meeting();

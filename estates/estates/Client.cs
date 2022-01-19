@@ -34,10 +34,21 @@ namespace estates
             _phoneNumber = CheckPhoneNumber(phoneNumber);
             DateTime.TryParseExact(date, new[]{"dd/MM/yyyy", "dd.mm.yyyy"}, null, System.Globalization.DateTimeStyles.None, out _dateOfBirth);
         }
-
+        /// <summary>
+        /// Client's name property
+        /// </summary>
         public string Name { get => _name; set => _name = value; }
+        /// <summary>
+        /// Client's surname property
+        /// </summary>
         public string Surname { get => _surname; set => _surname = value; }
+        /// <summary>
+        /// Client's Phone number property
+        /// </summary>
         public string PhoneNumber { get => _phoneNumber; set => _phoneNumber = value; }
+        /// <summary>
+        /// Client's date of birth property
+        /// </summary>
         public DateTime DateOfBirth { get => _dateOfBirth; set => _dateOfBirth = value; }
 
         /// <summary>

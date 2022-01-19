@@ -19,11 +19,14 @@ namespace WpfEstates
 {
     /// <summary>
     /// Interaction logic for ClientsPage.xaml
+    /// Page with information about Clients in datagrid.
     /// </summary>
     public partial class ClientsPage : Page
     {
         public ClientsRepository clientsRep;
-
+        /// <summary>
+        /// Reads xml file to ClientDataGrid.
+        /// </summary>
         public ClientsPage()
         {
             clientsRep = ClientsRepository.ReadXML();
@@ -39,6 +42,11 @@ namespace WpfEstates
         {
 
         }
+        /// <summary>
+        /// Deletes row of data from datagrid where selected client is.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void DeleteBtnClick(object sender, RoutedEventArgs e)
         {
             if (ClientsDataGrid.SelectedItem != null)
@@ -49,7 +57,11 @@ namespace WpfEstates
                 ClientsDataGrid.ItemsSource = new ObservableCollection<Client>(clientsRep.ClientList);
             }
         }
-
+        /// <summary>
+        /// Adds client to datagrid if result is true(if data is correct and user wants to save it).
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AddClient_Click(object sender, RoutedEventArgs e)
         {
             Client client = new Client();

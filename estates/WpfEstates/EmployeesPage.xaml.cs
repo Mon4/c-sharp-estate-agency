@@ -19,10 +19,14 @@ namespace WpfEstates
 {
     /// <summary>
     /// Interaction logic for EmployeesPage.xaml
+    /// Page with information about Employees in datagrid.
     /// </summary>
     public partial class EmployeesPage : Page
     {
         EmployeesRepository employeesRep;
+        /// <summary>
+        /// Reads xml file to EmployeesDataGrid.
+        /// </summary>
         public EmployeesPage()
         {
             employeesRep = EmployeesRepository.ReadXML();
@@ -35,6 +39,11 @@ namespace WpfEstates
             }
 
         }
+        /// <summary>
+        /// Deletes row of data from datagrid where selected employee is.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void DeleteBtnClick(object sender, RoutedEventArgs e)
         {
             if (EmployeesDataGrid.SelectedItem != null)
@@ -45,6 +54,11 @@ namespace WpfEstates
                 EmployeesDataGrid.ItemsSource = new ObservableCollection<Employee>(employeesRep.Employelist);
             }
         }
+        /// <summary>
+        /// Adds employee to datagrid if result is true(if data is correct and user wants to save it).
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
 
         private void AddEmployee_Click(object sender, RoutedEventArgs e)
         {
