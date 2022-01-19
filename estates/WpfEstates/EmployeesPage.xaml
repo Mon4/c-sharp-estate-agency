@@ -16,8 +16,6 @@
                 <DataGridTextColumn x:Name="Surname" Binding="{Binding Surname}" Header="Surname"></DataGridTextColumn>
                 <DataGridTextColumn x:Name="PhoneNumber" Binding="{Binding PhoneNumber1}" Header="PhoneNumber"></DataGridTextColumn>
                 <DataGridTextColumn x:Name="Salary" Binding="{Binding Salary}" Header="Salary"></DataGridTextColumn>
-                <DataGridTextColumn x:Name="Sale_bonus" Binding="{Binding Sale_bonus}" Header="Sale_bonus"></DataGridTextColumn>
-                <DataGridTextColumn x:Name="Sold_estates" Binding="{Binding Sold_estates}" Header="Sold_estates"></DataGridTextColumn>
                 <DataGridTemplateColumn>
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
