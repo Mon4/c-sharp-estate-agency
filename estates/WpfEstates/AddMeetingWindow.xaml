@@ -13,9 +13,9 @@
         <StackPanel Orientation="Vertical">
             <Label x:Name="Employee"        Content="Employee"          Margin="0 50 150 0" FontSize="15"></Label>
             <Label x:Name="Estate"          Content="Estate"            Margin="0 0 150 0" FontSize="15"></Label>
-            <Label x:Name="Date"            Content="Date"              Margin="0 0 150 0" FontSize="15"></Label>
+            <Label x:Name="Date"            Content="Date and time"     Margin="0 0 150 0" FontSize="15"></Label>
             <Label x:Name="Client"          Content="Client"            Margin="0 0 150 0" FontSize="15"></Label>
-            <Label x:Name="KindOfMeeting1"   Content="Kind of meeting"   Margin="0 0 150 0" FontSize="15"></Label>
+            <Label x:Name="KindOfMeeting1"   Content="Kind of meeting"  Margin="0 0 150 0" FontSize="15"></Label>
         </StackPanel>
 
         <StackPanel Orientation="Vertical">

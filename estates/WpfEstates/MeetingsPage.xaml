@@ -13,7 +13,7 @@
             <DataGrid.Columns>
                 <DataGridTextColumn x:Name="Employee" Binding="{Binding Employee}" Header="Employee"></DataGridTextColumn>
                 <DataGridTextColumn x:Name="Estate" Binding="{Binding Estate}" Header="Estate"></DataGridTextColumn>
-                <DataGridTextColumn x:Name="Date" Binding="{Binding Date}" Header="Date"></DataGridTextColumn>
+                <DataGridTextColumn x:Name="Date" Binding="{Binding Date}" Header="Date and time"></DataGridTextColumn>
                 <DataGridTextColumn x:Name="Client" Binding="{Binding Client}" Header="Client"></DataGridTextColumn>
                 <DataGridTextColumn x:Name="KindOfMeeting" Binding="{Binding KindOfMeeting}" Header="KindOfMeeting"></DataGridTextColumn>
                 <DataGridTemplateColumn>

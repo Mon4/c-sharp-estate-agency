@@ -31,7 +31,7 @@ namespace estates
             _client = client;
             _employee = employee;
             _estate = estate;
-            DateTime.TryParseExact(date, new[]{"dd/MM/yyyy", "dd.MM.yyyy" , "dd-MM-yyyy"}, null, System.Globalization.DateTimeStyles.None, out _date);
+            DateTime.TryParseExact(date, new[]{"dd/MM/yyyy HH:mm", "dd.MM.yyyy HH:mm" , "dd-MM-yyyy HH:mm"}, null, System.Globalization.DateTimeStyles.None, out DateTime _date);
             _kindOfMeeting = kindOfMeeting;
         }
 
