@@ -12,7 +12,17 @@ namespace estates
         string _phoneNumber;
         DateTime _dateOfBirth;
 
+        /// <summary>
+        /// Default constructor
+        /// </summary>
         public Client() { }
+        /// <summary>
+        /// parametric constructor
+        /// </summary>
+        /// <param name="name">client's name</param>
+        /// <param name="surname">client's surname</param>
+        /// <param name="phoneNumber">client's phone number</param>
+        /// <param name="date">date of birth</param>
         public Client(string name, string surname, string phoneNumber, string date)
         {
             _name = name;
@@ -26,11 +36,20 @@ namespace estates
         public string PhoneNumber { get => _phoneNumber; set => _phoneNumber = value; }
         public DateTime DateOfBirth { get => _dateOfBirth; set => _dateOfBirth = value; }
 
-
+        /// <summary>
+        /// Returns informations about clients in text.
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             return $"{Name} {Surname} (phone number: {PhoneNumber}, date of birth: {DateOfBirth: dd.mm.yyyy})";
         }
+        /// <summary>
+        /// checks if phone numer has 9 digits in 3-3-3 format
+        /// if its true its returns the number if its false it throws exception
+        /// </summary>
+        /// <param name="phoneNumber">client's phone number</param>
+        /// <returns></returns>
 
         public string CheckPhoneNumber(string phoneNumber)
         {
@@ -53,6 +72,12 @@ namespace estates
                 return "unknown phone number";
             }
         }
+        /// <summary>
+        /// Compares Client's Surnames, if they are the same, then it compares clients' Names
+        /// 
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
         public int CompareTo(object obj)
         {
             Client pom = (Client)obj;

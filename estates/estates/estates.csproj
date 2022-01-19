@@ -56,6 +56,7 @@
     <Compile Include="EstatesRepository.cs" />
     <Compile Include="Flat.cs" />
     <Compile Include="House.cs" />
+    <Compile Include="IRepository.cs" />
     <Compile Include="Meeting.cs" />
     <Compile Include="MeetingsRepository.cs" />
     <Compile Include="NoItemFoundException.cs" />
