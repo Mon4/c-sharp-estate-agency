@@ -18,14 +18,23 @@ namespace WpfEstates
 {
     /// <summary>
     /// Interaction logic for AddOwnerWindow.xaml
+    /// AddPrivateowner window opens window that enables user to add new Private owner to estatelist 
+    /// by writing data in blank windows. User can also save the changes or cancel it and quit.
     /// </summary>
     public partial class AddPrivateOwnerWindow : Window
     {
         PrivateOwner priv;
+        /// <summary>
+        /// Default constructor.
+        /// </summary>
         public AddPrivateOwnerWindow()
         {
             InitializeComponent();
         }
+        /// <summary>
+        /// Parametric constructor, sets textboxes to default value.
+        /// </summary>
+        /// <param name="c"></param>
         public AddPrivateOwnerWindow(PrivateOwner c):this()
         {
             priv = c;
@@ -36,7 +45,12 @@ namespace WpfEstates
             Name.Text = priv.Name;
             Surname.Text = priv.Surname;
         }
-
+        /// <summary>
+        /// Adds Private owner to Estatelist, checks if the value is valid if not then throws exceptions,
+        /// checks if phone number and zip are valid and trows exceptions otherwise.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Save_Click(object sender, RoutedEventArgs e)
         {
             int working = 1;
@@ -76,6 +90,11 @@ namespace WpfEstates
                 this.Close();
             }
         }
+        /// <summary>
+        /// Quits the window.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
 
         private void Cancel_Click(object sender, RoutedEventArgs e)
         {

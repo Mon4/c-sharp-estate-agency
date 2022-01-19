@@ -18,14 +18,23 @@ namespace WpfEstates
 {
     /// <summary>
     /// Logika interakcji dla klasy AddCompanyWindow.xaml
+    /// Add Company window opens window that enables user to add new Company to estatelist 
+    /// by writing data in blank windows. User can also save the changes or cancel it and quit.
     /// </summary>
     public partial class AddCompanyWindow : Window
     {
         Company company;
+        /// <summary>
+        /// Default constructor
+        /// </summary>
         public AddCompanyWindow()
         {
             InitializeComponent();
         }
+        /// <summary>
+        /// Parametric constructor, sets textboxes to default value.
+        /// </summary>
+        /// <param name="c"></param>
         public AddCompanyWindow(Company c):this()
         {
             company = c;
@@ -36,12 +45,21 @@ namespace WpfEstates
             Nip.Text = company.NIP;
             CompanyName.Text = company.CompanyName;
         }
-
+        /// <summary>
+        ///  Quits the window.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Cancel_Click(object sender, RoutedEventArgs e)
         {
             Close();
         }
-
+        /// <summary>
+        /// Adds Company to Estatelist, checks if the value is valid if not then throws exceptions,
+        /// checks if phone number zip and nip are valid and trows exceptions otherwise.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Save_Click(object sender, RoutedEventArgs e)
         {
             {

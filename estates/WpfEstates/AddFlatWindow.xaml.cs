@@ -18,15 +18,24 @@ namespace WpfEstates
 {
     /// <summary>
     /// Interaction logic for AddFlatWindow.xaml
+    /// Add Flat window opens window that enables user to add new flat to Estatelist 
+    /// by writing data in blank windows. User can also save the changes or cancel it and quit.
     /// </summary>
     public partial class AddFlatWindow : Window
     {
         Flat flat;
         OwnersRepository owners = OwnersRepository.ReadXML();
+        /// <summary>
+        /// Default constructor.
+        /// </summary>
         public AddFlatWindow()
         {
             InitializeComponent();
         }
+        /// <summary>
+        /// Parametric constructor, sets textboxes to default value.
+        /// </summary>
+        /// <param name="f"></param>
 
         public AddFlatWindow(Flat f):this()
         {
@@ -45,7 +54,12 @@ namespace WpfEstates
             BuildingDevelopment.Text = flat.Building_development;
             Level.Text = flat.Level.ToString();
         }
-
+        /// <summary>
+        /// Adds flat to estatelist, checks if the value is valid if not then throws exceptions,
+        /// checks if zipcode is valid and trows exceptions otherwise.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Save_Click(object sender, RoutedEventArgs e)
         {
             {
@@ -103,7 +117,11 @@ namespace WpfEstates
                 }
             }
         }
-
+        /// <summary>
+        ///  Quits the window.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Cancel_Click(object sender, RoutedEventArgs e)
         {
             Close();
