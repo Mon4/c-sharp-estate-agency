@@ -12,11 +12,15 @@
 
         <DataGrid Name="OwnersDataGrid" VerticalAlignment="Top"  HorizontalAlignment="Left" Height="344" Width="800" Margin="0,63,0,0" IsReadOnly="True" AutoGenerateColumns="False" SelectionChanged="OwnersDataGrid_SelectionChanged">
             <DataGrid.Columns>
+                <DataGridTextColumn x:Name="Name" Binding="{Binding Name}" Header="Name"></DataGridTextColumn>
+                <DataGridTextColumn x:Name="Surname" Binding="{Binding Surname}" Header="Surname"></DataGridTextColumn>
+                <DataGridTextColumn x:Name="ComapnyName" Binding="{Binding CompanyName}" Header="Company Name"></DataGridTextColumn>
                 <DataGridTextColumn x:Name="Adress" Binding="{Binding Adress}" Header="Adress"></DataGridTextColumn>
                 <DataGridTextColumn x:Name="ZipCode" Binding="{Binding ZipCode}" Header="ZipCode"></DataGridTextColumn>
                 <DataGridTextColumn x:Name="City" Binding="{Binding City}" Header="City"></DataGridTextColumn>
-                <DataGridTextColumn x:Name="PhoneNumber" Binding="{Binding PhoneNumber}" Header="PhoneNumber"></DataGridTextColumn>
-                <DataGridTextColumn x:Name="EstatesNumber" Binding="{Binding EstatesNumber}" Header="EstatesNumber"></DataGridTextColumn>
+                <DataGridTextColumn x:Name="PhoneNumber" Binding="{Binding PhoneNumber}" Header="Phone Number"></DataGridTextColumn>
+                <DataGridTextColumn x:Name="EstatesNumber" Binding="{Binding EstatesNumber}" Header="Estates Number"></DataGridTextColumn>
+                <DataGridTextColumn x:Name="NIP" Binding="{Binding NIP}" Header="NIP"></DataGridTextColumn>
 
                 <DataGridTemplateColumn>
                     <DataGridTemplateColumn.CellTemplate>
