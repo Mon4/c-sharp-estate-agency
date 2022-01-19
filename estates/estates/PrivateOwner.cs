@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace estates
 {
+    /// <summary>
+    /// Private owner of estate, inherits from Owner and has additional informations about
+    /// name and surname of the owner.
+    /// </summary>
     [Serializable]
     public class PrivateOwner : Owner
     {

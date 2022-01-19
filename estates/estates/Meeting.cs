@@ -2,6 +2,10 @@
 
 namespace estates
 {
+    /// <summary>
+    /// Meeting in estate agency, containing informations about client employeee
+    /// estate, the date of meeting and kind of meeting.
+    /// </summary>
     [Serializable]
     public class Meeting:IComparable<Meeting>
     {

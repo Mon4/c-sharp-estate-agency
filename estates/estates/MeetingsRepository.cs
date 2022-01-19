@@ -8,6 +8,9 @@ using System.Xml.Serialization;
 
 namespace estates
 {
+    /// <summary>
+    /// Repository containing all meetings, has its name and list of meetings.
+    /// </summary>
     [Serializable]
     public class MeetingsRepository
     {

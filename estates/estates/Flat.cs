@@ -7,6 +7,10 @@ using System.Xml.Serialization;
 
 namespace estates
 {
+    /// <summary>
+    /// Flat - specific estate, inherits from estate and has additional informations 
+    /// about building developments and level of the flat.
+    /// </summary>
     [Serializable]
     public class Flat : Estate
     {

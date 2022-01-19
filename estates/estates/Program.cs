@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace estates
 {
+    /// <summary>
+    /// kind of meetings can be selling when we sell estate or watching
+    /// </summary>
     public enum KindOfMeeting { watching, selling }
+    /// <summary>
+    /// Status of meeting can be ended when ended without sale, endedWithSale when it was 
+    /// succesfully finished with sale, or waiting.
+    /// </summary>
     public enum StatusOfMeeting { waiting, ended, endedWithSale}
 
     internal class Program

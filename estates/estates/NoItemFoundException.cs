@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace estates
 {
+    /// <summary>
+    /// Exception thrown when there is no item found in list ( we use it when we want to remove
+    /// someone or something from list in repositories)
+    /// </summary>
     class NoItemFoundException:Exception
     {
         /// <summary>

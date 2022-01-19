@@ -4,6 +4,10 @@ using System.Xml.Serialization;
 
 namespace estates
 {
+    /// <summary>
+    /// Owners of the estate, contains informations about adress, zipcode, city, phonenumber and
+    /// estetes number, Company and PrivateOwner inherits from this abstract class.
+    /// </summary>
     [Serializable]
     [XmlInclude(typeof(PrivateOwner))]
     [XmlInclude(typeof(Company))]

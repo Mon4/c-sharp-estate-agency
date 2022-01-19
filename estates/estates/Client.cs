@@ -3,8 +3,12 @@ using System.Text.RegularExpressions;
 
 
 namespace estates
-{
+{   /// <summary>
+    /// Client class - client of estate agency, contains informations about his name,surname,
+    /// date of birth and phone number.
+    /// </summary>
     [Serializable]
+    
     public class Client:IComparable
     {
         string _name;

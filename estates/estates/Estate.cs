@@ -4,6 +4,11 @@ using System.Xml.Serialization;
 
 namespace estates
 {
+    /// <summary>
+    /// Estates - All the estates that estate agency has, contains informations about its
+    /// id, adress, zipCode, city, price, currentid, area,furniture, balcony, number of 
+    /// rooms and beds, description and information about its owner.
+    /// </summary>
     [Serializable]
     [XmlInclude(typeof(Flat))]
     [XmlInclude(typeof(House))]

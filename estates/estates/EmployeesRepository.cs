@@ -8,6 +8,9 @@ using System.Xml.Serialization;
 
 namespace estates
 {
+    /// <summary>
+    /// Repository containing all employees, has its name and list of employees.
+    /// </summary>
     [Serializable]
     public class EmployeesRepository:IComparer<Employee>,IRepository
     {

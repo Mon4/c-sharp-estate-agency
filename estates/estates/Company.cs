@@ -7,6 +7,10 @@ using System.Text.RegularExpressions;
 
 namespace estates
 {
+    /// <summary>
+    /// Company that is an owner of estate,inherits from owners and has additinal fields
+    /// Nip and company name
+    /// </summary>
     [Serializable]
     public class Company:Owner
     {

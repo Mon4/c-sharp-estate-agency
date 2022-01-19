@@ -6,7 +6,10 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace estates
-{
+{/// <summary>
+/// Employee working in estate agency, class contains information about his name, surname,
+/// phone number and salary.
+/// </summary>
     [Serializable]
     public class Employee
     {
