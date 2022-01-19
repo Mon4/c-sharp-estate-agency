@@ -68,11 +68,11 @@ namespace WpfEstates
                 meeting.Client = clients.FindClientbyToString(ClientBox.Text);
                 if (KindBox.Text == "Watching")
                 {
-                    meeting.Kind = KindOfMeeting.watching;
+                    meeting.KindOfMeeting = KindOfMeeting.watching;
                 }
                 else
                 {
-                    meeting.Kind = KindOfMeeting.selling;
+                    meeting.KindOfMeeting = KindOfMeeting.selling;
                 }
                 if(DateBox.Text=="" | EmployeeBox.SelectedIndex==-1 | EstatesBox.SelectedIndex==-1 | 
                     ClientBox.SelectedIndex==-1 | KindBox.SelectedIndex==-1)

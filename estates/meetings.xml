@@ -43,7 +43,7 @@
         <PhoneNumber>512132546</PhoneNumber>
         <DateOfBirth>1980-12-15T00:00:00</DateOfBirth>
       </Client>
-      <Kind>selling</Kind>
+      <KindOfMeeting>watching</KindOfMeeting>
     </Meeting>
     <Meeting>
       <Employee>
@@ -85,7 +85,7 @@
         <PhoneNumber>512132546</PhoneNumber>
         <DateOfBirth>1980-12-15T00:00:00</DateOfBirth>
       </Client>
-      <Kind>selling</Kind>
+      <KindOfMeeting>watching</KindOfMeeting>
     </Meeting>
     <Meeting>
       <Employee>
@@ -128,7 +128,7 @@
         <PhoneNumber>450670213</PhoneNumber>
         <DateOfBirth>2003-01-01T00:00:00</DateOfBirth>
       </Client>
-      <Kind>watching</Kind>
+      <KindOfMeeting>watching</KindOfMeeting>
     </Meeting>
     <Meeting>
       <Employee>
@@ -170,7 +170,7 @@
         <PhoneNumber>450670213</PhoneNumber>
         <DateOfBirth>2003-01-01T00:00:00</DateOfBirth>
       </Client>
-      <Kind>selling</Kind>
+      <KindOfMeeting>watching</KindOfMeeting>
     </Meeting>
     <Meeting>
       <Employee>
@@ -212,7 +212,50 @@
         <PhoneNumber>908765124</PhoneNumber>
         <DateOfBirth>1990-12-24T00:00:00</DateOfBirth>
       </Client>
-      <Kind>selling</Kind>
+      <KindOfMeeting>watching</KindOfMeeting>
+    </Meeting>
+    <Meeting>
+      <Employee>
+        <Name>Bogdan</Name>
+        <Surname>Sprzedawca</Surname>
+        <PhoneNumber1>123456003</PhoneNumber1>
+        <Salary>3400</Salary>
+        <Sale_bonus>0</Sale_bonus>
+        <Sold_estates>0</Sold_estates>
+      </Employee>
+      <Estate xsi:type="House">
+        <Id>19</Id>
+        <Adress>ul. Królewska 1</Adress>
+        <ZipCode>34-901</ZipCode>
+        <City>Sopot</City>
+        <Price>3400</Price>
+        <Area>120</Area>
+        <Furniture>false</Furniture>
+        <Balcony>true</Balcony>
+        <RoomsNumber>5</RoomsNumber>
+        <Description>Bardzo ładny dom, polecam, Kamil Stoch</Description>
+        <Bedrooms>2</Bedrooms>
+        <Owner xsi:type="Company">
+          <Adress>Podmorska 12</Adress>
+          <ZipCode>34-900</ZipCode>
+          <City>Biurkowice</City>
+          <PhoneNumber>900800100</PhoneNumber>
+          <EstatesNumber>1</EstatesNumber>
+          <NIP>1001001005</NIP>
+          <CompanyName>Budowanko</CompanyName>
+        </Owner>
+        <Levels>5</Levels>
+        <Garden>true</Garden>
+        <GardenArea>45</GardenArea>
+      </Estate>
+      <Date>0001-01-01T00:00:00</Date>
+      <Client>
+        <Name>Ryszard</Name>
+        <Surname>Ryszardowicz</Surname>
+        <PhoneNumber>450670213</PhoneNumber>
+        <DateOfBirth>2003-01-01T00:00:00</DateOfBirth>
+      </Client>
+      <KindOfMeeting>selling</KindOfMeeting>
     </Meeting>
   </Meetingslist>
 </MeetingsRepository>
