@@ -51,30 +51,5 @@
       <Garden>true</Garden>
       <GardenArea>20</GardenArea>
     </Estate>
-    <Estate xsi:type="House">
-      <Id>3</Id>
-      <Adress>ul. Adama Mickiewicza 12</Adress>
-      <ZipCode>32-095</ZipCode>
-      <City>Kraków</City>
-      <Price>300000</Price>
-      <Area>30</Area>
-      <Furniture>true</Furniture>
-      <Balcony>true</Balcony>
-      <RoomsNumber>3</RoomsNumber>
-      <Description>Small but nice flat</Description>
-      <Bedrooms>2</Bedrooms>
-      <Owner xsi:type="Company">
-        <Adress>ul. Zielona 12</Adress>
-        <ZipCode>23-534</ZipCode>
-        <City>Kraków</City>
-        <PhoneNumber>123456789</PhoneNumber>
-        <EstatesNumber>1</EstatesNumber>
-        <NIP>123-123-12-12</NIP>
-        <CompanyName>BUDUJEMY_SE</CompanyName>
-      </Owner>
-      <Levels>6</Levels>
-      <Garden>false</Garden>
-      <GardenArea>0</GardenArea>
-    </Estate>
   </EstateList>
 </EstatesRepository>

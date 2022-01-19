@@ -12,7 +12,7 @@ namespace estates
     /// Repository containing all meetings, has its name and list of meetings.
     /// </summary>
     [Serializable]
-    public class MeetingsRepository
+    public class MeetingsRepository:IRepository
     {
         string _name;
         List<Meeting> _meetingslist;

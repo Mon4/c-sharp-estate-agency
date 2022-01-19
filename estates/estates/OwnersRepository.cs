@@ -12,7 +12,7 @@ namespace estates
     /// Repository containing all owners, has its name and list of owners.
     /// </summary>
     [Serializable]
-    public class OwnersRepository
+    public class OwnersRepository:IRepository
     {
         string _name;
         List<Owner> _ownerList;

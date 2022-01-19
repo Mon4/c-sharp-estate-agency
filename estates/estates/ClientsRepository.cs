@@ -12,7 +12,7 @@ namespace estates
     /// Repository containing all our clients, contains name and list of clients.
     /// </summary>
     [Serializable]
-    public class ClientsRepository
+    public class ClientsRepository:IRepository
     {
         string _name;
         List<Client> _clientList;

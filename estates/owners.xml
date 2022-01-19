@@ -7,7 +7,7 @@
       <ZipCode>23-534</ZipCode>
       <City>Kraków</City>
       <PhoneNumber>123456789</PhoneNumber>
-      <EstatesNumber>1</EstatesNumber>
+      <EstatesNumber>0</EstatesNumber>
       <NIP>123-123-12-12</NIP>
       <CompanyName>BUDUJEMY_SE</CompanyName>
     </Owner>
@@ -19,15 +19,6 @@
       <EstatesNumber>2</EstatesNumber>
       <Name>Mariusz</Name>
       <Surname>Grzyb</Surname>
-    </Owner>
-    <Owner xsi:type="PrivateOwner">
-      <Adress>Al. Jana Pawła II</Adress>
-      <ZipCode>12-312</ZipCode>
-      <City>Warszawa</City>
-      <PhoneNumber>311212312</PhoneNumber>
-      <EstatesNumber>0</EstatesNumber>
-      <Name>Jan</Name>
-      <Surname>Kowalski</Surname>
     </Owner>
   </OwnerList>
 </OwnersRepository>

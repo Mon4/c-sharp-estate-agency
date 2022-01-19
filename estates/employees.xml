@@ -8,30 +8,5 @@
       <PhoneNumber1>801234123</PhoneNumber1>
       <Salary>2500</Salary>
     </Employee>
-    <Employee>
-<<<<<<< HEAD
-      <Name>Maria</Name>
-      <Surname>Zawadzka</Surname>
-      <PhoneNumber1>334768522</PhoneNumber1>
-      <Salary>2000</Salary>
-=======
-      <Name>Jan</Name>
-      <Surname>Kowal</Surname>
-      <PhoneNumber1>514123123</PhoneNumber1>
-      <Salary>5000</Salary>
-    </Employee>
-    <Employee>
-      <Name>Elżbieta</Name>
-      <Surname>Bogusławska</Surname>
-      <PhoneNumber1>501123123</PhoneNumber1>
-      <Salary>3000</Salary>
-    </Employee>
-    <Employee>
-      <Name>Dobromir</Name>
-      <Surname>Nowak</Surname>
-      <PhoneNumber1>904123317</PhoneNumber1>
-      <Salary>0</Salary>
->>>>>>> 67c8e93978689ee6948c3dfaef5e23189c7a2d2a
-    </Employee>
   </Employelist>
 </EmployeesRepository>

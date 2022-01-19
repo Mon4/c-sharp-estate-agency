@@ -12,7 +12,7 @@ namespace estates
     /// Repository containing all estates, has its name and list of estates
     /// </summary>
     [Serializable]
-    public class EstatesRepository
+    public class EstatesRepository:IRepository
     {
 
         string _name;
