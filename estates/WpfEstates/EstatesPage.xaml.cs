@@ -104,5 +104,7 @@ namespace WpfEstates
                 ownersRep.SaveToXML();
             }
         }
+
+       
     }
 }

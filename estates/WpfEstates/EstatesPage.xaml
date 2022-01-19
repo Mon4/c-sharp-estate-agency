@@ -12,7 +12,8 @@
     <Grid>
         <DataGrid x:Name="EstatesDataGrid" HorizontalAlignment="Left" 
                   Height="450" VerticalAlignment="Top" Width="800" Margin="0,58,0,0" 
-                  SelectionChanged="EstatesDataGrid_SelectionChanged" IsReadOnly="True" AutoGenerateColumns="False">
+                  SelectionChanged="EstatesDataGrid_SelectionChanged" IsReadOnly="True" 
+                  AutoGenerateColumns="False">
             <DataGrid.Columns>
                 <DataGridTextColumn x:Name="Id" Binding="{Binding Id}" Header="Id"></DataGridTextColumn>
                 <DataGridTextColumn x:Name="Adress" Binding="{Binding Adress}" Header="Adress"></DataGridTextColumn>
@@ -25,7 +26,7 @@
                 <DataGridTextColumn x:Name="RoomsNumber" Binding="{Binding RoomsNumber}" Header="Rooms Number"></DataGridTextColumn>
                 <DataGridTextColumn x:Name="Descrition" Binding="{Binding Description}" Header="Description"></DataGridTextColumn>
                 <DataGridTextColumn x:Name="Bedrooms" Binding="{Binding Bedrooms}" Header="Bedrooms"></DataGridTextColumn>
-                <DataGridTextColumn x:Name="Owner" Binding="{Binding Owner}" Header="Owner"></DataGridTextColumn>
+                <DataGridTextColumn x:Name="Owner" Binding="{Binding Owner}" Header="Owner" ></DataGridTextColumn>
                 <DataGridTemplateColumn>
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>

@@ -11,7 +11,7 @@ namespace estates
 /// phone number and salary.
 /// </summary>
     [Serializable]
-    public class Employee
+    public class Employee : IComparable
     {
         string _name;
         string _surname;
@@ -93,7 +93,12 @@ namespace estates
         /// <returns></returns>
         public override string ToString()
         {
-            return _name + " " + _surname + " " + "(Phone number: "+_phoneNumber+")";
+            return _name + " " + _surname + ", Phone number: ["+_phoneNumber+"]";
+        }
+
+        public int CompareTo(object other)
+        {
+            return this.Surname.CompareTo(((Employee)other).Surname);
         }
     }
 

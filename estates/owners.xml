@@ -20,5 +20,14 @@
       <Name>Mariusz</Name>
       <Surname>Skała</Surname>
     </Owner>
+    <Owner xsi:type="PrivateOwner">
+      <Adress>ul.Długa 12</Adress>
+      <ZipCode>12-123</ZipCode>
+      <City>Warszawa</City>
+      <PhoneNumber>123123123</PhoneNumber>
+      <EstatesNumber>0</EstatesNumber>
+      <Name>Jan</Name>
+      <Surname>Głowa</Surname>
+    </Owner>
   </OwnerList>
 </OwnersRepository>

@@ -12,7 +12,7 @@ namespace estates
     [Serializable]
     [XmlInclude(typeof(Flat))]
     [XmlInclude(typeof(House))]
-    public abstract class Estate :IComparable
+    public abstract class Estate : IComparable
     {
         int _id;
         static int id_now;
@@ -57,7 +57,7 @@ namespace estates
         /// <param name="bedrooms">Numer of bedrooms</param>
         /// <param name="owner">Owner of the Estate</param>
         protected Estate(string adress, string zipCode, string city, decimal price, decimal area,
-            bool furniture, bool balcony, int roomsNumber, string description, int bedrooms, Owner owner):this()
+            bool furniture, bool balcony, int roomsNumber, string description, int bedrooms, Owner owner) : this()
         {
             Adress = adress;
             ZipCode = zipCode;
@@ -142,27 +142,34 @@ namespace estates
         /// <summary>
         /// Estate owner property
         /// </summary>
-        public Owner Owner { get => _owner; set => _owner = value;}
+        public Owner Owner { get => _owner; set => _owner = value; }
         /// <summary>
         /// Returns informations about Estates in text.
         /// </summary>
         /// <returns></returns>
         public override string ToString()
         {
-            return $"ID: {Id:d5} Adress: {Adress} {ZipCode} {City} {Owner.EstatesNumber}";
+            return $"ID: {Id:d5} City: {City} Adress: {Adress} [{ZipCode}]";
         }
+
+        public int CompareTo(object other)
+        {
+
+            var thisS = this is House h ? h.City: ((Flat)this).City;
+            var otherS = other is House h2 ? h2.City : ((Flat)other).City;
+            return thisS.CompareTo(otherS);
+
+        }
+
         /// <summary>
         /// Compares estate's price
         /// </summary>
         /// <param name="obj"></param>
         /// <returns></returns>
-        public int CompareTo(object obj)
-        {
-            return _price.CompareTo(obj);
-        }
+
     }
 
-    
+
 
 
 }

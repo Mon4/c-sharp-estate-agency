@@ -11,7 +11,7 @@ namespace estates
     [Serializable]
     [XmlInclude(typeof(PrivateOwner))]
     [XmlInclude(typeof(Company))]
-    public abstract class Owner :IComparable<Owner>
+    public abstract class Owner : IComparable
     {
         string _adress; //street and home number
         string _zipCode;
@@ -117,14 +117,16 @@ namespace estates
         /// <param name="other"></param>
         /// <returns></returns>
 
-        public int CompareTo(Owner other)
+        public int CompareTo(object other)
         {
-            return this._estatesNumber.CompareTo(other.EstatesNumber);
+            var thisS = this is PrivateOwner po ? po.Surname + po.Name : ((Company)this).CompanyName;
+            var otherS = other is PrivateOwner po2 ? po2.Surname + po2.Name : ((Company)other).CompanyName;
+            return thisS.CompareTo(otherS);
         }
     }
 
-    
 
-    
+
+
 
 }

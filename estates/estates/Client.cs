@@ -57,7 +57,7 @@ namespace estates
         /// <returns></returns>
         public override string ToString()
         {
-            return $"{Name} {Surname} (phone number: {PhoneNumber}, date of birth: {DateOfBirth: dd.mm.yyyy})";
+            return $"{Name} {Surname}, phone number: [{PhoneNumber}]";
         }
         /// <summary>
         /// checks if phone numer has 9 digits in 3-3-3 format

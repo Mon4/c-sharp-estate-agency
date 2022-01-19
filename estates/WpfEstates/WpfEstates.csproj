@@ -230,7 +230,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\estates\estates.csproj">
-      <Project>{9C871C1E-B5E9-4FFF-91F4-070482899BBF}</Project>
+      <Project>{9c871c1e-b5e9-4fff-91f4-070482899bbf}</Project>
       <Name>estates</Name>
     </ProjectReference>
   </ItemGroup>
