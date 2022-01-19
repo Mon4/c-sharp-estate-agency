@@ -8,8 +8,6 @@
         <Surname>Nowak</Surname>
         <PhoneNumber1>801234123</PhoneNumber1>
         <Salary>2500</Salary>
-        <Sale_bonus>0</Sale_bonus>
-        <Sold_estates>0</Sold_estates>
       </Employee>
       <Estate xsi:type="House">
         <Id>1</Id>
@@ -42,6 +40,170 @@
         <Surname>Kowalski</Surname>
         <PhoneNumber>512132546</PhoneNumber>
         <DateOfBirth>1980-12-15T00:00:00</DateOfBirth>
+      </Client>
+      <KindOfMeeting>selling</KindOfMeeting>
+    </Meeting>
+    <Meeting>
+      <Employee>
+        <Name>Janina</Name>
+        <Surname>Nowak</Surname>
+        <PhoneNumber1>801234123</PhoneNumber1>
+        <Salary>2500</Salary>
+      </Employee>
+      <Estate xsi:type="House">
+        <Id>1</Id>
+        <Adress>ul. Niebieska 14</Adress>
+        <ZipCode>31-642</ZipCode>
+        <City>Kraków</City>
+        <Price>50000</Price>
+        <Area>50</Area>
+        <Furniture>true</Furniture>
+        <Balcony>true</Balcony>
+        <RoomsNumber>4</RoomsNumber>
+        <Description>nice house</Description>
+        <Bedrooms>2</Bedrooms>
+        <Owner xsi:type="PrivateOwner">
+          <Adress>ul. Kwiatowa 4</Adress>
+          <ZipCode>32-123</ZipCode>
+          <City>Kraków</City>
+          <PhoneNumber>123056789</PhoneNumber>
+          <EstatesNumber>2</EstatesNumber>
+          <Name>Mariusz</Name>
+          <Surname>Grzyb</Surname>
+        </Owner>
+        <Levels>2</Levels>
+        <Garden>true</Garden>
+        <GardenArea>20</GardenArea>
+      </Estate>
+      <Date>0001-01-01T00:00:00</Date>
+      <Client>
+        <Name>Jan</Name>
+        <Surname>Kowalski</Surname>
+        <PhoneNumber>512132546</PhoneNumber>
+        <DateOfBirth>1980-12-15T00:00:00</DateOfBirth>
+      </Client>
+      <KindOfMeeting>watching</KindOfMeeting>
+    </Meeting>
+    <Meeting>
+      <Employee>
+        <Name>Janina</Name>
+        <Surname>Nowak</Surname>
+        <PhoneNumber1>801234123</PhoneNumber1>
+        <Salary>2500</Salary>
+      </Employee>
+      <Estate xsi:type="House">
+        <Id>1</Id>
+        <Adress>ul. Niebieska 14</Adress>
+        <ZipCode>31-642</ZipCode>
+        <City>Kraków</City>
+        <Price>50000</Price>
+        <Area>50</Area>
+        <Furniture>true</Furniture>
+        <Balcony>true</Balcony>
+        <RoomsNumber>4</RoomsNumber>
+        <Description>nice house</Description>
+        <Bedrooms>2</Bedrooms>
+        <Owner xsi:type="PrivateOwner">
+          <Adress>ul. Kwiatowa 4</Adress>
+          <ZipCode>32-123</ZipCode>
+          <City>Kraków</City>
+          <PhoneNumber>123056789</PhoneNumber>
+          <EstatesNumber>2</EstatesNumber>
+          <Name>Mariusz</Name>
+          <Surname>Grzyb</Surname>
+        </Owner>
+        <Levels>2</Levels>
+        <Garden>true</Garden>
+        <GardenArea>20</GardenArea>
+      </Estate>
+      <Date>0001-01-01T00:00:00</Date>
+      <Client>
+        <Name>Jan</Name>
+        <Surname>Kowalski</Surname>
+        <PhoneNumber>512132546</PhoneNumber>
+        <DateOfBirth>1980-12-15T00:00:00</DateOfBirth>
+      </Client>
+      <KindOfMeeting>watching</KindOfMeeting>
+    </Meeting>
+    <Meeting>
+      <Employee>
+        <Name>Dobromir</Name>
+        <Surname>Nowak</Surname>
+        <PhoneNumber1>904123317</PhoneNumber1>
+        <Salary>0</Salary>
+      </Employee>
+      <Estate xsi:type="House">
+        <Id>3</Id>
+        <Adress>ul. Adama Mickiewicza 12</Adress>
+        <ZipCode>32-095</ZipCode>
+        <City>Kraków</City>
+        <Price>300000</Price>
+        <Area>30</Area>
+        <Furniture>true</Furniture>
+        <Balcony>true</Balcony>
+        <RoomsNumber>3</RoomsNumber>
+        <Description>Small but nice flat</Description>
+        <Bedrooms>2</Bedrooms>
+        <Owner xsi:type="Company">
+          <Adress>ul. Zielona 12</Adress>
+          <ZipCode>23-534</ZipCode>
+          <City>Kraków</City>
+          <PhoneNumber>123456789</PhoneNumber>
+          <EstatesNumber>1</EstatesNumber>
+          <NIP>123-123-12-12</NIP>
+          <CompanyName>BUDUJEMY_SE</CompanyName>
+        </Owner>
+        <Levels>6</Levels>
+        <Garden>false</Garden>
+        <GardenArea>0</GardenArea>
+      </Estate>
+      <Date>0001-01-01T00:00:00</Date>
+      <Client>
+        <Name>Jadwiga</Name>
+        <Surname>Jagiełło</Surname>
+        <PhoneNumber>901123123</PhoneNumber>
+        <DateOfBirth>2001-11-15T00:00:00</DateOfBirth>
+      </Client>
+      <KindOfMeeting>watching</KindOfMeeting>
+    </Meeting>
+    <Meeting>
+      <Employee>
+        <Name>Dobromir</Name>
+        <Surname>Nowak</Surname>
+        <PhoneNumber1>904123317</PhoneNumber1>
+        <Salary>0</Salary>
+      </Employee>
+      <Estate xsi:type="House">
+        <Id>1</Id>
+        <Adress>ul. Niebieska 14</Adress>
+        <ZipCode>31-642</ZipCode>
+        <City>Kraków</City>
+        <Price>50000</Price>
+        <Area>50</Area>
+        <Furniture>true</Furniture>
+        <Balcony>true</Balcony>
+        <RoomsNumber>4</RoomsNumber>
+        <Description>nice house</Description>
+        <Bedrooms>2</Bedrooms>
+        <Owner xsi:type="PrivateOwner">
+          <Adress>ul. Kwiatowa 4</Adress>
+          <ZipCode>32-123</ZipCode>
+          <City>Kraków</City>
+          <PhoneNumber>123056789</PhoneNumber>
+          <EstatesNumber>2</EstatesNumber>
+          <Name>Mariusz</Name>
+          <Surname>Grzyb</Surname>
+        </Owner>
+        <Levels>2</Levels>
+        <Garden>true</Garden>
+        <GardenArea>20</GardenArea>
+      </Estate>
+      <Date>0001-01-01T00:00:00</Date>
+      <Client>
+        <Name>Danuta</Name>
+        <Surname>Wąż</Surname>
+        <PhoneNumber>623412111</PhoneNumber>
+        <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
       </Client>
       <KindOfMeeting>selling</KindOfMeeting>
     </Meeting>

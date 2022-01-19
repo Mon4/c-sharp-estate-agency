@@ -7,8 +7,24 @@
       <Surname>Nowak</Surname>
       <PhoneNumber1>801234123</PhoneNumber1>
       <Salary>2500</Salary>
-      <Sale_bonus>0</Sale_bonus>
-      <Sold_estates>0</Sold_estates>
+    </Employee>
+    <Employee>
+      <Name>Jan</Name>
+      <Surname>Kowal</Surname>
+      <PhoneNumber1>514123123</PhoneNumber1>
+      <Salary>5000</Salary>
+    </Employee>
+    <Employee>
+      <Name>Elżbieta</Name>
+      <Surname>Bogusławska</Surname>
+      <PhoneNumber1>501123123</PhoneNumber1>
+      <Salary>3000</Salary>
+    </Employee>
+    <Employee>
+      <Name>Dobromir</Name>
+      <Surname>Nowak</Surname>
+      <PhoneNumber1>904123317</PhoneNumber1>
+      <Salary>0</Salary>
     </Employee>
   </Employelist>
 </EmployeesRepository>

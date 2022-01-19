@@ -24,14 +24,14 @@ namespace estates
         /// <param name="client">Client</param>
         /// <param name="employee">Employee</param>
         /// <param name="estate">Estate</param>
-        /// <param name="date1">Date of meeting</param>
+        /// <param name="date">Date of meeting</param>
         /// <param name="kindOfMeeting">Kind of meeting</param>
-        public Meeting(Client client, Employee employee, Estate estate, string date1, KindOfMeeting kindOfMeeting)
+        public Meeting(Client client, Employee employee, Estate estate, string date, KindOfMeeting kindOfMeeting)
         {
             _client = client;
             _employee = employee;
             _estate = estate;
-            DateTime.TryParseExact(date1, new[]{"dd/MM/yyyy HH:mm", "dd.MM.yyyy HH:mm" }, null, System.Globalization.DateTimeStyles.None, out _date);
+            DateTime.TryParseExact(date, new[]{"dd/MM/yyyy", "dd.MM.yyyy" , "dd-MM-yyyy"}, null, System.Globalization.DateTimeStyles.None, out _date);
             _kindOfMeeting = kindOfMeeting;
         }
 
