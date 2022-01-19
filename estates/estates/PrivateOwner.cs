@@ -12,8 +12,19 @@ namespace estates
 
         string _name;
         string _surname;
-
+        /// <summary>
+        /// Default contructor.
+        /// </summary>
         public PrivateOwner() { }
+        /// <summary>
+        /// Parametric constructor, creates private owner with given informations.
+        /// </summary>
+        /// <param name="adress">Owner's adress</param>
+        /// <param name="zipCode">Owner's zipcode</param>
+        /// <param name="city">Owner's city</param>
+        /// <param name="phoneNumber">Owner's phone number</param>
+        /// <param name="name">Owner's name</param>
+        /// <param name="surname">Owner's surname</param>
         public PrivateOwner(string adress, string zipCode, string city, string phoneNumber,
             string name, string surname) : base(adress, zipCode, city, phoneNumber)
         {
@@ -23,6 +34,10 @@ namespace estates
 
         public string Name { get => _name; set => _name = value; }
         public string Surname { get => _surname; set => _surname = value; }
+        /// <summary>
+        /// Returns informations about Private Owner as text.
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             return $"{Name} {Surname}, " + base.ToString();

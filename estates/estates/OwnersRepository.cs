@@ -16,19 +16,33 @@ namespace estates
 
         public string Name { get => _name; set => _name = value; }
         public List<Owner> OwnerList { get => _ownerList; set => _ownerList = value; }
-
+        /// <summary>
+        /// Default constructor, inicializes OwnersList
+        /// </summary>
         public OwnersRepository()
         {
             OwnerList = new List<Owner>();
         }
+        /// <summary>
+        /// Parametric constructor, creates new OwnersRepository with given name, refers to default constructor.
+        /// </summary>
+        /// <param name="n"></param>
         public OwnersRepository(string n):this()
         {
             Name = n;
         }
+        /// <summary>
+        /// Adds new owner to OwnersList.
+        /// </summary>
+        /// <param name="o">owner</param>
         public void AddOwner(Owner o)
         {
             OwnerList.Add(o);
         }
+        /// <summary>
+        /// Removes owner from OwnersList if the list contains this person, if not throws exception
+        /// </summary>
+        /// <param name="o">owner</param>
         public void RemoveOwner(Owner o)
         {
             try
@@ -47,16 +61,27 @@ namespace estates
                 Console.WriteLine(nife.Message);
             }
         }
+        /// <summary>
+        /// Finds owner by its phone.
+        /// </summary>
+        /// <param name="phone"></param>
+        /// <returns></returns>
         public Owner FindOwnerbyNumber(string phone)
         {
             var pom = OwnerList.Find(x => x.PhoneNumber == phone);
             return pom;
         }
+        /// <summary>
+        /// Sorts owners.
+        /// </summary>
         public void SortOwners()
         {
             OwnerList.Sort();
         }
-
+        /// <summary>
+        /// Returns informations about owners as text.
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
@@ -67,6 +92,9 @@ namespace estates
             }
             return sb.ToString();
         }
+        /// <summary>
+        /// Saves OwnersRepository to xml file.
+        /// </summary>
         public void SaveToXML()
         {
             var xs = new XmlSerializer(typeof(OwnersRepository));
@@ -74,6 +102,10 @@ namespace estates
             xs.Serialize(fs, this);
             fs.Close();
         }
+        /// <summary>
+        /// Reads xml file to new OwnersRepository.
+        /// </summary>
+        /// <returns></returns>
         public static OwnersRepository ReadXML()
         {
             OwnersRepository owners_rep;

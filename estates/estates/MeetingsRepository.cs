@@ -17,18 +17,33 @@ namespace estates
         public string Name { get => _name; set => _name = value; }
         public List<Meeting> Meetingslist { get => _meetingslist; set => _meetingslist = value; }
 
+        /// <summary>
+        /// Default contructor, initializes Meetingslist
+        /// </summary>
         public MeetingsRepository()
         {
             Meetingslist = new List<Meeting>();
         }
+        /// <summary>
+        /// Parametric constructor, creates new repository with given name, refers to default constructor
+        /// </summary>
+        /// <param name="n"></param>
         public MeetingsRepository(string n):this()
         {
             Name = n;
         }
+        /// <summary>
+        /// Adds given meeting to MeetingsList
+        /// </summary>
+        /// <param name="m">meeting</param>
         public void AddMeeting(Meeting m)
         {
             Meetingslist.Add(m);
         }
+        /// <summary>
+        /// Removes given meeting from MeetingsList if the list contains this meeting, if not throws new exception
+        /// </summary>
+        /// <param name="m">meeting</param>
         public void RemoveMeeting(Meeting m)
         {
             try
@@ -47,6 +62,10 @@ namespace estates
                 Console.WriteLine(nife.Message);
             }
         }
+        /// <summary>
+        /// Finds meeting by date and writes it down.
+        /// </summary>
+        /// <param name="date"></param>
         public void FindMeetingbyDate(string date)
         {
             
@@ -59,10 +78,17 @@ namespace estates
                 }
             }
         }
+        /// <summary>
+        /// Sorts Meetingslist
+        /// </summary>
         public void SortMeetingsbyDate()
         {
             Meetingslist.Sort();
         }
+        /// <summary>
+        /// Returns informations about Meetings in text.
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
@@ -73,6 +99,9 @@ namespace estates
             }
             return sb.ToString();
         }
+        /// <summary>
+        /// Saves MeetingsRepository to xml file
+        /// </summary>
         public void SaveToXML()
         {
             var xs = new XmlSerializer(typeof(MeetingsRepository));
@@ -80,6 +109,10 @@ namespace estates
             xs.Serialize(fs, this);
             fs.Close();
         }
+        /// <summary>
+        /// Reads xml file and return new repository.
+        /// </summary>
+        /// <returns></returns>
         public static MeetingsRepository ReadXML()
         {
             MeetingsRepository meet_rep;

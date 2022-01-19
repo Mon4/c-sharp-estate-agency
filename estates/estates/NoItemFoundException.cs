@@ -8,7 +8,14 @@ namespace estates
 {
     class NoItemFoundException:Exception
     {
+        /// <summary>
+        /// Default contructor
+        /// </summary>
         public NoItemFoundException() : base() { }
+        /// <summary>
+        /// Parametric constructor
+        /// </summary>
+        /// <param name="msg"></param>
         public NoItemFoundException(string msg) : base(msg) { }
     }
 }

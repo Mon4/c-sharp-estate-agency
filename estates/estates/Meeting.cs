@@ -10,8 +10,18 @@ namespace estates
         Estate _estate;
         DateTime _date;
         KindOfMeeting _kindOfMeeting;
-
+        /// <summary>
+        /// Default contructor.
+        /// </summary>
         public Meeting() { }
+        /// <summary>
+        /// Parametric constructor, creates meeting with given informations.
+        /// </summary>
+        /// <param name="client">Client</param>
+        /// <param name="employee">Employee</param>
+        /// <param name="estate">Estate</param>
+        /// <param name="date1">Date of meeting</param>
+        /// <param name="kindOfMeeting">Kind of meeting</param>
         public Meeting(Client client, Employee employee, Estate estate, string date1, KindOfMeeting kindOfMeeting)
         {
             _client = client;
@@ -26,12 +36,20 @@ namespace estates
         public DateTime Date { get => _date; set => _date = value; }
         public Client Client { get => _client; set => _client = value; }
         public KindOfMeeting KindOfMeeting { get => _kindOfMeeting; set => _kindOfMeeting = value; }
-
+        /// <summary>
+        /// Return information about meeting to text.
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             return $"Time: {_date:dd-MM-yyyy HH:mm}, Adress: {_estate.Adress} {_estate.City}, Employee: {Employee.Name} " +
                 $"{Employee.Surname}, Client: {_client} [{_kindOfMeeting}]";
         }
+        /// <summary>
+        /// Compares meetings with their date.
+        /// </summary>
+        /// <param name="other"></param>
+        /// <returns></returns>
 
         public int CompareTo(Meeting other)
         {
