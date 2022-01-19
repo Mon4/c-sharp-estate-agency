@@ -127,7 +127,7 @@ namespace estates
             }
         }
         /// <summary>
-        /// 
+        /// Returns informations about Employees repository in text.
         /// </summary>
         /// <returns></returns>
         public override string ToString()
@@ -140,6 +140,9 @@ namespace estates
             }
             return sb.ToString();
         }
+        /// <summary>
+        /// Saves EmployeeRepository to xml file.
+        /// </summary>
         public void SaveToXML()
         {
             var xs = new XmlSerializer(typeof(EmployeesRepository));
@@ -147,6 +150,10 @@ namespace estates
             xs.Serialize(fs, this);
             fs.Close();
         }
+        /// <summary>
+        /// Reads from the xml file to new EmployeeRepository.
+        /// </summary>
+        /// <returns></returns>
         public static EmployeesRepository ReadXML()
         {
             EmployeesRepository emp_rep;

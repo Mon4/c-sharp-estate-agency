@@ -16,20 +16,34 @@ namespace estates
         List<Estate> _estateList;
         public string Name { get => _name; set => _name = value; }
         public List<Estate> EstateList { get => _estateList; set => _estateList = value; }
-
+        /// <summary>
+        /// Creates default constructor, inicializes EstateList
+        /// </summary>
         public EstatesRepository()
         {
             EstateList = new List<Estate>();
         }
+        /// <summary>
+        /// Parametric constructor, creates EstateRepository with given name, refers to default contructor.
+        /// </summary>
+        /// <param name="n">Estate's name</param>
         public EstatesRepository(string n):this()
         {
             Name = n;
         }
+        /// <summary>
+        /// Adds estate to EstateList.
+        /// </summary>
+        /// <param name="e"></param>
         public void AddEstate(Estate e)
         {
             EstateList.Add(e);
             e.Owner.EstatesNumber += 1;
         }
+        /// <summary>
+        /// Removes estate from EstateList if the list contains the element, if not then throws exception.
+        /// </summary>
+        /// <param name="e"></param>
         public void RemoveEstate(Estate e)
         {
             try
@@ -49,26 +63,17 @@ namespace estates
                 Console.WriteLine(nife.Message);
             }
         }
-        public void SellEstate(Estate est, Employee emp)
-        {
-            int numberOfEstates = EstateList.Count;
-            decimal bonus = est.Price*(decimal)0.01;
-            RemoveEstate(est);
-            if(EstateList.Count<numberOfEstates)
-            {
-                emp.Sale_bonus += bonus;
-                emp.Sold_estates += 1;
-            }
-            else
-            {
-                return;
-            }
-        }
+       /// <summary>
+       /// Sorts Estate
+       /// </summary>
         public void SortEstate()
         {
             EstateList.Sort();
         }
-
+        /// <summary>
+        /// Returns informations about EstateRepository in text.
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
@@ -79,7 +84,11 @@ namespace estates
             }
             return sb.ToString();
         }
-
+        /// <summary>
+        /// Finds Estete by string (important for GUI)
+        /// </summary>
+        /// <param name="text">string in tostring</param>
+        /// <returns></returns>
         public Estate FindEstatebyToString(string text)
         {
             foreach (var emp in EstateList)
@@ -92,6 +101,9 @@ namespace estates
             Flat emp1 = new Flat();
             return emp1;
         }
+        /// <summary>
+        /// Saves EstateRepository to xml file.
+        /// </summary>
         public void SaveToXML()
         {
             var xs = new XmlSerializer(typeof(EstatesRepository));                      
@@ -99,6 +111,10 @@ namespace estates
             xs.Serialize(fs, this);
             fs.Close();
         }
+        /// <summary>
+        /// Reads xml file to new EstateRepository
+        /// </summary>
+        /// <returns></returns>
         public static EstatesRepository ReadXML()
         {
             EstatesRepository estate_rep;
