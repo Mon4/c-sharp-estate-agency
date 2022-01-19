@@ -32,7 +32,7 @@ namespace estates
             Flat f1 = new Flat(adress: "ul. Mickiewicza 1", zipCode:"32-123", city:"Kraków", price: 400000, area:90, furniture:true, balcony:false, roomsNumber:5,
                 description: "nice flat", bedrooms: 1, owner: po1, building_development: "kamienica", level:10);
             
-            Meeting m1 = new Meeting(client: c1, employee: e1, estate: h1, date1: "12.12.2021 16:00", KindOfMeeting.selling);
+            Meeting m1 = new Meeting(client: c1, employee: e1, estate: h1, date: "12.12.2021 16:00", KindOfMeeting.selling);
             
             Company co1 = new Company(adress:"ul. Zielona 12", zipCode:"23-534", city:"Kraków", phoneNumber:"123456789", nip:"123-123-12-12", companyName:"BUDUJEMY_SE");
 

@@ -60,6 +60,9 @@ namespace estates
                 }
             }
         }
+        /// <summary>
+        /// Company name property
+        /// </summary>
         public string CompanyName { get => _companyName; set => _companyName = value; }
         /// <summary>
         /// Return informations about company in text.

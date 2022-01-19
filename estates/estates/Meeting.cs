@@ -24,21 +24,35 @@ namespace estates
         /// <param name="client">Client</param>
         /// <param name="employee">Employee</param>
         /// <param name="estate">Estate</param>
-        /// <param name="date1">Date of meeting</param>
+        /// <param name="date">Date of meeting</param>
         /// <param name="kindOfMeeting">Kind of meeting</param>
-        public Meeting(Client client, Employee employee, Estate estate, string date1, KindOfMeeting kindOfMeeting)
+        public Meeting(Client client, Employee employee, Estate estate, string date, KindOfMeeting kindOfMeeting)
         {
             _client = client;
             _employee = employee;
             _estate = estate;
-            DateTime.TryParseExact(date1, new[]{"dd/MM/yyyy HH:mm", "dd.MM.yyyy HH:mm" }, null, System.Globalization.DateTimeStyles.None, out _date);
+            DateTime.TryParseExact(date, new[]{"dd/MM/yyyy HH:mm", "dd.MM.yyyy HH:mm" , "dd-MM-yyyy HH:mm"}, null, System.Globalization.DateTimeStyles.None, out DateTime _date);
             _kindOfMeeting = kindOfMeeting;
         }
-
+        /// <summary>
+        /// Meeting's eployee property
+        /// </summary>
         public Employee Employee { get => _employee; set => _employee = value; }
+        /// <summary>
+        /// Meeting's estate property
+        /// </summary>
         public Estate Estate { get => _estate; set => _estate = value; }
+        /// <summary>
+        /// Meeting's date property
+        /// </summary>
         public DateTime Date { get => _date; set => _date = value; }
+        /// <summary>
+        /// Meeting's client property
+        /// </summary>
         public Client Client { get => _client; set => _client = value; }
+        /// <summary>
+        /// Meeting's kindofMeeting property
+        /// </summary>
         public KindOfMeeting KindOfMeeting { get => _kindOfMeeting; set => _kindOfMeeting = value; }
         /// <summary>
         /// Return information about meeting to text.

@@ -37,8 +37,13 @@ namespace estates
             _phoneNumber = CheckPhoneNumber(phoneNumber);
             _estatesNumber = 0;
         }
-
+        /// <summary>
+        /// Owner's adress property
+        /// </summary>
         public string Adress { get => _adress; set => _adress = value; }
+        /// <summary>
+        /// Owner's zipcode property, checking whether zip code is valid 2digit-3digit format
+        /// </summary>
         public string ZipCode { get => _zipCode; set
             {
                 var r = new Regex(@"^\d{2}-\d{3}$");
@@ -60,8 +65,17 @@ namespace estates
                 }
             }
         }
+        /// <summary>
+        /// Owner's city property
+        /// </summary>
         public string City { get => _city; set => _city = value; }
+        /// <summary>
+        /// Owner's phonenumber property
+        /// </summary>
         public string PhoneNumber { get => _phoneNumber; set => _phoneNumber = value; }
+        /// <summary>
+        /// Owner's estatenumber property
+        /// </summary>
         public int EstatesNumber { get => _estatesNumber; set => _estatesNumber = value; }
         /// <summary>
         /// Returns informations about owners in text.

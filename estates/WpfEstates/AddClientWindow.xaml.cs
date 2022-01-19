@@ -45,7 +45,6 @@ namespace WpfEstates
             Name.Text = client.Name;
             Surname.Text = client.Surname;
             PhoneNumber.Text = client.PhoneNumber;
-            DateBirth.Text = $"{client.DateOfBirth:dd-MMM-yyyy}";
         }
         /// <summary>
         /// Quits the window.

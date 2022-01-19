@@ -16,8 +16,13 @@ namespace estates
     {
         string _name;
         List<Client> _clientList;
-
+        /// <summary>
+        /// Clients'Repository name property
+        /// </summary>
         public string Name { get => _name; set => _name = value; }
+        /// <summary>
+        /// Clients'Repository clientlist property
+        /// </summary>
         public List<Client> ClientList { get => _clientList; set => _clientList = value; }
         /// <summary>
         /// Default constructor, initializes ClientList

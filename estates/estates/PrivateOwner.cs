@@ -35,8 +35,13 @@ namespace estates
             Name = name;
             Surname = surname;
         }
-
+        /// <summary>
+        /// PrivateOwner's name property
+        /// </summary>
         public string Name { get => _name; set => _name = value; }
+        /// <summary>
+        /// PrivateOwner's surname property
+        /// </summary>
         public string Surname { get => _surname; set => _surname = value; }
         /// <summary>
         /// Returns informations about Private Owner as text.

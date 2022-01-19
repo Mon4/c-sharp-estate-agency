@@ -72,9 +72,18 @@ namespace estates
             Owner = owner;
             //owner.EstatesNumber += 1;
         }
-
+        /// <summary>
+        /// Estate id property
+        /// </summary>
         public int Id { get => _id; set => _id = value; }
+        /// <summary>
+        /// Estate adress property
+        /// </summary>
         public string Adress { get => _adress; set => _adress = value; }
+        /// <summary>
+        /// Estate ZipCode property, checking whether the zipcode is valid, 2digits-3ditits format, if not
+        /// then throws exception.
+        /// </summary>
         public string ZipCode
         {
             get => _zipCode; set
@@ -98,14 +107,41 @@ namespace estates
                 }
             }
         }
+        /// <summary>
+        /// Estate city property
+        /// </summary>
         public string City { get => _city; set => _city = value; }
+        /// <summary>
+        /// Estate price property
+        /// </summary>
         public decimal Price { get => _price; set => _price = value; }
+        /// <summary>
+        /// Estate area property
+        /// </summary>
         public decimal Area { get => _area; set => _area = value; }
+        /// <summary>
+        /// Estate furniture property
+        /// </summary>
         public bool Furniture { get => _furniture; set => _furniture = value; }
+        /// <summary>
+        /// Estate balcony property
+        /// </summary>
         public bool Balcony { get => _balcony; set => _balcony = value; }
+        /// <summary>
+        /// Estate roomsnumber property
+        /// </summary>
         public int RoomsNumber { get => _roomsNumber; set => _roomsNumber = value; }
+        /// <summary>
+        /// Estate description property
+        /// </summary>
         public string Description { get => _description; set => _description = value; }
+        /// <summary>
+        /// Estate bedrooms property
+        /// </summary>
         public int Bedrooms { get => _bedrooms; set => _bedrooms = value; }
+        /// <summary>
+        /// Estate owner property
+        /// </summary>
         public Owner Owner { get => _owner; set => _owner = value;}
         /// <summary>
         /// Returns informations about Estates in text.

@@ -49,9 +49,17 @@ namespace estates
             GardenArea = gardenArea;
            
         }
-
+        /// <summary>
+        /// House levels property
+        /// </summary>
         public int Levels { get => _levels; set => _levels = value; }
+        /// <summary>
+        /// House Garden property
+        /// </summary>
         public bool Garden { get => _garden; set => _garden = value; }
+        /// <summary>
+        /// House GardenArea property
+        /// </summary>
         public decimal GardenArea { get => _gardenArea; set => _gardenArea = value; }
         /// <summary>
         /// Returns information about house to text.

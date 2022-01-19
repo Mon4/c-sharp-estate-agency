@@ -105,7 +105,7 @@ namespace WpfEstates
                 flat.Owner = (Owner)OwnerBox.SelectedItem;
                 if (Adress.Text == "" | ZipCode.Text == "" | City.Text == "" | Area.Text == "" |
                 Price.Text == "" | RoomsNumber.Text == "" | Bedrooms.Text == "" | Level.Text == "" |
-                 OwnerBox.SelectedItem == null | Area.Text == "0" | Price.Text == "0" | BuildingDevelopment.Text=="")
+                 OwnerBox.SelectedItem == null | Area.Text == "0" | Price.Text == "0")
                 {
                     ExceptionLabelFlat.Content = "Some fields are ampty!";
                     working = 0;

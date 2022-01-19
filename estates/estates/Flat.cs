@@ -47,13 +47,18 @@ namespace estates
             Building_development = building_development;
             Level = level;
         }
-
+        /// <summary>
+        /// Flat's building_development property
+        /// </summary>
         public string Building_development { get => _building_development; set => _building_development = value; }
+        /// <summary>
+        /// Flat's level property
+        /// </summary>
         public int Level { get => _level; set => _level = value; }
         /// <summary>
         /// Returns information about flat to text.
         /// </summary>
-        /// <returns></returns>
+        
         public override string ToString()
         {
             return base.ToString();

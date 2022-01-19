@@ -5,16 +5,16 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:WpfEstates"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="500" d:DesignWidth="800"
       Title="EmployeesPage">
 
     <Grid>
 
-        <DataGrid Name ="EmployeesDataGrid" HorizontalAlignment="Left" Height="345" Margin="0,59,0,0" VerticalAlignment="Top" Width="800" AutoGenerateColumns="False" IsReadOnly="True">
+        <DataGrid Name ="EmployeesDataGrid" HorizontalAlignment="Left" Height="450" Margin="0,59,0,0" VerticalAlignment="Top" Width="800" AutoGenerateColumns="False" IsReadOnly="True">
             <DataGrid.Columns>
                 <DataGridTextColumn x:Name="Name" Binding="{Binding Name}" Header="Name"></DataGridTextColumn>
                 <DataGridTextColumn x:Name="Surname" Binding="{Binding Surname}" Header="Surname"></DataGridTextColumn>
-                <DataGridTextColumn x:Name="PhoneNumber" Binding="{Binding PhoneNumber1}" Header="PhoneNumber"></DataGridTextColumn>
+                <DataGridTextColumn x:Name="PhoneNumber" Binding="{Binding PhoneNumber1}" Header="Phone Number"></DataGridTextColumn>
                 <DataGridTextColumn x:Name="Salary" Binding="{Binding Salary}" Header="Salary"></DataGridTextColumn>
                 <DataGridTemplateColumn>
                     <DataGridTemplateColumn.CellTemplate>
@@ -27,6 +27,6 @@
             </DataGrid.Columns>
         </DataGrid>
         <Label x:Name="EmployeesLabel" Content="Employees" HorizontalAlignment="Left" Height="58" VerticalAlignment="Top" Width="800" Background="#FFADCFAA" FontSize="20"/>
-        <Button x:Name="AddEmployee" Content="Add new employee" HorizontalAlignment="Left" Margin="622,404,0,0" VerticalAlignment="Top" Width="178" Height="46" Click="AddEmployee_Click" BorderBrush="{x:Null}"/>
+        <Button x:Name="AddEmployee" Content="Add new employee" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="178" Height="46" Click="AddEmployee_Click" BorderBrush="{x:Null}"/>
     </Grid>
 </Page>

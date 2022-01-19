@@ -16,8 +16,13 @@ namespace estates
     {
         string _name;
         List<Meeting> _meetingslist;
-
+        /// <summary>
+        /// MeetingsReporitory's name property
+        /// </summary>
         public string Name { get => _name; set => _name = value; }
+        /// <summary>
+        /// MeetingsRepository's meetingsList property
+        /// </summary>
         public List<Meeting> Meetingslist { get => _meetingslist; set => _meetingslist = value; }
 
         /// <summary>

@@ -8,5 +8,17 @@
       <PhoneNumber>512132546</PhoneNumber>
       <DateOfBirth>1980-12-15T00:00:00</DateOfBirth>
     </Client>
+    <Client>
+      <Name>Danuta</Name>
+      <Surname>Wąż</Surname>
+      <PhoneNumber>623412111</PhoneNumber>
+      <DateOfBirth>0001-01-01T00:00:00</DateOfBirth>
+    </Client>
+    <Client>
+      <Name>Jadwiga</Name>
+      <Surname>Jagiełło</Surname>
+      <PhoneNumber>901123123</PhoneNumber>
+      <DateOfBirth>2001-11-15T00:00:00</DateOfBirth>
+    </Client>
   </ClientList>
 </ClientsRepository>

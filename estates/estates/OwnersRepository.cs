@@ -16,8 +16,13 @@ namespace estates
     {
         string _name;
         List<Owner> _ownerList;
-
+        /// <summary>
+        /// OwnersRepository's name property
+        /// </summary>
         public string Name { get => _name; set => _name = value; }
+        /// <summary>
+        /// OwnersRepository's ownerlist property
+        /// </summary>
         public List<Owner> OwnerList { get => _ownerList; set => _ownerList = value; }
         /// <summary>
         /// Default constructor, inicializes OwnersList

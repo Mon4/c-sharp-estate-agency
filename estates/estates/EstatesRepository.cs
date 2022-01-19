@@ -17,7 +17,13 @@ namespace estates
 
         string _name;
         List<Estate> _estateList;
+        /// <summary>
+        /// EstateRepository's name property
+        /// </summary>
         public string Name { get => _name; set => _name = value; }
+        /// <summary>
+        /// EstateRepository's estatelist property
+        /// </summary>
         public List<Estate> EstateList { get => _estateList; set => _estateList = value; }
         /// <summary>
         /// Creates default constructor, inicializes EstateList
