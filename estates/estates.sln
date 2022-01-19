@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "estates", "estates\estates.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfEstates", "WpfEstates\WpfEstates.csproj", "{9783DDBF-30A3-4142-91C6-9D479BEDB921}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject", "UnitTestProject\UnitTestProject.csproj", "{62589389-5F6F-4FAC-9296-AA46266B7A73}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{9783DDBF-30A3-4142-91C6-9D479BEDB921}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9783DDBF-30A3-4142-91C6-9D479BEDB921}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9783DDBF-30A3-4142-91C6-9D479BEDB921}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62589389-5F6F-4FAC-9296-AA46266B7A73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62589389-5F6F-4FAC-9296-AA46266B7A73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62589389-5F6F-4FAC-9296-AA46266B7A73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62589389-5F6F-4FAC-9296-AA46266B7A73}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

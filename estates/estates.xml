@@ -3,391 +3,53 @@
   <Name>List of estates</Name>
   <EstateList>
     <Estate xsi:type="Flat">
-      <Id>6</Id>
-      <Adress>Krowia 4</Adress>
-      <ZipCode>23-900</ZipCode>
-      <City>Zakopane</City>
-      <Price>1590000</Price>
-      <Area>65</Area>
-      <Furniture>true</Furniture>
-      <Balcony>false</Balcony>
-      <RoomsNumber>0</RoomsNumber>
-      <Description />
-      <Bedrooms>5</Bedrooms>
-      <Owner xsi:type="Company">
-        <Adress>ul. Zielona 12</Adress>
-        <ZipCode>23-534</ZipCode>
-        <City>Kraków</City>
-        <PhoneNumber>123456789</PhoneNumber>
-        <EstatesNumber>2</EstatesNumber>
-        <NIP>123-123-12-12</NIP>
-        <CompanyName>BUDUJEMY_SE</CompanyName>
-      </Owner>
-      <Building_development>65</Building_development>
-      <Level>3</Level>
-    </Estate>
-    <Estate xsi:type="Flat">
-      <Id>3</Id>
-      <Adress>Czarna 4</Adress>
-      <ZipCode>34-900</ZipCode>
-      <City>Zamość</City>
-      <Price>678000</Price>
-      <Area>45.6</Area>
-      <Furniture>true</Furniture>
-      <Balcony>true</Balcony>
-      <RoomsNumber>5</RoomsNumber>
-      <Description>Beautiful flat!</Description>
-      <Bedrooms>3</Bedrooms>
-      <Owner xsi:type="PrivateOwner">
-        <Adress>Kocia 3</Adress>
-        <ZipCode>12-356</ZipCode>
-        <City>Andrychów</City>
-        <PhoneNumber>901902906</PhoneNumber>
-        <EstatesNumber>1</EstatesNumber>
-        <Name>Mariusz</Name>
-        <Surname>Skała</Surname>
-      </Owner>
-      <Building_development>kamienica</Building_development>
-      <Level>3</Level>
-    </Estate>
-    <Estate xsi:type="Flat">
-      <Id>3</Id>
-      <Adress>Biała 67</Adress>
-      <ZipCode>56-900</ZipCode>
-      <City>Bielsko-Biała</City>
-      <Price>345600</Price>
-      <Area>78</Area>
-      <Furniture>true</Furniture>
-      <Balcony>false</Balcony>
-      <RoomsNumber>7</RoomsNumber>
-      <Description>Nice flat</Description>
-      <Bedrooms>4</Bedrooms>
-      <Owner xsi:type="PrivateOwner">
-        <Adress>Kocia 3</Adress>
-        <ZipCode>12-356</ZipCode>
-        <City>Andrychów</City>
-        <PhoneNumber>901902906</PhoneNumber>
-        <EstatesNumber>2</EstatesNumber>
-        <Name>Mariusz</Name>
-        <Surname>Skała</Surname>
-      </Owner>
-      <Building_development>kamienica</Building_development>
-      <Level>2</Level>
-    </Estate>
-    <Estate xsi:type="Flat">
-      <Id>4</Id>
-      <Adress>Bałtycka 12</Adress>
-      <ZipCode>34-900</ZipCode>
+      <Id>2</Id>
+      <Adress>ul. Mickiewicza 1</Adress>
+      <ZipCode>32-123</ZipCode>
       <City>Kraków</City>
-      <Price>1000000</Price>
-      <Area>67</Area>
+      <Price>400000</Price>
+      <Area>90</Area>
       <Furniture>true</Furniture>
       <Balcony>false</Balcony>
-      <RoomsNumber>4</RoomsNumber>
-      <Description />
-      <Bedrooms>2</Bedrooms>
-      <Owner xsi:type="PrivateOwner">
-        <Adress>Kocia 3</Adress>
-        <ZipCode>12-356</ZipCode>
-        <City>Andrychów</City>
-        <PhoneNumber>901902906</PhoneNumber>
-        <EstatesNumber>3</EstatesNumber>
-        <Name>Mariusz</Name>
-        <Surname>Skała</Surname>
-      </Owner>
-      <Building_development>blok</Building_development>
-      <Level>2</Level>
-    </Estate>
-    <Estate xsi:type="House">
-      <Id>5</Id>
-      <Adress>Pomorska 3</Adress>
-      <ZipCode>56-000</ZipCode>
-      <City>Zakopane</City>
-      <Price>345000</Price>
-      <Area>67</Area>
-      <Furniture>false</Furniture>
-      <Balcony>true</Balcony>
-      <RoomsNumber>6</RoomsNumber>
-      <Description />
-      <Bedrooms>3</Bedrooms>
-      <Owner xsi:type="Company">
-        <Adress>ul. Zielona 12</Adress>
-        <ZipCode>23-534</ZipCode>
-        <City>Kraków</City>
-        <PhoneNumber>123456789</PhoneNumber>
-        <EstatesNumber>3</EstatesNumber>
-        <NIP>123-123-12-12</NIP>
-        <CompanyName>BUDUJEMY_SE</CompanyName>
-      </Owner>
-      <Levels>7</Levels>
-      <Garden>true</Garden>
-      <GardenArea>45</GardenArea>
-    </Estate>
-    <Estate xsi:type="Flat">
-      <Id>20</Id>
-      <Adress>Laptopowa 2</Adress>
-      <ZipCode>10-000</ZipCode>
-      <City>Przemyśl</City>
-      <Price>600000</Price>
-      <Area>45</Area>
-      <Furniture>false</Furniture>
-      <Balcony>false</Balcony>
-      <RoomsNumber>2</RoomsNumber>
-      <Description />
+      <RoomsNumber>5</RoomsNumber>
+      <Description>nice flat</Description>
       <Bedrooms>1</Bedrooms>
       <Owner xsi:type="PrivateOwner">
-        <Adress>Kocia 3</Adress>
-        <ZipCode>12-356</ZipCode>
-        <City>Andrychów</City>
-        <PhoneNumber>901902906</PhoneNumber>
-        <EstatesNumber>4</EstatesNumber>
-        <Name>Mariusz</Name>
-        <Surname>Skała</Surname>
-      </Owner>
-      <Building_development>kamienica</Building_development>
-      <Level>2</Level>
-    </Estate>
-    <Estate xsi:type="Flat">
-      <Id>7</Id>
-      <Adress>Niewiemowa 1</Adress>
-      <ZipCode>45-000</ZipCode>
-      <City>Kraków</City>
-      <Price>456000</Price>
-      <Area>12</Area>
-      <Furniture>false</Furniture>
-      <Balcony>false</Balcony>
-      <RoomsNumber>12</RoomsNumber>
-      <Description />
-      <Bedrooms>2</Bedrooms>
-      <Owner xsi:type="PrivateOwner">
-        <Adress>Kocia 3</Adress>
-        <ZipCode>12-356</ZipCode>
-        <City>Andrychów</City>
-        <PhoneNumber>901902906</PhoneNumber>
-        <EstatesNumber>5</EstatesNumber>
-        <Name>Mariusz</Name>
-        <Surname>Skała</Surname>
-      </Owner>
-      <Building_development>kamienica</Building_development>
-      <Level>1</Level>
-    </Estate>
-    <Estate xsi:type="House">
-      <Id>8</Id>
-      <Adress>Czarna 1</Adress>
-      <ZipCode>56-000</ZipCode>
-      <City>Kraków</City>
-      <Price>1230000</Price>
-      <Area>45</Area>
-      <Furniture>false</Furniture>
-      <Balcony>true</Balcony>
-      <RoomsNumber>7</RoomsNumber>
-      <Description />
-      <Bedrooms>3</Bedrooms>
-      <Owner xsi:type="PrivateOwner">
-        <Adress>Kocia 3</Adress>
-        <ZipCode>12-356</ZipCode>
-        <City>Andrychów</City>
-        <PhoneNumber>901902906</PhoneNumber>
-        <EstatesNumber>6</EstatesNumber>
-        <Name>Mariusz</Name>
-        <Surname>Skała</Surname>
-      </Owner>
-      <Levels>1</Levels>
-      <Garden>false</Garden>
-      <GardenArea>0</GardenArea>
-    </Estate>
-    <Estate xsi:type="Flat">
-      <Id>9</Id>
-      <Adress>Zielononóżki 12</Adress>
-      <ZipCode>45-900</ZipCode>
-      <City>Proszowice</City>
-      <Price>450000</Price>
-      <Area>45</Area>
-      <Furniture>false</Furniture>
-      <Balcony>false</Balcony>
-      <RoomsNumber>3</RoomsNumber>
-      <Description />
-      <Bedrooms>2</Bedrooms>
-      <Owner xsi:type="PrivateOwner">
-        <Adress>ul.Długa 12</Adress>
-        <ZipCode>12-123</ZipCode>
-        <City>Warszawa</City>
-        <PhoneNumber>123123123</PhoneNumber>
-        <EstatesNumber>1</EstatesNumber>
-        <Name>Jan</Name>
-        <Surname>Głowa</Surname>
-      </Owner>
-      <Building_development>blok</Building_development>
-      <Level>2</Level>
-    </Estate>
-    <Estate xsi:type="Flat">
-      <Id>37</Id>
-      <Adress>Psia 3</Adress>
-      <ZipCode>12-000</ZipCode>
-      <City>Kraków</City>
-      <Price>200000</Price>
-      <Area>80</Area>
-      <Furniture>false</Furniture>
-      <Balcony>false</Balcony>
-      <RoomsNumber>5</RoomsNumber>
-      <Description />
-      <Bedrooms>2</Bedrooms>
-      <Owner xsi:type="PrivateOwner">
-        <Adress>Kocia 3</Adress>
-        <ZipCode>12-356</ZipCode>
-        <City>Andrychów</City>
-        <PhoneNumber>901902906</PhoneNumber>
-        <EstatesNumber>7</EstatesNumber>
-        <Name>Mariusz</Name>
-        <Surname>Skała</Surname>
-      </Owner>
-      <Building_development>kamienica</Building_development>
-      <Level>4</Level>
-    </Estate>
-    <Estate xsi:type="Flat">
-      <Id>38</Id>
-      <Adress>fewf</Adress>
-      <ZipCode>12-000</ZipCode>
-      <City>fewfwf</City>
-      <Price>324</Price>
-      <Area>22</Area>
-      <Furniture>false</Furniture>
-      <Balcony>false</Balcony>
-      <RoomsNumber>5</RoomsNumber>
-      <Description />
-      <Bedrooms>3</Bedrooms>
-      <Owner xsi:type="Company">
-        <Adress>ul. Zielona 12</Adress>
-        <ZipCode>23-534</ZipCode>
+        <Adress>ul. Kwiatowa 4</Adress>
+        <ZipCode>32-123</ZipCode>
         <City>Kraków</City>
-        <PhoneNumber>123456789</PhoneNumber>
-        <EstatesNumber>4</EstatesNumber>
-        <NIP>123-123-12-12</NIP>
-        <CompanyName>BUDUJEMY_SE</CompanyName>
-      </Owner>
-      <Building_development>fwfwe</Building_development>
-      <Level>0</Level>
-    </Estate>
-    <Estate xsi:type="House">
-      <Id>50</Id>
-      <Adress>regfeef</Adress>
-      <ZipCode>34-000</ZipCode>
-      <City>wef</City>
-      <Price>323</Price>
-      <Area>43324</Area>
-      <Furniture>false</Furniture>
-      <Balcony>false</Balcony>
-      <RoomsNumber>43545</RoomsNumber>
-      <Description />
-      <Bedrooms>3243</Bedrooms>
-      <Owner xsi:type="PrivateOwner">
-        <Adress>ul.Długa 12</Adress>
-        <ZipCode>12-123</ZipCode>
-        <City>Warszawa</City>
-        <PhoneNumber>123123123</PhoneNumber>
+        <PhoneNumber>123056789</PhoneNumber>
         <EstatesNumber>2</EstatesNumber>
-        <Name>Jan</Name>
-        <Surname>Głowa</Surname>
+        <Name>Mariusz</Name>
+        <Surname>Grzyb</Surname>
       </Owner>
-      <Levels>3</Levels>
-      <Garden>false</Garden>
-      <GardenArea>0</GardenArea>
+      <Building_development>kamienica</Building_development>
+      <Level>10</Level>
     </Estate>
-    <Estate xsi:type="Flat">
-      <Id>13</Id>
-      <Adress>Morska 4</Adress>
-      <ZipCode>56-000</ZipCode>
+    <Estate xsi:type="House">
+      <Id>1</Id>
+      <Adress>ul. Niebieska 14</Adress>
+      <ZipCode>31-642</ZipCode>
       <City>Kraków</City>
-      <Price>4500</Price>
-      <Area>12</Area>
-      <Furniture>false</Furniture>
-      <Balcony>false</Balcony>
+      <Price>50000</Price>
+      <Area>50</Area>
+      <Furniture>true</Furniture>
+      <Balcony>true</Balcony>
       <RoomsNumber>4</RoomsNumber>
-      <Description />
-      <Bedrooms>3</Bedrooms>
-      <Owner xsi:type="Company">
-        <Adress>ul. Zielona 12</Adress>
-        <ZipCode>23-534</ZipCode>
-        <City>Kraków</City>
-        <PhoneNumber>123456789</PhoneNumber>
-        <EstatesNumber>5</EstatesNumber>
-        <NIP>123-123-12-12</NIP>
-        <CompanyName>BUDUJEMY_SE</CompanyName>
-      </Owner>
-      <Building_development>blok</Building_development>
-      <Level>0</Level>
-    </Estate>
-    <Estate xsi:type="Flat">
-      <Id>14</Id>
-      <Adress>morska 4</Adress>
-      <ZipCode>45-000</ZipCode>
-      <City>Kraków</City>
-      <Price>12</Price>
-      <Area>2</Area>
-      <Furniture>false</Furniture>
-      <Balcony>false</Balcony>
-      <RoomsNumber>2</RoomsNumber>
-      <Description />
+      <Description>nice house</Description>
       <Bedrooms>2</Bedrooms>
-      <Owner xsi:type="Company">
-        <Adress>ul. Zielona 12</Adress>
-        <ZipCode>23-534</ZipCode>
+      <Owner xsi:type="PrivateOwner">
+        <Adress>ul. Kwiatowa 4</Adress>
+        <ZipCode>32-123</ZipCode>
         <City>Kraków</City>
-        <PhoneNumber>123456789</PhoneNumber>
-        <EstatesNumber>6</EstatesNumber>
-        <NIP>123-123-12-12</NIP>
-        <CompanyName>BUDUJEMY_SE</CompanyName>
-      </Owner>
-      <Building_development>blok</Building_development>
-      <Level>0</Level>
-    </Estate>
-    <Estate xsi:type="Flat">
-      <Id>29</Id>
-      <Adress>Bokowa 2</Adress>
-      <ZipCode>45-000</ZipCode>
-      <City>Miasto</City>
-      <Price>423</Price>
-      <Area>323</Area>
-      <Furniture>false</Furniture>
-      <Balcony>false</Balcony>
-      <RoomsNumber>43</RoomsNumber>
-      <Description />
-      <Bedrooms>3</Bedrooms>
-      <Owner xsi:type="PrivateOwner">
-        <Adress>Kocia 3</Adress>
-        <ZipCode>12-356</ZipCode>
-        <City>Andrychów</City>
-        <PhoneNumber>901902906</PhoneNumber>
-        <EstatesNumber>8</EstatesNumber>
+        <PhoneNumber>123056789</PhoneNumber>
+        <EstatesNumber>2</EstatesNumber>
         <Name>Mariusz</Name>
-        <Surname>Skała</Surname>
+        <Surname>Grzyb</Surname>
       </Owner>
-      <Building_development>blok</Building_development>
-      <Level>0</Level>
-    </Estate>
-    <Estate xsi:type="Flat">
-      <Id>16</Id>
-      <Adress>Szalona 3</Adress>
-      <ZipCode>45-000</ZipCode>
-      <City>Kraków</City>
-      <Price>123</Price>
-      <Area>321</Area>
-      <Furniture>false</Furniture>
-      <Balcony>false</Balcony>
-      <RoomsNumber>5</RoomsNumber>
-      <Description />
-      <Bedrooms>3</Bedrooms>
-      <Owner xsi:type="PrivateOwner">
-        <Adress>Kocia 3</Adress>
-        <ZipCode>12-356</ZipCode>
-        <City>Andrychów</City>
-        <PhoneNumber>901902906</PhoneNumber>
-        <EstatesNumber>9</EstatesNumber>
-        <Name>Mariusz</Name>
-        <Surname>Skała</Surname>
-      </Owner>
-      <Building_development />
-      <Level>0</Level>
+      <Levels>2</Levels>
+      <Garden>true</Garden>
+      <GardenArea>20</GardenArea>
     </Estate>
   </EstateList>
 </EstatesRepository>
