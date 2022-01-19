@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfEstates"
         mc:Ignorable="d"
-        Title="Main Window" Height="598.5" Width="1012">
+        Title="Main Window" Height="598.5" Width="1012" ResizeMode="NoResize">
     <Grid>
         <StackPanel HorizontalAlignment="Left" Height="587" VerticalAlignment="Top" Width="195" Background="#FF83E873">
             <Image>
