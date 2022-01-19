@@ -10,7 +10,7 @@
 
     <Grid>
 
-        <DataGrid Name ="EmployeesDataGrid" HorizontalAlignment="Left" Height="345" Margin="0,59,0,0" VerticalAlignment="Top" Width="800" AutoGenerateColumns="False">
+        <DataGrid Name ="EmployeesDataGrid" HorizontalAlignment="Left" Height="345" Margin="0,59,0,0" VerticalAlignment="Top" Width="800" AutoGenerateColumns="False" IsReadOnly="True">
             <DataGrid.Columns>
                 <DataGridTextColumn x:Name="Name" Binding="{Binding Name}" Header="Name"></DataGridTextColumn>
                 <DataGridTextColumn x:Name="Surname" Binding="{Binding Surname}" Header="Surname"></DataGridTextColumn>
