@@ -72,8 +72,7 @@ namespace WpfEstates
                     working = 0;
 
                 }
-                emp.Sale_bonus = 0;
-                emp.Sold_estates = 0;
+
                 if(Name.Text=="" | Surname.Text=="" | Salary.Text=="" | PhoneNumber.Text=="")
                 {
                     working = 0;
