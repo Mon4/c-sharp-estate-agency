@@ -19,6 +19,8 @@ namespace WpfEstates
 {
     /// <summary>
     /// Interaction logic for AddMeetingWindow.xaml
+    /// AddMeetingWindow opens window that enables user to add new meeting to Meetinglist, by writing data
+    /// in blank spaces, user can either save changes or cancel them.
     /// </summary>
     public partial class AddMeetingWindow : Window
     {
@@ -26,10 +28,17 @@ namespace WpfEstates
         EmployeesRepository emprep;
         EstatesRepository est = EstatesRepository.ReadXML();
         ClientsRepository clients = ClientsRepository.ReadXML();
+        /// <summary>
+        /// Default constructor
+        /// </summary>
         public AddMeetingWindow()
         {
             InitializeComponent();
         }
+        /// <summary>
+        /// Parametric constructor, sets textboxes to default value.
+        /// </summary>
+        /// <param name="m"></param>
 
         public AddMeetingWindow(Meeting m):this()
         {
@@ -41,12 +50,21 @@ namespace WpfEstates
             ClientBox.ItemsSource = clients.ClientList;
             KindBox.ItemsSource = new List<string> { "Watching", "Selling" };
         }
-
+        /// <summary>
+        /// Quits the window.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Cancel_Click(object sender, RoutedEventArgs e)
         {
             Close();
         }
-
+        /// <summary>
+        ///  Adds Meeting to Meetingslist, checks if the value is valid if not then throws exceptions,
+        /// checks if date is valid and trows exceptions otherwise.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Save_Click(object sender, RoutedEventArgs e)
         {
             {

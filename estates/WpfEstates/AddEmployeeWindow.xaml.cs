@@ -19,15 +19,23 @@ namespace WpfEstates
 {
     /// <summary>
     /// Interaction logic for AddEmployeeWindow.xaml
+    /// Add Employee window opens window that enables user to add new employee to employeelist 
+    /// by writing data in blank windows. User can also save the changes or cancel it and quit.
     /// </summary>
     public partial class AddEmployeeWindow : Window
     {
         Employee emp;
+        /// <summary>
+        /// Default contructor
+        /// </summary>
         public AddEmployeeWindow()
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Parametric constructor, sets textboxes to default value.
+        /// </summary>
+        /// <param name="e"></param>
         public AddEmployeeWindow(Employee e):this()
         {
             emp = e;
@@ -36,6 +44,12 @@ namespace WpfEstates
             PhoneNumber.Text = emp.PhoneNumber1;
             Salary.Text = emp.Salary.ToString();
         }
+        /// <summary>
+        /// Adds employee to employeeslist, checks if the value is valid if not then throws exceptions,
+        /// checks if phone number is valid and trows exceptions otherwise.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Save_Click(object sender, RoutedEventArgs e)
         {
             {
@@ -85,7 +99,11 @@ namespace WpfEstates
                 }
             }
         }
-
+        /// <summary>
+        ///  Quits the window.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Cancel_Click(object sender, RoutedEventArgs e)
         {
             Close();

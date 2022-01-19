@@ -18,15 +18,26 @@ namespace WpfEstates
 {
     /// <summary>
     /// Interaction logic for AddClientWindow.xaml
+    /// Add client window opens window that enables user to add new client to Clientlist 
+    /// by writing data in blank windows. User can also save the changes or cancel it and quit.
     /// </summary>
+    /// 
+    
     public partial class AddClientWindow : Window
     {
         Client client;
+        /// <summary>
+        /// Default contructor
+        /// </summary>
         public AddClientWindow()
         {
             InitializeComponent();
 
         }
+        /// <summary>
+        /// Parametric constructor, sets textboxes to default value.
+        /// </summary>
+        /// <param name="c">Client</param>
 
         public AddClientWindow(Client c):this()
         {
@@ -36,11 +47,21 @@ namespace WpfEstates
             PhoneNumber.Text = client.PhoneNumber;
             DateBirth.Text = $"{client.DateOfBirth:dd-MMM-yyyy}";
         }
+        /// <summary>
+        /// Quits the window.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Cancel_Click(object sender, RoutedEventArgs e)
         {
             Close();
         }
-
+        /// <summary>
+        /// Adds client to clientslist, checks if the value is valid if not then throws exceptions,
+        /// checks if phone number and date are valid and trows exceptions otherwise.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Save_Click(object sender, RoutedEventArgs e)
         {
             if (Name.Text != "" || Surname.Text != "" || PhoneNumber.Text != "" | DateBirth.Text!="")
