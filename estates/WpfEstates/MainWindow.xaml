@@ -21,9 +21,7 @@
             <Button x:Name="ExitBtn" Content="Exit" HorizontalAlignment="Left" Height="71" VerticalAlignment="Top" Width="196" Click="ExitBtn_Click" Margin="0,0,-1,0" BorderBrush="{x:Null}" Background="#FF49B838"/>
         </StackPanel>
 
-        <Frame x:Name="Main" Margin="195,110,0,0" NavigationUIVisibility="Hidden"/>
-
-        <Label Content="Estates Program" HorizontalAlignment="Left" Height="43" Margin="202,21,0,0" VerticalAlignment="Top" Width="375" FontSize="22"/>
+        <Frame x:Name="Main" Margin="195,0,0,0" NavigationUIVisibility="Hidden"/>
 
 
     </Grid>
