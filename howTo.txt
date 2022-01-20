@@ -1,0 +1,20 @@
+How to use
+1. Open folder estates/WpfEstates/bin/Debug
+2. Double click on WpfEstates.exe
+3. Enjoy using real estate app :)
+
+
+This program features a database for real estate. The database contains data about estates,its clients and workers, meetings where employee and client meet to buy or visit estate
+and owners of the estates. 
+After starting the program user will see 6 buttons:
+Estates,Employees,Clients,Owners Meetings and Quit.
+User can click on one of the following buttons:
+1.)Estate button, the database of estates will show up, the user will have possibility to add new estate either flat or house, he also can delate existing estate by clicking delete button
+in a specified row. Moreover by clicking on 'Owner'column the program will sort estates by Owner. 
+2.)Employees button, the database of employees will show up, user can add new employee or delete existing one by clicking delete button in specified row.
+3.)Clients button, the database of clients will show up, again user can add new client, or delete existing one by clicking delete button in specified row.
+4.)Owners button, the database of owners will show up, user can add new owner, depending on what user wants he can add either new company or new private user, he can also delete any owner
+by clicking delete button in specified row.
+5.)Meetings button, the database of meetings will show up, user can add new meeting or delete existing meeting by clicking on delete button in specified row.
+6.)Quit Button wchich ends the program.
+ 
