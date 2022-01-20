@@ -9,11 +9,12 @@
     <Grid>
         <Label Content="New Flat" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" 
                Width="792" Background="#FF52BD48" FontSize="20"/>
+        
         <StackPanel Orientation="Vertical" Margin="0,40,0,-40" >
             <Label Content="Adress*"       FontSize="15" Margin="0 0 150 0"></Label>
-            <Label Content="ZipCode*"  FontSize="15" Margin="0 0 150 0"></Label>
-            <Label Content="City*" FontSize="15" Margin="0 0 150 0"></Label>
-            <Label Content="Price*" FontSize="15" Margin="0 0 150 0"></Label>
+            <Label Content="ZipCode*"      FontSize="15" Margin="0 0 150 0"></Label>
+            <Label Content="City*"         FontSize="15" Margin="0 0 150 0"></Label>
+            <Label Content="Price*"        FontSize="15" Margin="0 0 150 0"></Label>
             <Label Content="Area*" FontSize="15" Margin="0 0 150 0"></Label>
             <Label Content="Furniture" FontSize="15" Margin="0 0 150 0"></Label>
             <Label Content="Balcony" FontSize="15" Margin="0 0 150 0"></Label>

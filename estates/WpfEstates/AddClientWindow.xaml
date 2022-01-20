@@ -18,9 +18,9 @@
         </StackPanel>
         <StackPanel Orientation="Vertical">
             <TextBox    x:Name="Name"        FontSize="15" Margin="150 60 5 0"></TextBox>
-            <TextBox    x:Name="Surname"     FontSize="15" Margin="150 5 5 0"></TextBox>
-            <TextBox    x:Name="PhoneNumber" FontSize="15" Margin="150 5 5 0"></TextBox>
-            <TextBox    x:Name="DateBirth" FontSize="15" Margin="150 5 5 0"/>
+            <TextBox    x:Name="Surname"     FontSize="15" Margin="150 6 5 0"></TextBox>
+            <TextBox    x:Name="PhoneNumber" FontSize="15" Margin="150 6 5 0"></TextBox>
+            <TextBox    x:Name="DateBirth" FontSize="15" Margin="150 7 5 0"/>
         </StackPanel>
         <Button x:Name="Save"   FontSize="15" Margin="10 370 170 5" Click="Save_Click">Save</Button>
         <Button x:Name="Cancel" FontSize="15" Margin="170 370 10 5" Click="Cancel_Click">Cancel</Button>

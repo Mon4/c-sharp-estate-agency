@@ -18,12 +18,12 @@
             <Label Content="CompanyName"  FontSize="15" Margin="0 0 150 0"></Label>
         </StackPanel>
         <StackPanel Orientation="Vertical">
-            <TextBox    x:Name="Adress"        FontSize="15" Margin="150 60 5 0"></TextBox>
-            <TextBox    x:Name="ZipCode"     FontSize="15" Margin="150 5 5 0"></TextBox>
-            <TextBox    x:Name="City" FontSize="15" Margin="150 5 5 0"></TextBox>
-            <TextBox    x:Name="PhoneNumber"        FontSize="15" Margin="150 5 5 0"></TextBox>
-            <TextBox    x:Name="Nip"     FontSize="15" Margin="150 5 5 0"></TextBox>
-            <TextBox    x:Name="CompanyName" FontSize="15" Margin="150 5 5 0"></TextBox>
+            <TextBox    x:Name="Adress"        FontSize="15" Margin="150 55 5 0"></TextBox>
+            <TextBox    x:Name="ZipCode"       FontSize="15" Margin="150 9 5 0"></TextBox>
+            <TextBox    x:Name="City"          FontSize="15" Margin="150 9 5 0"></TextBox>
+            <TextBox    x:Name="PhoneNumber"   FontSize="15" Margin="150 9 5 0"></TextBox>
+            <TextBox    x:Name="Nip"           FontSize="15" Margin="150 9 5 0"></TextBox>
+            <TextBox    x:Name="CompanyName"   FontSize="15" Margin="150 9 5 0"></TextBox>
         </StackPanel>
         <Label x:Name="ExceptionLabelCompany" Content="" Margin="10,318,10,54" FontSize="16" Foreground="#FFBD1212"/>
 
