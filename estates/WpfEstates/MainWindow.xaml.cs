@@ -39,7 +39,6 @@ namespace WpfEstates
         /// <param name="e"></param>
         private void EstatesBtn_Click(object sender, RoutedEventArgs e)
         {
-            Globalls.currentPage = "Estates";
             Main.Content = new EstatesPage();
         }
         /// <summary>
@@ -49,7 +48,6 @@ namespace WpfEstates
         /// <param name="e"></param>
         private void EployeesBtn_Click(object sender, RoutedEventArgs e)
         {
-            Globalls.currentPage = "Employees";
             Main.Content = new EmployeesPage();
         }
         /// <summary>
@@ -59,7 +57,6 @@ namespace WpfEstates
         /// <param name="e"></param>
         private void ClientsBtn_Click(object sender, RoutedEventArgs e)
         {
-            Globalls.currentPage = "Clients";
             Main.Content = new ClientsPage();
         }
         /// <summary>
@@ -69,7 +66,6 @@ namespace WpfEstates
         /// <param name="e"></param>
         private void OwnersBtn_Click(object sender, RoutedEventArgs e)
         {
-            Globalls.currentPage = "Owners";
             Main.Content = new OwnersPage();
         }
         /// <summary>
@@ -79,7 +75,6 @@ namespace WpfEstates
         /// <param name="e"></param>
         private void MeetingsBtn_Click(object sender, RoutedEventArgs e)
         {
-            Globalls.currentPage = "Meetings";
             Main.Content = new MeetingsPage();
         }
         /// <summary>

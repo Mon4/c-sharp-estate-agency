@@ -79,16 +79,6 @@
     <Compile Include="AddPrivateOwnerWindow.xaml.cs">
       <DependentUpon>AddPrivateOwnerWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ButtonsAddEstatePage.xaml.cs">
-      <DependentUpon>ButtonsAddEstatePage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ButtonsAddOwnerPage.xaml.cs">
-      <DependentUpon>ButtonsAddOwnerPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ButtonsPage.xaml.cs">
-      <DependentUpon>ButtonsPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Globalls.cs" />
     <Compile Include="StartingPage.xaml.cs">
       <DependentUpon>StartingPage.xaml</DependentUpon>
     </Compile>
@@ -118,18 +108,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="AddPrivateOwnerWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="ButtonsAddEstatePage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="ButtonsAddOwnerPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="ButtonsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

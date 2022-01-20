@@ -8,8 +8,8 @@ namespace estates
     /// date of birth and phone number.
     /// </summary>
     [Serializable]
-    
-    public class Client:IComparable
+
+    public class Client : IComparable
     {
         string _name;
         string _surname;
@@ -32,7 +32,7 @@ namespace estates
             _name = name;
             _surname = surname;
             _phoneNumber = CheckPhoneNumber(phoneNumber);
-            DateTime.TryParseExact(date, new[]{"dd/MM/yyyy", "dd.mm.yyyy"}, null, System.Globalization.DateTimeStyles.None, out _dateOfBirth);
+            DateTime.TryParseExact(date, new[] { "dd/MM/yyyy", "dd.mm.yyyy" }, null, System.Globalization.DateTimeStyles.None, out _dateOfBirth);
         }
         /// <summary>
         /// Client's name property
