@@ -27,6 +27,11 @@
                 <DataGridTextColumn x:Name="Descrition" Binding="{Binding Description}" Header="Description"></DataGridTextColumn>
                 <DataGridTextColumn x:Name="Bedrooms" Binding="{Binding Bedrooms}" Header="Bedrooms"></DataGridTextColumn>
                 <DataGridTextColumn x:Name="Owner" Binding="{Binding Owner}" Header="Owner" ></DataGridTextColumn>
+                <DataGridCheckBoxColumn x:Name="Garden" Binding="{Binding Garden}" Header="Garden" ></DataGridCheckBoxColumn>
+                <DataGridTextColumn x:Name="GardenArea" Binding="{Binding GardenArea}" Header="Garden area" ></DataGridTextColumn>
+                <DataGridTextColumn x:Name="Levels" Binding="{Binding Levels}" Header="Levels" ></DataGridTextColumn>
+                <DataGridTextColumn x:Name="Building_development" Binding="{Binding Building_development}" Header="Building development" ></DataGridTextColumn>
+                <DataGridTextColumn x:Name="Level" Binding="{Binding Level}" Header="Level" ></DataGridTextColumn>
                 <DataGridTemplateColumn>
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>

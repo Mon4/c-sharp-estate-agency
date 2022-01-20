@@ -51,5 +51,127 @@
       <Building_development>blok</Building_development>
       <Level>0</Level>
     </Estate>
+    <Estate xsi:type="House">
+      <Id>3</Id>
+      <Adress>Miejska 145</Adress>
+      <ZipCode>34-100</ZipCode>
+      <City>Wadowice</City>
+      <Price>670000</Price>
+      <Area>56</Area>
+      <Furniture>true</Furniture>
+      <Balcony>false</Balcony>
+      <RoomsNumber>6</RoomsNumber>
+      <Description />
+      <Bedrooms>3</Bedrooms>
+      <Owner xsi:type="PrivateOwner">
+        <Adress>ul. Kwiatowa 4</Adress>
+        <ZipCode>32-123</ZipCode>
+        <City>Kraków</City>
+        <PhoneNumber>123056789</PhoneNumber>
+        <EstatesNumber>2</EstatesNumber>
+        <Name>Mariusz</Name>
+        <Surname>Grzyb</Surname>
+      </Owner>
+      <Levels>2</Levels>
+      <Garden>true</Garden>
+      <GardenArea>12</GardenArea>
+    </Estate>
+    <Estate xsi:type="Flat">
+      <Id>4</Id>
+      <Adress>Podmorska 7</Adress>
+      <ZipCode>45-100</ZipCode>
+      <City>Katowice</City>
+      <Price>560000</Price>
+      <Area>45</Area>
+      <Furniture>false</Furniture>
+      <Balcony>true</Balcony>
+      <RoomsNumber>4</RoomsNumber>
+      <Description>beautiful flat with 2 rooms</Description>
+      <Bedrooms>2</Bedrooms>
+      <Owner xsi:type="PrivateOwner">
+        <Adress>ul. Kwiatowa 4</Adress>
+        <ZipCode>32-123</ZipCode>
+        <City>Kraków</City>
+        <PhoneNumber>123056789</PhoneNumber>
+        <EstatesNumber>3</EstatesNumber>
+        <Name>Mariusz</Name>
+        <Surname>Grzyb</Surname>
+      </Owner>
+      <Building_development>kamienica</Building_development>
+      <Level>5</Level>
+    </Estate>
+    <Estate xsi:type="House">
+      <Id>5</Id>
+      <Adress>Plażowa 4</Adress>
+      <ZipCode>12-000</ZipCode>
+      <City>Wieliczka</City>
+      <Price>780000</Price>
+      <Area>78</Area>
+      <Furniture>true</Furniture>
+      <Balcony>false</Balcony>
+      <RoomsNumber>4</RoomsNumber>
+      <Description>Pretty house on Plażowa street</Description>
+      <Bedrooms>1</Bedrooms>
+      <Owner xsi:type="Company">
+        <Adress>Sielska 3</Adress>
+        <ZipCode>65-999</ZipCode>
+        <City>Niepołomice</City>
+        <PhoneNumber>456900100</PhoneNumber>
+        <EstatesNumber>1</EstatesNumber>
+        <NIP>9009001276</NIP>
+        <CompanyName>BuildAHouse</CompanyName>
+      </Owner>
+      <Levels>6</Levels>
+      <Garden>false</Garden>
+      <GardenArea>0</GardenArea>
+    </Estate>
+    <Estate xsi:type="Flat">
+      <Id>6</Id>
+      <Adress>Polna 8</Adress>
+      <ZipCode>19-190</ZipCode>
+      <City>Warszawa</City>
+      <Price>3400000</Price>
+      <Area>120</Area>
+      <Furniture>true</Furniture>
+      <Balcony>true</Balcony>
+      <RoomsNumber>8</RoomsNumber>
+      <Description />
+      <Bedrooms>3</Bedrooms>
+      <Owner xsi:type="PrivateOwner">
+        <Adress>Turkusowa 5</Adress>
+        <ZipCode>12-100</ZipCode>
+        <City>Kraków</City>
+        <PhoneNumber>900100100</PhoneNumber>
+        <EstatesNumber>1</EstatesNumber>
+        <Name>Kamil</Name>
+        <Surname>Sprzedawca</Surname>
+      </Owner>
+      <Building_development>apartamentowiec</Building_development>
+      <Level>5</Level>
+    </Estate>
+    <Estate xsi:type="Flat">
+      <Id>7</Id>
+      <Adress>Miła 45</Adress>
+      <ZipCode>87-900</ZipCode>
+      <City>Rzeszów</City>
+      <Price>120000</Price>
+      <Area>45</Area>
+      <Furniture>false</Furniture>
+      <Balcony>false</Balcony>
+      <RoomsNumber>4</RoomsNumber>
+      <Description />
+      <Bedrooms>1</Bedrooms>
+      <Owner xsi:type="Company">
+        <Adress>Sielska 3</Adress>
+        <ZipCode>65-999</ZipCode>
+        <City>Niepołomice</City>
+        <PhoneNumber>456900100</PhoneNumber>
+        <EstatesNumber>2</EstatesNumber>
+        <NIP>9009001276</NIP>
+        <CompanyName>BuildAHouse</CompanyName>
+      </Owner>
+      <Building_development>kamienica</Building_development>
+      <Level>5</Level>
+    </Estate>
   </EstateList>
 </EstatesRepository>

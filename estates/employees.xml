@@ -8,5 +8,17 @@
       <PhoneNumber1>801234123</PhoneNumber1>
       <Salary>2500</Salary>
     </Employee>
+    <Employee>
+      <Name>Mariola</Name>
+      <Surname>Dyńko</Surname>
+      <PhoneNumber1>888000103</PhoneNumber1>
+      <Salary>4500</Salary>
+    </Employee>
+    <Employee>
+      <Name>Mariusz</Name>
+      <Surname>Sarna</Surname>
+      <PhoneNumber1>980120345</PhoneNumber1>
+      <Salary>3200</Salary>
+    </Employee>
   </Employelist>
 </EmployeesRepository>

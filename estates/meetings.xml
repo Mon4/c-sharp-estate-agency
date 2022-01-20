@@ -43,5 +43,46 @@
       </Client>
       <KindOfMeeting>selling</KindOfMeeting>
     </Meeting>
+    <Meeting>
+      <Employee>
+        <Name>Mariola</Name>
+        <Surname>Dyńko</Surname>
+        <PhoneNumber1>888000103</PhoneNumber1>
+        <Salary>4500</Salary>
+      </Employee>
+      <Estate xsi:type="House">
+        <Id>3</Id>
+        <Adress>Miejska 145</Adress>
+        <ZipCode>34-100</ZipCode>
+        <City>Wadowice</City>
+        <Price>670000</Price>
+        <Area>56</Area>
+        <Furniture>true</Furniture>
+        <Balcony>false</Balcony>
+        <RoomsNumber>6</RoomsNumber>
+        <Description />
+        <Bedrooms>3</Bedrooms>
+        <Owner xsi:type="PrivateOwner">
+          <Adress>ul. Kwiatowa 4</Adress>
+          <ZipCode>32-123</ZipCode>
+          <City>Kraków</City>
+          <PhoneNumber>123056789</PhoneNumber>
+          <EstatesNumber>2</EstatesNumber>
+          <Name>Mariusz</Name>
+          <Surname>Grzyb</Surname>
+        </Owner>
+        <Levels>2</Levels>
+        <Garden>true</Garden>
+        <GardenArea>12</GardenArea>
+      </Estate>
+      <Date>2021-03-12T13:00:00</Date>
+      <Client>
+        <Name>Adam</Name>
+        <Surname>Truskawka</Surname>
+        <PhoneNumber>100444100</PhoneNumber>
+        <DateOfBirth>2000-01-12T00:00:00</DateOfBirth>
+      </Client>
+      <KindOfMeeting>watching</KindOfMeeting>
+    </Meeting>
   </Meetingslist>
 </MeetingsRepository>

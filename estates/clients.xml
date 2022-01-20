@@ -8,5 +8,23 @@
       <PhoneNumber>512132546</PhoneNumber>
       <DateOfBirth>1980-12-15T00:00:00</DateOfBirth>
     </Client>
+    <Client>
+      <Name>Adam</Name>
+      <Surname>Truskawka</Surname>
+      <PhoneNumber>100444100</PhoneNumber>
+      <DateOfBirth>2000-01-12T00:00:00</DateOfBirth>
+    </Client>
+    <Client>
+      <Name>Anna</Name>
+      <Surname>Szczepan</Surname>
+      <PhoneNumber>870675123</PhoneNumber>
+      <DateOfBirth>1976-04-23T00:00:00</DateOfBirth>
+    </Client>
+    <Client>
+      <Name>Joanna</Name>
+      <Surname>Zdrój</Surname>
+      <PhoneNumber>760900120</PhoneNumber>
+      <DateOfBirth>1956-03-03T00:00:00</DateOfBirth>
+    </Client>
   </ClientList>
 </ClientsRepository>
